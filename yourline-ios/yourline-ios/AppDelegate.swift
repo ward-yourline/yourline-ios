@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         router = MainViewRouter(window: window)
         router?.start()
+        
         return true
     }
 

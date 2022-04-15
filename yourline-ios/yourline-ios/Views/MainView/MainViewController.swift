@@ -11,13 +11,34 @@ class MainViewController: UIViewController, MainViewing {
     
     @IBOutlet private weak var containerView: UIView!
     
+    private var childViews: [UIViewController]? {
+        didSet {
+            print("I'm set")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        setupChildrenIfNeeded()
     }
     
     func addChildViews(_ views: [UIViewController]?) {
+        childViews = views
+    }
+    
+    private func setupChildrenIfNeeded() {
+        guard let childViews = childViews else {
+            return
+        }
         
+        for childView in childViews {
+            addChild(childView)
+            childView.view.frame = containerView.frame
+            containerView.addSubview(childView.view)
+            childView.didMove(toParent: self)
+        }
     }
 }
 
