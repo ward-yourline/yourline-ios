@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F37C890A28097C4000F148EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890928097C4000F148EB /* AppDelegate.swift */; };
-		F37C890C28097C4000F148EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890B28097C4000F148EB /* SceneDelegate.swift */; };
 		F37C890E28097C4000F148EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890D28097C4000F148EB /* MainViewController.swift */; };
 		F37C891128097C4000F148EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37C890F28097C4000F148EB /* Main.storyboard */; };
 		F37C891428097C4000F148EB /* yourline_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F37C891228097C4000F148EB /* yourline_ios.xcdatamodeld */; };
@@ -47,7 +46,6 @@
 /* Begin PBXFileReference section */
 		F37C890628097C4000F148EB /* yourline-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yourline-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37C890928097C4000F148EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F37C890B28097C4000F148EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F37C890D28097C4000F148EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F37C891028097C4000F148EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F37C891328097C4000F148EB /* yourline_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = yourline_ios.xcdatamodel; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				F37C890928097C4000F148EB /* AppDelegate.swift */,
-				F37C890B28097C4000F148EB /* SceneDelegate.swift */,
 				F3AB763328098A0A002AF45D /* Routing.swift */,
 				F3AB763528098A50002AF45D /* Constants.swift */,
 				F3AB76242809852E002AF45D /* Views */,
@@ -317,7 +314,6 @@
 				F37C890A28097C4000F148EB /* AppDelegate.swift in Sources */,
 				F37C891428097C4000F148EB /* yourline_ios.xcdatamodeld in Sources */,
 				F3AB7628280985B2002AF45D /* SignInViewController.swift in Sources */,
-				F37C890C28097C4000F148EB /* SceneDelegate.swift in Sources */,
 				F3AB7630280989C8002AF45D /* SignInProtocols.swift in Sources */,
 				F3AB762E280985CE002AF45D /* MainViewRouter.swift in Sources */,
 				F3AB762C280985C8002AF45D /* MainViewProtocols.swift in Sources */,

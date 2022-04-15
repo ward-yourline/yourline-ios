@@ -8,16 +8,16 @@
 import UIKit
 import CoreData
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private var router: MainViewRouting?
-    private let window: UIWindow = UIWindow(frame: UIScreen.main.bounds)
+    internal var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Override point for customization after application launch.
-        
+        window = UIWindow(frame: UIScreen.main.bounds)
         router = MainViewRouter(window: window)
         router?.start()
         
