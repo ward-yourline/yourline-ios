@@ -1,2 +1,2 @@
-# yourline-ios
+# Your Line
 YourLine iOS Repo
