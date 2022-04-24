@@ -98,9 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				F3F499F32815897400BD71CE /* FormViewController.swift */,
-				F3F499F52815899E00BD71CE /* FormView.storyboard */,
 				F3D8666E2815920600E574B0 /* FormTableDelegate.swift */,
 				F3D866702815920F00E574B0 /* FormTableDataSource.swift */,
+				F3F499F52815899E00BD71CE /* FormView.storyboard */,
 			);
 			path = Form;
 			sourceTree = "<group>";
