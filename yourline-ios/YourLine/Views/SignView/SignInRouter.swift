@@ -42,6 +42,7 @@ class SignInRouter: SignInRouting {
         let formViewStoryboard = UIStoryboard(name: "FormView", bundle: presentationBundle)
         let formView = formViewStoryboard.instantiateViewController(withIdentifier: "FormViewController")
         
+        signInContext?.setNavigationBarHidden(false, animated: false)
         signInContext?.pushViewController(formView, animated: true)
     }
 }
