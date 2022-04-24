@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3D8666F2815920600E574B0 /* FormTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8666E2815920600E574B0 /* FormTableDelegate.swift */; };
+		F3D866712815920F00E574B0 /* FormTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866702815920F00E574B0 /* FormTableDataSource.swift */; };
 		F3F499D8281588D700BD71CE /* Presentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = F3F499D7281588D700BD71CE /* Presentation.docc */; };
 		F3F499DE281588D800BD71CE /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499D3281588D700BD71CE /* Presentation.framework */; };
 		F3F499E3281588D800BD71CE /* PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F499E2281588D800BD71CE /* PresentationTests.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3D8666E2815920600E574B0 /* FormTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDelegate.swift; sourceTree = "<group>"; };
+		F3D866702815920F00E574B0 /* FormTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDataSource.swift; sourceTree = "<group>"; };
 		F3F499D3281588D700BD71CE /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F499D6281588D700BD71CE /* Presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
 		F3F499D7281588D700BD71CE /* Presentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Presentation.docc; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 			children = (
 				F3F499F32815897400BD71CE /* FormViewController.swift */,
 				F3F499F52815899E00BD71CE /* FormView.storyboard */,
+				F3D8666E2815920600E574B0 /* FormTableDelegate.swift */,
+				F3D866702815920F00E574B0 /* FormTableDataSource.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 			files = (
 				F3F499F42815897400BD71CE /* FormViewController.swift in Sources */,
 				F3F499D8281588D700BD71CE /* Presentation.docc in Sources */,
+				F3D8666F2815920600E574B0 /* FormTableDelegate.swift in Sources */,
+				F3D866712815920F00E574B0 /* FormTableDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
