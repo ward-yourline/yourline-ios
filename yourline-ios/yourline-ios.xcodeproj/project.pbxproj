@@ -113,7 +113,7 @@
 		F37C88FD28097C4000F148EB = {
 			isa = PBXGroup;
 			children = (
-				F37C890828097C4000F148EB /* yourline-ios */,
+				F37C890828097C4000F148EB /* YourLine */,
 				F37C892228097C4400F148EB /* yourline-iosTests */,
 				F37C892C28097C4400F148EB /* yourline-iosUITests */,
 				F37C890728097C4000F148EB /* Products */,
@@ -131,7 +131,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F37C890828097C4000F148EB /* yourline-ios */ = {
+		F37C890828097C4000F148EB /* YourLine */ = {
 			isa = PBXGroup;
 			children = (
 				F37C890928097C4000F148EB /* AppDelegate.swift */,
@@ -143,7 +143,7 @@
 				F37C891A28097C4400F148EB /* Info.plist */,
 				F37C891228097C4000F148EB /* yourline_ios.xcdatamodeld */,
 			);
-			path = "yourline-ios";
+			path = YourLine;
 			sourceTree = "<group>";
 		};
 		F37C892228097C4400F148EB /* yourline-iosTests */ = {
@@ -523,7 +523,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T4TFC62RFB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "yourline-ios/Info.plist";
+				INFOPLIST_FILE = YourLine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -551,7 +551,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T4TFC62RFB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "yourline-ios/Info.plist";
+				INFOPLIST_FILE = YourLine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
