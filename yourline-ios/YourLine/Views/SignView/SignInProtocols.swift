@@ -11,11 +11,20 @@ import Utility
 
 protocol SignInRouting: Routing {
     
-    init(window: UIWindow?)
+    init(context: UIViewController?)
     
     func start()
+    
+    func openSignUp()
 }
 
-import UIKit
+protocol SignInViewing {
+    func setPresenter(_ presenter: SignInPresenter?)
+}
 
-protocol SignInViewing {}
+protocol SignInPresenting {
+    
+    init(router: SignInRouting)
+    
+    func signUp()
+}

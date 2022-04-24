@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Views: String {
+enum YourLineViews: String {
     case mainView = "MainViewController"
     case signInView = "SignInViewController"
     

@@ -27,6 +27,7 @@
 		F3D866672815912F00E574B0 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499EE281588F000BD71CE /* Presentation.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3D866692815913100E574B0 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866642815912300E574B0 /* Utility.framework */; };
 		F3D8666A2815913100E574B0 /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866642815912300E574B0 /* Utility.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866722815984A00E574B0 /* SignInPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		F3AB7631280989CF002AF45D /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
 		F3AB763528098A50002AF45D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F3D866642815912300E574B0 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D866722815984A00E574B0 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
 		F3F499EE281588F000BD71CE /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -190,6 +192,7 @@
 			children = (
 				F3AB762F280989C7002AF45D /* SignInProtocols.swift */,
 				F3AB7631280989CF002AF45D /* SignInRouter.swift */,
+				F3D866722815984A00E574B0 /* SignInPresenter.swift */,
 				F3AB7627280985B2002AF45D /* SignInViewController.swift */,
 				F3AB7629280985BA002AF45D /* SignInView.storyboard */,
 			);
@@ -346,6 +349,7 @@
 				F3AB7628280985B2002AF45D /* SignInViewController.swift in Sources */,
 				F3AB7630280989C8002AF45D /* SignInProtocols.swift in Sources */,
 				F3AB762E280985CE002AF45D /* MainViewRouter.swift in Sources */,
+				F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */,
 				F3AB762C280985C8002AF45D /* MainViewProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

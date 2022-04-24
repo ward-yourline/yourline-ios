@@ -29,21 +29,15 @@ class MainViewRouter: MainViewRouting {
     
     func start() {
         let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-        let mainView = storyboard.instantiateViewController(withIdentifier: Views.mainView.name)
-        
-        let signInStoryboard = UIStoryboard.init(name: "SignInView", bundle: Bundle.main)
-        let signInView = signInStoryboard.instantiateViewController(withIdentifier: Views.signInView.name)
-        
-        // TEST
-        let presentationBundle = Bundle(identifier: "com.yourline.presentation")
-        let formViewStoryboard = UIStoryboard(name: "FormView", bundle: presentationBundle)
-        let formView = formViewStoryboard.instantiateViewController(withIdentifier: "FormViewController")
-        
-        if let mainView = mainView as? MainViewing {
-            mainView.addChildViews([formView])
-        }
+        let mainView = storyboard.instantiateViewController(withIdentifier: YourLineViews.mainView.name)
+
+        let router = SignInRouter(context: mainView)
+        router.start()
+
+        childRouters.append(router)
         
         if let context = context as? UINavigationController {
+            context.setNavigationBarHidden(true, animated: false)
             context.setViewControllers([mainView], animated: false)
         }
     }
