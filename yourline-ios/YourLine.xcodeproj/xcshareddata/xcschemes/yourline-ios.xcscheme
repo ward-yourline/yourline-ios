@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F3D866492815910900E574B0"
+               BuildableName = "Utility.framework"
+               BlueprintName = "Utility"
+               ReferencedContainer = "container:Utility/Utility.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "F3F499D2281588D700BD71CE"
                BuildableName = "Presentation.framework"
                BlueprintName = "Presentation"
-               ReferencedContainer = "container:yourline-ios/Presentation/Presentation.xcodeproj">
+               ReferencedContainer = "container:Presentation/Presentation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry

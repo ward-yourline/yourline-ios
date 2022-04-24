@@ -22,10 +22,11 @@
 		F3AB762E280985CE002AF45D /* MainViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB762D280985CE002AF45D /* MainViewRouter.swift */; };
 		F3AB7630280989C8002AF45D /* SignInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB762F280989C7002AF45D /* SignInProtocols.swift */; };
 		F3AB7632280989CF002AF45D /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB7631280989CF002AF45D /* SignInRouter.swift */; };
-		F3AB763428098A0A002AF45D /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB763328098A0A002AF45D /* Routing.swift */; };
 		F3AB763628098A50002AF45D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB763528098A50002AF45D /* Constants.swift */; };
-		F3F499EF281588F000BD71CE /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499EE281588F000BD71CE /* Presentation.framework */; };
-		F3F499F0281588F000BD71CE /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499EE281588F000BD71CE /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3D866662815912F00E574B0 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499EE281588F000BD71CE /* Presentation.framework */; };
+		F3D866672815912F00E574B0 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499EE281588F000BD71CE /* Presentation.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3D866692815913100E574B0 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866642815912300E574B0 /* Utility.framework */; };
+		F3D8666A2815913100E574B0 /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866642815912300E574B0 /* Utility.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F3F499F1281588F000BD71CE /* Embed Frameworks */ = {
+		F3D866682815912F00E574B0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F3F499F0281588F000BD71CE /* Presentation.framework in Embed Frameworks */,
+				F3D866672815912F00E574B0 /* Presentation.framework in Embed Frameworks */,
+				F3D8666A2815913100E574B0 /* Utility.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,8 +81,8 @@
 		F3AB762D280985CE002AF45D /* MainViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
 		F3AB762F280989C7002AF45D /* SignInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocols.swift; sourceTree = "<group>"; };
 		F3AB7631280989CF002AF45D /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
-		F3AB763328098A0A002AF45D /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		F3AB763528098A50002AF45D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F3D866642815912300E574B0 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F499EE281588F000BD71CE /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,7 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F499EF281588F000BD71CE /* Presentation.framework in Frameworks */,
+				F3D866662815912F00E574B0 /* Presentation.framework in Frameworks */,
+				F3D866692815913100E574B0 /* Utility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				F37C890928097C4000F148EB /* AppDelegate.swift */,
-				F3AB763328098A0A002AF45D /* Routing.swift */,
 				F3AB763528098A50002AF45D /* Constants.swift */,
 				F3AB76242809852E002AF45D /* Views */,
 				F37C891528097C4400F148EB /* Assets.xcassets */,
@@ -197,6 +199,7 @@
 		F3F499ED281588F000BD71CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3D866642815912300E574B0 /* Utility.framework */,
 				F3F499EE281588F000BD71CE /* Presentation.framework */,
 			);
 			name = Frameworks;
@@ -212,7 +215,7 @@
 				F37C890228097C4000F148EB /* Sources */,
 				F37C890328097C4000F148EB /* Frameworks */,
 				F37C890428097C4000F148EB /* Resources */,
-				F3F499F1281588F000BD71CE /* Embed Frameworks */,
+				F3D866682815912F00E574B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,7 +338,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3AB763428098A0A002AF45D /* Routing.swift in Sources */,
 				F3AB763628098A50002AF45D /* Constants.swift in Sources */,
 				F3AB7632280989CF002AF45D /* SignInRouter.swift in Sources */,
 				F37C890E28097C4000F148EB /* MainViewController.swift in Sources */,

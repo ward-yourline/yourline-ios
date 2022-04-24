@@ -7,4 +7,4 @@
 
 import Foundation
 
-protocol Routing: AnyObject {}
+public protocol Routing: AnyObject {}
