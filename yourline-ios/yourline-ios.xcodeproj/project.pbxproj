@@ -24,6 +24,8 @@
 		F3AB7632280989CF002AF45D /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB7631280989CF002AF45D /* SignInRouter.swift */; };
 		F3AB763428098A0A002AF45D /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB763328098A0A002AF45D /* Routing.swift */; };
 		F3AB763628098A50002AF45D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB763528098A50002AF45D /* Constants.swift */; };
+		F3F499EF281588F000BD71CE /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499EE281588F000BD71CE /* Presentation.framework */; };
+		F3F499F0281588F000BD71CE /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499EE281588F000BD71CE /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,20 @@
 			remoteInfo = "yourline-ios";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3F499F1281588F000BD71CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3F499F0281588F000BD71CE /* Presentation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F37C890628097C4000F148EB /* yourline-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yourline-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +81,7 @@
 		F3AB7631280989CF002AF45D /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
 		F3AB763328098A0A002AF45D /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		F3AB763528098A50002AF45D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F3F499EE281588F000BD71CE /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F499EF281588F000BD71CE /* Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +117,7 @@
 				F37C892228097C4400F148EB /* yourline-iosTests */,
 				F37C892C28097C4400F148EB /* yourline-iosUITests */,
 				F37C890728097C4000F148EB /* Products */,
+				F3F499ED281588F000BD71CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +194,14 @@
 			path = SignView;
 			sourceTree = "<group>";
 		};
+		F3F499ED281588F000BD71CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3F499EE281588F000BD71CE /* Presentation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,6 +212,7 @@
 				F37C890228097C4000F148EB /* Sources */,
 				F37C890328097C4000F148EB /* Frameworks */,
 				F37C890428097C4000F148EB /* Resources */,
+				F3F499F1281588F000BD71CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
