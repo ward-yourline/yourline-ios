@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F37C890528097C4000F148EB"
                BuildableName = "yourline-ios.app"
-               BlueprintName = "yourline-ios"
-               ReferencedContainer = "container:yourline-ios.xcodeproj">
+               BlueprintName = "YourLine"
+               ReferencedContainer = "container:YourLine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,8 +48,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F37C891E28097C4400F148EB"
                BuildableName = "yourline-iosTests.xctest"
-               BlueprintName = "yourline-iosTests"
-               ReferencedContainer = "container:yourline-ios.xcodeproj">
+               BlueprintName = "YourLineTests"
+               ReferencedContainer = "container:YourLine.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -58,8 +58,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F37C892828097C4400F148EB"
                BuildableName = "yourline-iosUITests.xctest"
-               BlueprintName = "yourline-iosUITests"
-               ReferencedContainer = "container:yourline-ios.xcodeproj">
+               BlueprintName = "YourLineUITests"
+               ReferencedContainer = "container:YourLine.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -80,8 +80,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F37C890528097C4000F148EB"
             BuildableName = "yourline-ios.app"
-            BlueprintName = "yourline-ios"
-            ReferencedContainer = "container:yourline-ios.xcodeproj">
+            BlueprintName = "YourLine"
+            ReferencedContainer = "container:YourLine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -97,8 +97,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F37C890528097C4000F148EB"
             BuildableName = "yourline-ios.app"
-            BlueprintName = "yourline-ios"
-            ReferencedContainer = "container:yourline-ios.xcodeproj">
+            BlueprintName = "YourLine"
+            ReferencedContainer = "container:YourLine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

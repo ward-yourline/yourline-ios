@@ -10,12 +10,12 @@
 		F37C890A28097C4000F148EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890928097C4000F148EB /* AppDelegate.swift */; };
 		F37C890E28097C4000F148EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890D28097C4000F148EB /* MainViewController.swift */; };
 		F37C891128097C4000F148EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37C890F28097C4000F148EB /* Main.storyboard */; };
-		F37C891428097C4000F148EB /* yourline_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F37C891228097C4000F148EB /* yourline_ios.xcdatamodeld */; };
+		F37C891428097C4000F148EB /* YourLine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F37C891228097C4000F148EB /* YourLine.xcdatamodeld */; };
 		F37C891628097C4400F148EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37C891528097C4400F148EB /* Assets.xcassets */; };
 		F37C891928097C4400F148EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37C891728097C4400F148EB /* LaunchScreen.storyboard */; };
-		F37C892428097C4400F148EB /* yourline_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892328097C4400F148EB /* yourline_iosTests.swift */; };
-		F37C892E28097C4400F148EB /* yourline_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892D28097C4400F148EB /* yourline_iosUITests.swift */; };
-		F37C893028097C4400F148EB /* yourline_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892F28097C4400F148EB /* yourline_iosUITestsLaunchTests.swift */; };
+		F37C892428097C4400F148EB /* YourLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892328097C4400F148EB /* YourLineTests.swift */; };
+		F37C892E28097C4400F148EB /* YourLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892D28097C4400F148EB /* YourLineUITests.swift */; };
+		F37C893028097C4400F148EB /* YourLineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */; };
 		F3AB7628280985B2002AF45D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB7627280985B2002AF45D /* SignInViewController.swift */; };
 		F3AB762A280985BA002AF45D /* SignInView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AB7629280985BA002AF45D /* SignInView.storyboard */; };
 		F3AB762C280985C8002AF45D /* MainViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB762B280985C8002AF45D /* MainViewProtocols.swift */; };
@@ -60,7 +60,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F37C890628097C4000F148EB /* yourline-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yourline-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37C890628097C4000F148EB /* YourLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37C890928097C4000F148EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37C890D28097C4000F148EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F37C891028097C4000F148EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,11 +68,11 @@
 		F37C891528097C4400F148EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F37C891828097C4400F148EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F37C891A28097C4400F148EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F37C891F28097C4400F148EB /* yourline-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yourline-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F37C892328097C4400F148EB /* yourline_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourline_iosTests.swift; sourceTree = "<group>"; };
-		F37C892928097C4400F148EB /* yourline-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yourline-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F37C892D28097C4400F148EB /* yourline_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourline_iosUITests.swift; sourceTree = "<group>"; };
-		F37C892F28097C4400F148EB /* yourline_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourline_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F37C891F28097C4400F148EB /* YourLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YourLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37C892328097C4400F148EB /* YourLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineTests.swift; sourceTree = "<group>"; };
+		F37C892928097C4400F148EB /* YourLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YourLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37C892D28097C4400F148EB /* YourLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineUITests.swift; sourceTree = "<group>"; };
+		F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F3AB7627280985B2002AF45D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F3AB7629280985BA002AF45D /* SignInView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInView.storyboard; sourceTree = "<group>"; };
 		F3AB762B280985C8002AF45D /* MainViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocols.swift; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				F37C890828097C4000F148EB /* YourLine */,
-				F37C892228097C4400F148EB /* yourline-iosTests */,
-				F37C892C28097C4400F148EB /* yourline-iosUITests */,
+				F37C892228097C4400F148EB /* YourLineTests */,
+				F37C892C28097C4400F148EB /* YourLineUITests */,
 				F37C890728097C4000F148EB /* Products */,
 				F3F499ED281588F000BD71CE /* Frameworks */,
 			);
@@ -124,9 +124,9 @@
 		F37C890728097C4000F148EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F37C890628097C4000F148EB /* yourline-ios.app */,
-				F37C891F28097C4400F148EB /* yourline-iosTests.xctest */,
-				F37C892928097C4400F148EB /* yourline-iosUITests.xctest */,
+				F37C890628097C4000F148EB /* YourLine.app */,
+				F37C891F28097C4400F148EB /* YourLineTests.xctest */,
+				F37C892928097C4400F148EB /* YourLineUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,26 +141,26 @@
 				F37C891528097C4400F148EB /* Assets.xcassets */,
 				F37C891728097C4400F148EB /* LaunchScreen.storyboard */,
 				F37C891A28097C4400F148EB /* Info.plist */,
-				F37C891228097C4000F148EB /* yourline_ios.xcdatamodeld */,
+				F37C891228097C4000F148EB /* YourLine.xcdatamodeld */,
 			);
 			path = YourLine;
 			sourceTree = "<group>";
 		};
-		F37C892228097C4400F148EB /* yourline-iosTests */ = {
+		F37C892228097C4400F148EB /* YourLineTests */ = {
 			isa = PBXGroup;
 			children = (
-				F37C892328097C4400F148EB /* yourline_iosTests.swift */,
+				F37C892328097C4400F148EB /* YourLineTests.swift */,
 			);
-			path = "yourline-iosTests";
+			path = YourLineTests;
 			sourceTree = "<group>";
 		};
-		F37C892C28097C4400F148EB /* yourline-iosUITests */ = {
+		F37C892C28097C4400F148EB /* YourLineUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F37C892D28097C4400F148EB /* yourline_iosUITests.swift */,
-				F37C892F28097C4400F148EB /* yourline_iosUITestsLaunchTests.swift */,
+				F37C892D28097C4400F148EB /* YourLineUITests.swift */,
+				F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */,
 			);
-			path = "yourline-iosUITests";
+			path = YourLineUITests;
 			sourceTree = "<group>";
 		};
 		F3AB76242809852E002AF45D /* Views */ = {
@@ -205,9 +205,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F37C890528097C4000F148EB /* yourline-ios */ = {
+		F37C890528097C4000F148EB /* YourLine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F37C893328097C4400F148EB /* Build configuration list for PBXNativeTarget "yourline-ios" */;
+			buildConfigurationList = F37C893328097C4400F148EB /* Build configuration list for PBXNativeTarget "YourLine" */;
 			buildPhases = (
 				F37C890228097C4000F148EB /* Sources */,
 				F37C890328097C4000F148EB /* Frameworks */,
@@ -218,14 +218,14 @@
 			);
 			dependencies = (
 			);
-			name = "yourline-ios";
+			name = YourLine;
 			productName = "yourline-ios";
-			productReference = F37C890628097C4000F148EB /* yourline-ios.app */;
+			productReference = F37C890628097C4000F148EB /* YourLine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F37C891E28097C4400F148EB /* yourline-iosTests */ = {
+		F37C891E28097C4400F148EB /* YourLineTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F37C893628097C4400F148EB /* Build configuration list for PBXNativeTarget "yourline-iosTests" */;
+			buildConfigurationList = F37C893628097C4400F148EB /* Build configuration list for PBXNativeTarget "YourLineTests" */;
 			buildPhases = (
 				F37C891B28097C4400F148EB /* Sources */,
 				F37C891C28097C4400F148EB /* Frameworks */,
@@ -236,14 +236,14 @@
 			dependencies = (
 				F37C892128097C4400F148EB /* PBXTargetDependency */,
 			);
-			name = "yourline-iosTests";
+			name = YourLineTests;
 			productName = "yourline-iosTests";
-			productReference = F37C891F28097C4400F148EB /* yourline-iosTests.xctest */;
+			productReference = F37C891F28097C4400F148EB /* YourLineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F37C892828097C4400F148EB /* yourline-iosUITests */ = {
+		F37C892828097C4400F148EB /* YourLineUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F37C893928097C4400F148EB /* Build configuration list for PBXNativeTarget "yourline-iosUITests" */;
+			buildConfigurationList = F37C893928097C4400F148EB /* Build configuration list for PBXNativeTarget "YourLineUITests" */;
 			buildPhases = (
 				F37C892528097C4400F148EB /* Sources */,
 				F37C892628097C4400F148EB /* Frameworks */,
@@ -254,9 +254,9 @@
 			dependencies = (
 				F37C892B28097C4400F148EB /* PBXTargetDependency */,
 			);
-			name = "yourline-iosUITests";
+			name = YourLineUITests;
 			productName = "yourline-iosUITests";
-			productReference = F37C892928097C4400F148EB /* yourline-iosUITests.xctest */;
+			productReference = F37C892928097C4400F148EB /* YourLineUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -282,7 +282,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F37C890128097C4000F148EB /* Build configuration list for PBXProject "yourline-ios" */;
+			buildConfigurationList = F37C890128097C4000F148EB /* Build configuration list for PBXProject "YourLine" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -295,9 +295,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F37C890528097C4000F148EB /* yourline-ios */,
-				F37C891E28097C4400F148EB /* yourline-iosTests */,
-				F37C892828097C4400F148EB /* yourline-iosUITests */,
+				F37C890528097C4000F148EB /* YourLine */,
+				F37C891E28097C4400F148EB /* YourLineTests */,
+				F37C892828097C4400F148EB /* YourLineUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,7 +340,7 @@
 				F3AB7632280989CF002AF45D /* SignInRouter.swift in Sources */,
 				F37C890E28097C4000F148EB /* MainViewController.swift in Sources */,
 				F37C890A28097C4000F148EB /* AppDelegate.swift in Sources */,
-				F37C891428097C4000F148EB /* yourline_ios.xcdatamodeld in Sources */,
+				F37C891428097C4000F148EB /* YourLine.xcdatamodeld in Sources */,
 				F3AB7628280985B2002AF45D /* SignInViewController.swift in Sources */,
 				F3AB7630280989C8002AF45D /* SignInProtocols.swift in Sources */,
 				F3AB762E280985CE002AF45D /* MainViewRouter.swift in Sources */,
@@ -352,7 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F37C892428097C4400F148EB /* yourline_iosTests.swift in Sources */,
+				F37C892428097C4400F148EB /* YourLineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +360,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F37C892E28097C4400F148EB /* yourline_iosUITests.swift in Sources */,
-				F37C893028097C4400F148EB /* yourline_iosUITestsLaunchTests.swift in Sources */,
+				F37C892E28097C4400F148EB /* YourLineUITests.swift in Sources */,
+				F37C893028097C4400F148EB /* YourLineUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,12 +370,12 @@
 /* Begin PBXTargetDependency section */
 		F37C892128097C4400F148EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F37C890528097C4000F148EB /* yourline-ios */;
+			target = F37C890528097C4000F148EB /* YourLine */;
 			targetProxy = F37C892028097C4400F148EB /* PBXContainerItemProxy */;
 		};
 		F37C892B28097C4400F148EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F37C890528097C4000F148EB /* yourline-ios */;
+			target = F37C890528097C4000F148EB /* YourLine */;
 			targetProxy = F37C892A28097C4400F148EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -586,7 +586,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yourline-ios.app/yourline-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YourLine.app/YourLine";
 			};
 			name = Debug;
 		};
@@ -606,7 +606,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yourline-ios.app/yourline-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YourLine.app/YourLine";
 			};
 			name = Release;
 		};
@@ -649,7 +649,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F37C890128097C4000F148EB /* Build configuration list for PBXProject "yourline-ios" */ = {
+		F37C890128097C4000F148EB /* Build configuration list for PBXProject "YourLine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F37C893128097C4400F148EB /* Debug */,
@@ -658,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F37C893328097C4400F148EB /* Build configuration list for PBXNativeTarget "yourline-ios" */ = {
+		F37C893328097C4400F148EB /* Build configuration list for PBXNativeTarget "YourLine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F37C893428097C4400F148EB /* Debug */,
@@ -667,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F37C893628097C4400F148EB /* Build configuration list for PBXNativeTarget "yourline-iosTests" */ = {
+		F37C893628097C4400F148EB /* Build configuration list for PBXNativeTarget "YourLineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F37C893728097C4400F148EB /* Debug */,
@@ -676,7 +676,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F37C893928097C4400F148EB /* Build configuration list for PBXNativeTarget "yourline-iosUITests" */ = {
+		F37C893928097C4400F148EB /* Build configuration list for PBXNativeTarget "YourLineUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F37C893A28097C4400F148EB /* Debug */,
@@ -688,13 +688,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F37C891228097C4000F148EB /* yourline_ios.xcdatamodeld */ = {
+		F37C891228097C4000F148EB /* YourLine.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				F37C891328097C4000F148EB /* yourline_ios.xcdatamodel */,
 			);
 			currentVersion = F37C891328097C4000F148EB /* yourline_ios.xcdatamodel */;
-			path = yourline_ios.xcdatamodeld;
+			path = YourLine.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
