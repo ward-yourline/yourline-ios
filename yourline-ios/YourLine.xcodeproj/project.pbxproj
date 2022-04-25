@@ -28,6 +28,8 @@
 		F3D866692815913100E574B0 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866642815912300E574B0 /* Utility.framework */; };
 		F3D8666A2815913100E574B0 /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866642815912300E574B0 /* Utility.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866722815984A00E574B0 /* SignInPresenter.swift */; };
+		F3D866EF2816A5D600E574B0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866EE2816A5D600E574B0 /* Domain.framework */; };
+		F3D866F02816A5D600E574B0 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866EE2816A5D600E574B0 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F3D866F02816A5D600E574B0 /* Domain.framework in Embed Frameworks */,
 				F3D866672815912F00E574B0 /* Presentation.framework in Embed Frameworks */,
 				F3D8666A2815913100E574B0 /* Utility.framework in Embed Frameworks */,
 			);
@@ -85,6 +88,7 @@
 		F3AB763528098A50002AF45D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F3D866642815912300E574B0 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D866722815984A00E574B0 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		F3D866EE2816A5D600E574B0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F499EE281588F000BD71CE /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D866EF2816A5D600E574B0 /* Domain.framework in Frameworks */,
 				F3D866662815912F00E574B0 /* Presentation.framework in Frameworks */,
 				F3D866692815913100E574B0 /* Utility.framework in Frameworks */,
 			);
@@ -202,6 +207,7 @@
 		F3F499ED281588F000BD71CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3D866EE2816A5D600E574B0 /* Domain.framework */,
 				F3D866642815912300E574B0 /* Utility.framework */,
 				F3F499EE281588F000BD71CE /* Presentation.framework */,
 			);
