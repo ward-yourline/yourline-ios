@@ -2,11 +2,11 @@ import Foundation
 
 public struct Rows: Decodable {
     
-    var groupKey: String?
-    var isInjected: Bool?
-    var rows: [Row]?
+    public var groupKey: String?
+    public var isInjected: Bool?
+    public var rows: [Row]?
     
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         
         case groupKey = "group_key"
         case rows

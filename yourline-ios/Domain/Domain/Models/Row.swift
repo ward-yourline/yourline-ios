@@ -1,4 +1,5 @@
 import Foundation
+import Utility
 
 // MARK: - Model
 
@@ -11,19 +12,19 @@ public enum HeaderType: String, Decodable {
 
 public struct Row: Decodable {
     
-    let content: String?
-    let title: String?
-    let errorTitle: String?
-    let height: PaddingSize?
-    let type: RowType?
-    let inputKey: String?
-    let alignment: RowAlignmentType?
-    let cellInputType: RowInputType?
-    let action: Action?
-    let isSecure: Bool?
-    let isRequired: Bool?
-    let isBordered: Bool?
-    let headerType: HeaderType?
+    public let content: String?
+    public let title: String?
+    public let errorTitle: String?
+    public let height: PaddingSize?
+    public let type: RowType?
+    public let inputKey: String?
+    public let alignment: RowAlignmentType?
+    public let cellInputType: RowInputType?
+    public let action: Action?
+    public let isSecure: Bool?
+    public let isRequired: Bool?
+    public let isBordered: Bool?
+    public let headerType: HeaderType?
     
     enum CodingKeys: String, CodingKey {
         
@@ -99,7 +100,7 @@ public enum RowType: String, CaseIterable, Decodable {
     case paddingCell = "padding_cell"
     case separatorCell = "separator_cell"
     
-    func getIdentifier() -> String {
+    public func getIdentifier() -> String {
         
         switch self {
         case .headerCell:

@@ -3,5 +3,9 @@ import Foundation
 
 public struct Payload: Decodable {
 
-    var content: String?
+    public var content: String?
+    
+    public init(content: String?) {
+        self.content = content
+    }
 }

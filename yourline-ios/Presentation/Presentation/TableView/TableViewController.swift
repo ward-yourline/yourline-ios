@@ -1,4 +1,6 @@
 import UIKit
+import Utility
+import Domain
 
 class TableViewController: UIViewController, TableViewing {
     
@@ -42,9 +44,9 @@ class TableViewController: UIViewController, TableViewing {
         tableView.separatorColor = presenter.hasSeparators ? #colorLiteral(red: 0.768627451, green: 0.7843137255, blue: 0.8, alpha: 1) : #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         tableView.separatorInset = UIEdgeInsets(
             top: PaddingSize.none.convertToCGFloat(),
-            left: PaddingSize.medium.convertToCGFloat(),
+            left: PaddingSize.pt_8.convertToCGFloat(),
             bottom: PaddingSize.none.convertToCGFloat(),
-            right: PaddingSize.medium.convertToCGFloat()
+            right: PaddingSize.pt_8.convertToCGFloat()
         )
         tableView.keyboardDismissMode = .onDrag
         tableView.reloadData()

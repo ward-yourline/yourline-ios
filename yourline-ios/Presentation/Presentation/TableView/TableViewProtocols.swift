@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Domain
+import Utility
 
 public protocol TableViewing: AnyObject {
     

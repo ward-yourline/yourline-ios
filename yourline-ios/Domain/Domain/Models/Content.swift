@@ -10,7 +10,7 @@ import Foundation
 
 public struct Content: Decodable {
     
-    var content: String?
+    public var content: String?
     
     public func updateValues(content: String?) -> Content {
         

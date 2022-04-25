@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Utility
 
 class SingleActionButtonCell: UITableViewCell {
     

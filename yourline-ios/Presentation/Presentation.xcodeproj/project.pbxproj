@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		F3D8666F2815920600E574B0 /* FormTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8666E2815920600E574B0 /* FormTableDelegate.swift */; };
 		F3D866712815920F00E574B0 /* FormTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866702815920F00E574B0 /* FormTableDataSource.swift */; };
-		F3D866B82816A5A100E574B0 /* PaddingSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866B52816A5A100E574B0 /* PaddingSize.swift */; };
-		F3D866B92816A5A100E574B0 /* CellPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866B72816A5A100E574B0 /* CellPresentable.swift */; };
 		F3D866D82816A5AE00E574B0 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D866BD2816A5AE00E574B0 /* InputCell.xib */; };
 		F3D866D92816A5AE00E574B0 /* InputCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866BE2816A5AE00E574B0 /* InputCellViewModel.swift */; };
 		F3D866DA2816A5AE00E574B0 /* InputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866BF2816A5AE00E574B0 /* InputCell.swift */; };
@@ -35,6 +33,8 @@
 		F3D866ED2816A5AE00E574B0 /* TableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866D72816A5AE00E574B0 /* TableViewPresenter.swift */; };
 		F3D866F32816A5E200E574B0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866F22816A5E200E574B0 /* Domain.framework */; };
 		F3D866F72816A5E600E574B0 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866F62816A5E600E574B0 /* Utility.framework */; };
+		F3D867302816A99900E574B0 /* CellPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8672F2816A99900E574B0 /* CellPresentable.swift */; };
+		F3D867332816AF5700E574B0 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D867322816AF5700E574B0 /* Services.framework */; };
 		F3F499D8281588D700BD71CE /* Presentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = F3F499D7281588D700BD71CE /* Presentation.docc */; };
 		F3F499DE281588D800BD71CE /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499D3281588D700BD71CE /* Presentation.framework */; };
 		F3F499E3281588D800BD71CE /* PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F499E2281588D800BD71CE /* PresentationTests.swift */; };
@@ -56,8 +56,6 @@
 /* Begin PBXFileReference section */
 		F3D8666E2815920600E574B0 /* FormTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDelegate.swift; sourceTree = "<group>"; };
 		F3D866702815920F00E574B0 /* FormTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDataSource.swift; sourceTree = "<group>"; };
-		F3D866B52816A5A100E574B0 /* PaddingSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingSize.swift; sourceTree = "<group>"; };
-		F3D866B72816A5A100E574B0 /* CellPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellPresentable.swift; sourceTree = "<group>"; };
 		F3D866BD2816A5AE00E574B0 /* InputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
 		F3D866BE2816A5AE00E574B0 /* InputCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputCellViewModel.swift; sourceTree = "<group>"; };
 		F3D866BF2816A5AE00E574B0 /* InputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputCell.swift; sourceTree = "<group>"; };
@@ -82,6 +80,8 @@
 		F3D866D72816A5AE00E574B0 /* TableViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewPresenter.swift; sourceTree = "<group>"; };
 		F3D866F22816A5E200E574B0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D866F62816A5E600E574B0 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D8672F2816A99900E574B0 /* CellPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellPresentable.swift; sourceTree = "<group>"; };
+		F3D867322816AF5700E574B0 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F499D3281588D700BD71CE /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F499D6281588D700BD71CE /* Presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
 		F3F499D7281588D700BD71CE /* Presentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Presentation.docc; sourceTree = "<group>"; };
@@ -97,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D866F32816A5E200E574B0 /* Domain.framework in Frameworks */,
+				F3D867332816AF5700E574B0 /* Services.framework in Frameworks */,
 				F3D866F72816A5E600E574B0 /* Utility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,31 +113,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F3D866B32816A5A100E574B0 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				F3D866B42816A5A100E574B0 /* Constants */,
-				F3D866B62816A5A100E574B0 /* Protocols */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		F3D866B42816A5A100E574B0 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				F3D866B52816A5A100E574B0 /* PaddingSize.swift */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		F3D866B62816A5A100E574B0 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				F3D866B72816A5A100E574B0 /* CellPresentable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		F3D866BA2816A5AE00E574B0 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,10 +201,19 @@
 		F3D866F12816A5E200E574B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3D867322816AF5700E574B0 /* Services.framework */,
 				F3D866F62816A5E600E574B0 /* Utility.framework */,
 				F3D866F22816A5E200E574B0 /* Domain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3D867312816A9A100E574B0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8672F2816A99900E574B0 /* CellPresentable.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		F3F499C9281588D700BD71CE = {
@@ -253,7 +238,7 @@
 		F3F499D5281588D700BD71CE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F3D866B32816A5A100E574B0 /* Shared */,
+				F3D867312816A9A100E574B0 /* Shared */,
 				F3D866BA2816A5AE00E574B0 /* TableView */,
 				F3F499F22815895C00BD71CE /* Form */,
 				F3F499D6281588D700BD71CE /* Presentation.h */,
@@ -399,10 +384,10 @@
 			files = (
 				F3D866E92816A5AE00E574B0 /* TableViewDataSource.swift in Sources */,
 				F3F499F42815897400BD71CE /* FormViewController.swift in Sources */,
-				F3D866B82816A5A100E574B0 /* PaddingSize.swift in Sources */,
 				F3D866EB2816A5AE00E574B0 /* TableViewController.swift in Sources */,
 				F3D866DF2816A5AE00E574B0 /* SingleActionButtonCell.swift in Sources */,
 				F3D866DD2816A5AE00E574B0 /* SingleActionButtonCellViewModel.swift in Sources */,
+				F3D867302816A99900E574B0 /* CellPresentable.swift in Sources */,
 				F3D866E22816A5AE00E574B0 /* PaddingCellViewModel.swift in Sources */,
 				F3D866E62816A5AE00E574B0 /* BodyTextCellViewModel.swift in Sources */,
 				F3D866DA2816A5AE00E574B0 /* InputCell.swift in Sources */,
@@ -418,7 +403,6 @@
 				F3D866E52816A5AE00E574B0 /* HeaderTextCell.swift in Sources */,
 				F3D866EA2816A5AE00E574B0 /* TableViewDelegate.swift in Sources */,
 				F3D866712815920F00E574B0 /* FormTableDataSource.swift in Sources */,
-				F3D866B92816A5A100E574B0 /* CellPresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

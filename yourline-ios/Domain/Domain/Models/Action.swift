@@ -18,5 +18,5 @@ public enum ActionType: String, Decodable {
 
 public struct Action: Decodable {
     
-    let type: ActionType
+    public let type: ActionType
 }

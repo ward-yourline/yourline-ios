@@ -1,5 +1,6 @@
-import Foundation
 import UIKit
+import Domain
+import Utility
 
 class HeaderTextCellViewModel: CellViewModelling {
     
