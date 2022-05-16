@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F3A361962832BCAA00690696 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A361952832BCAA00690696 /* TableView.storyboard */; };
+		F3A361992832BF6C00690696 /* UserTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A361982832BF6C00690696 /* UserTypeSelectionViewController.swift */; };
+		F3A3619B2832BF7600690696 /* UserTypeSelectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A3619A2832BF7600690696 /* UserTypeSelectionView.storyboard */; };
 		F3D8666F2815920600E574B0 /* FormTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8666E2815920600E574B0 /* FormTableDelegate.swift */; };
 		F3D866712815920F00E574B0 /* FormTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866702815920F00E574B0 /* FormTableDataSource.swift */; };
 		F3D866D82816A5AE00E574B0 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D866BD2816A5AE00E574B0 /* InputCell.xib */; };
@@ -56,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		F3A361952832BCAA00690696 /* TableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
+		F3A361982832BF6C00690696 /* UserTypeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewController.swift; sourceTree = "<group>"; };
+		F3A3619A2832BF7600690696 /* UserTypeSelectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTypeSelectionView.storyboard; sourceTree = "<group>"; };
 		F3D8666E2815920600E574B0 /* FormTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDelegate.swift; sourceTree = "<group>"; };
 		F3D866702815920F00E574B0 /* FormTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDataSource.swift; sourceTree = "<group>"; };
 		F3D866BD2816A5AE00E574B0 /* InputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
@@ -115,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3A361972832BF5800690696 /* UserTypeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				F3A361982832BF6C00690696 /* UserTypeSelectionViewController.swift */,
+				F3A3619A2832BF7600690696 /* UserTypeSelectionView.storyboard */,
+			);
+			path = UserTypeSelection;
+			sourceTree = "<group>";
+		};
 		F3D866BA2816A5AE00E574B0 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +254,7 @@
 		F3F499D5281588D700BD71CE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F3A361972832BF5800690696 /* UserTypeSelection */,
 				F3D867312816A9A100E574B0 /* Shared */,
 				F3D866BA2816A5AE00E574B0 /* TableView */,
 				F3F499F22815895C00BD71CE /* Form */,
@@ -365,6 +379,7 @@
 				F3D866DC2816A5AE00E574B0 /* SeparatorCell.xib in Resources */,
 				F3F499F62815899E00BD71CE /* FormView.storyboard in Resources */,
 				F3A361962832BCAA00690696 /* TableView.storyboard in Resources */,
+				F3A3619B2832BF7600690696 /* UserTypeSelectionView.storyboard in Resources */,
 				F3D866E42816A5AE00E574B0 /* HeaderTextCell.xib in Resources */,
 				F3D866E72816A5AE00E574B0 /* BodyTextCell.xib in Resources */,
 				F3D866E12816A5AE00E574B0 /* PaddingCell.xib in Resources */,
@@ -406,6 +421,7 @@
 				F3D866DB2816A5AE00E574B0 /* SeparatorCell.swift in Sources */,
 				F3D866E52816A5AE00E574B0 /* HeaderTextCell.swift in Sources */,
 				F3D866EA2816A5AE00E574B0 /* TableViewDelegate.swift in Sources */,
+				F3A361992832BF6C00690696 /* UserTypeSelectionViewController.swift in Sources */,
 				F3D866712815920F00E574B0 /* FormTableDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
