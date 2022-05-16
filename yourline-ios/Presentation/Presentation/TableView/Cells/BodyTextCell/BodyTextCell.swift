@@ -33,7 +33,7 @@ extension BodyTextCell: CellPresentable {
             
             style.lineHeightMultiple = 1.42
             
-            let font = UIFont(name: "ProximaNova-Regular", size: 13)
+            let font = UIFont.systemFont(ofSize: 13)
             let attributes = [NSAttributedString.Key.paragraphStyle : style,
                               NSAttributedString.Key.font : font]
             bodyTextView.attributedText = NSAttributedString(string: content, attributes: attributes as [NSAttributedString.Key : Any])

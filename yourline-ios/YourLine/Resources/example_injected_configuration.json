@@ -1,0 +1,265 @@
+{
+    "screens": [
+        {
+            "id": "checkout",
+            "title": "Experiences Checkout",
+            "type": "table",
+            "header_image": "",
+            "header_text": "header",
+            "footer_image": "",
+            "footer_text": "footer",
+            "top_content_inset" : "none",
+            "bottom_content_inset" : "pt_16",
+            "has_seperators": false,
+            "sections" : [
+                {
+                    "rows": [
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        },
+                        {
+                            "type": "header_text_cell",
+                            "content": "Experiences Checkout",
+                            "alignment": "center",
+                            "header_type": "large_header"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_64"
+                        },
+                        {
+                            "type": "separator_cell"
+                        }
+                    ]
+                },
+                {
+                    "rows": [
+                        {
+                            "type": "header_text_cell",
+                            "content": "User info",
+                            "alignment": "left",
+                            "header_type": "large_header"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_64"
+                        },
+                        {
+                            "type": "header_text_cell",
+                            "content": "First name",
+                            "header_type": "normal_header"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        },
+                        {
+                            "type": "input_cell",
+                            "input_key": "first_name",
+                            "title": "Enter first name",
+                            "error_title": "Enter a valid email",
+                            "content": "Enter info",
+                            "cell_input_type": "name",
+                            "is_required": true
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        }
+                    ]
+                },
+                {
+                    "rows": [
+                        {
+                            "type": "header_text_cell",
+                            "content": "Last name"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        },
+                        {
+                            "type": "input_cell",
+                            "input_key": "last_name",
+                            "title": "Enter last name",
+                            "error_title": "Enter a valid name",
+                            "cell_input_type": "name",
+                            "content": "Enter info"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        }
+                    ]
+                },
+                {
+                    "rows": [
+                        {
+                            "type": "header_text_cell",
+                            "content": "Address Information"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        },
+                        {
+                            "type": "input_cell",
+                            "input_key": "address",
+                            "title": "Enter address",
+                            "error_title": "Enter a valid address",
+                            "cell_input_type": "normal",
+                            "content": "Enter info"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        }]
+                },
+                {
+                    "rows": [
+                        {
+                            "type": "header_text_cell",
+                            "content": "How many children?"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        },
+                        {
+                            "type": "input_cell",
+                            "input_key": "number_of_children",
+                            "title": "Enter number of children",
+                            "cell_input_type": "numerical",
+                            "content": "Enter info"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_64"
+                        }
+                    ]
+                },
+                {
+                    "rows": [
+                        {
+                            "type": "header_text_cell",
+                            "content": "Payment information"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_64"
+                        },
+                        {
+                            "type": "header_text_cell",
+                            "content": "Credit card number",
+                            "header_type": "normal_header"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        },
+                        {
+                            "type": "input_cell",
+                            "input_key": "credit_card_number",
+                            "title": "Credit card number",
+                            "error_title": "Enter a valid credit card number",
+                            "is_secure": true,
+                            "is_required": true,
+                            "cell_input_type": "numerical",
+                            "content": "Enter info"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_64"
+                        },
+                        {
+                            "type": "separator_cell"
+                        }
+                    ]
+                },
+                {
+                    "rows": [
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_64"
+                        },
+                        {
+                            "type": "header_text_cell",
+                            "content": "Hotel rules and cancellation policies",
+                            "header_type": "normal_header"
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_128"
+                        },
+                        {
+                            "type": "header_text_cell",
+                            "content": "Non-refundable",
+                            "header_type": "sub_header",
+                            "is_bordered": true
+                        },
+                        {
+                            "type": "body_text_cell",
+                            "content": "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.",
+                            "is_bordered": true
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        }
+                    ]
+                },
+                {
+                    "rows": [
+                        {
+                            "type": "header_text_cell",
+                            "content": "Cancellation Policy",
+                            "header_type": "sub_header",
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        },
+                        {
+                            "type": "body_text_cell",
+                            "content": "This merchant uses Trust My Travel Ltd to protect and process credit card payments. All credit card payments placed through this website are protected by TMTProtects.Me. Click here for full terms of service.\n\nFor payment questions, please contact:  Tel: 44(0)17small0 43smallsmall2small.  Address: The Cedars, Ryhall PE9 4HL, United Kingdom."
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_16"
+                        },
+                        {
+                            "type": "separator_cell"
+                        }
+                    ]
+                },
+                {
+                    "rows": [
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_64"
+                        },
+                        {
+                            "type": "single_action_button_cell",
+                            "content": "Submit",
+                            "action" : {
+                                "type": "submit"
+                            }
+                        },
+                        {
+                            "type": "padding_cell",
+                            "height": "pt_64"
+                        },
+                        {
+                            "type": "separator_cell"
+                        }
+                    ]
+                },
+                {
+                    "group_key": "first_injection",
+                    "is_injected": true
+                }
+            ]
+        }
+    ]
+}

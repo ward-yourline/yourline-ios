@@ -30,6 +30,7 @@ public final class ApplicationLoader {
                     
                     print(config ?? "failed")
                 } catch {
+                    fatalError(error.localizedDescription)
                     completion(config, error)
                 }
             }

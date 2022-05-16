@@ -7,11 +7,13 @@
 
 import Foundation
 import UIKit
+import Utility
 
 class SignInRouter: SignInRouting {
     
     private weak var context: UIViewController?
     private var signInContext: UINavigationController?
+    private lazy var childRouters = [Routing]()
     
     required init(context: UIViewController?) {
         self.context = context
@@ -38,11 +40,14 @@ class SignInRouter: SignInRouting {
     }
     
     func openSignUp() {
-        let presentationBundle = Bundle(identifier: "com.yourline.presentation")
-        let formViewStoryboard = UIStoryboard(name: "FormView", bundle: presentationBundle)
-        let formView = formViewStoryboard.instantiateViewController(withIdentifier: "FormViewController")
-        
-        signInContext?.setNavigationBarHidden(false, animated: false)
-        signInContext?.pushViewController(formView, animated: true)
+        let router = SignUpViewRouter(context: signInContext)
+        childRouters.append(router)
+        router.start()
+//        let presentationBundle = Bundle(identifier: "com.yourline.presentation")
+//        let formViewStoryboard = UIStoryboard(name: "FormView", bundle: presentationBundle)
+//        let formView = formViewStoryboard.instantiateViewController(withIdentifier: "FormViewController")
+//
+//        signInContext?.setNavigationBarHidden(false, animated: false)
+//        signInContext?.pushViewController(formView, animated: true)
     }
 }

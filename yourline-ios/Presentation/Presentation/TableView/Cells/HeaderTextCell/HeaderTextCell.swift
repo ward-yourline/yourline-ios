@@ -32,15 +32,15 @@ extension HeaderTextCell: CellPresentable {
             style.lineHeightMultiple = 1.42
             style.alignment = viewModel.alignment
             
-            var font: UIFont? = UIFont(name: "ProximaNova-Semibold", size: 24)
+            var font: UIFont? = UIFont.systemFont(ofSize: 24)
             
             switch viewModel.headerType {
             case .largeHeader:
-                font = UIFont(name: "ProximaNova-Bold", size: 30)
+                font = UIFont.systemFont(ofSize: 30)
             case .normalHeader:
-                font = UIFont(name: "ProximaNova-Semibold", size: 24)
+                font = UIFont.systemFont(ofSize: 24)
             case.subHeader:
-                font = UIFont(name: "ProximaNova-Bold", size: 13)
+                font = UIFont.systemFont(ofSize: 13)
             case .none:
                 break
             }

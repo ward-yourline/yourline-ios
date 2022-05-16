@@ -18,6 +18,7 @@
 		F37C893028097C4400F148EB /* YourLineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */; };
 		F3A3618F2832B6B700690696 /* SignUpViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3618E2832B6B700690696 /* SignUpViewProtocols.swift */; };
 		F3A361912832B6C200690696 /* SignUpViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A361902832B6C200690696 /* SignUpViewRouter.swift */; };
+		F3A361942832BB9900690696 /* example_injected_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A361932832BB9900690696 /* example_injected_configuration.json */; };
 		F3AB7628280985B2002AF45D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB7627280985B2002AF45D /* SignInViewController.swift */; };
 		F3AB762A280985BA002AF45D /* SignInView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AB7629280985BA002AF45D /* SignInView.storyboard */; };
 		F3AB762C280985C8002AF45D /* MainViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB762B280985C8002AF45D /* MainViewProtocols.swift */; };
@@ -83,6 +84,7 @@
 		F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F3A3618E2832B6B700690696 /* SignUpViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewProtocols.swift; sourceTree = "<group>"; };
 		F3A361902832B6C200690696 /* SignUpViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewRouter.swift; sourceTree = "<group>"; };
+		F3A361932832BB9900690696 /* example_injected_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example_injected_configuration.json; sourceTree = "<group>"; };
 		F3AB7627280985B2002AF45D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F3AB7629280985BA002AF45D /* SignInView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInView.storyboard; sourceTree = "<group>"; };
 		F3AB762B280985C8002AF45D /* MainViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocols.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		F37C890828097C4000F148EB /* YourLine */ = {
 			isa = PBXGroup;
 			children = (
+				F3A361922832BB8F00690696 /* Resources */,
 				F37C890928097C4000F148EB /* AppDelegate.swift */,
 				F3AB763528098A50002AF45D /* Constants.swift */,
 				F3AB76242809852E002AF45D /* Views */,
@@ -183,6 +186,14 @@
 				F3A361902832B6C200690696 /* SignUpViewRouter.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		F3A361922832BB8F00690696 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3A361932832BB9900690696 /* example_injected_configuration.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F3AB76242809852E002AF45D /* Views */ = {
@@ -336,6 +347,7 @@
 				F37C891928097C4400F148EB /* LaunchScreen.storyboard in Resources */,
 				F37C891628097C4400F148EB /* Assets.xcassets in Resources */,
 				F37C891128097C4000F148EB /* Main.storyboard in Resources */,
+				F3A361942832BB9900690696 /* example_injected_configuration.json in Resources */,
 				F3AB762A280985BA002AF45D /* SignInView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

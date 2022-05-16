@@ -14,7 +14,7 @@ import Services
 
 class SignUpViewRouter: Routing {
     
-    private weak var window: UIWindow?
+    private weak var context: UIViewController?
     private var application: Application? {
         didSet {
             loadUI()
@@ -22,20 +22,13 @@ class SignUpViewRouter: Routing {
         }
     }
     private var screens: [Screen]?
-    private var context: UIViewController?
         
-    required init(window: UIWindow?) {
+    required init(context: UIViewController?) {
         
-        self.window = window
+        self.context = context
     }
     
     func start() {
-        
-        context = UINavigationController()
-        
-        window?.rootViewController = context
-        window?.makeKeyAndVisible()
-    
         /* Use this to swap between static data, and injected data driven content examples */
         
         let testingInjection = true
@@ -44,7 +37,6 @@ class SignUpViewRouter: Routing {
         var fileName = "example"
         
         if testingInjection {
-            
             fileName = "example_injected_configuration"
             injectableSections = Self.mockedAPI()
         }
@@ -75,7 +67,7 @@ class SignUpViewRouter: Routing {
         
         guard currentScreen != nil else { return }
         
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let storyboard = UIStoryboard(name: "TableView", bundle: Bundle(identifier: "com.yourline.presentation"))
         guard let view = storyboard.instantiateViewController(identifier: "TableViewController") as? TableViewing else { fatalError() }
         
         let presenter = TableViewPresenter(screen: currentScreen, view: view, router: self, dataCallbackBlock: { data in

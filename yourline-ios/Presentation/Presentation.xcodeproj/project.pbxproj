@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3A361962832BCAA00690696 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A361952832BCAA00690696 /* TableView.storyboard */; };
 		F3D8666F2815920600E574B0 /* FormTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8666E2815920600E574B0 /* FormTableDelegate.swift */; };
 		F3D866712815920F00E574B0 /* FormTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866702815920F00E574B0 /* FormTableDataSource.swift */; };
 		F3D866D82816A5AE00E574B0 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D866BD2816A5AE00E574B0 /* InputCell.xib */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3A361952832BCAA00690696 /* TableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
 		F3D8666E2815920600E574B0 /* FormTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDelegate.swift; sourceTree = "<group>"; };
 		F3D866702815920F00E574B0 /* FormTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDataSource.swift; sourceTree = "<group>"; };
 		F3D866BD2816A5AE00E574B0 /* InputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				F3D866D42816A5AE00E574B0 /* TableViewDelegate.swift */,
 				F3D866D52816A5AE00E574B0 /* TableViewController.swift */,
 				F3D866D72816A5AE00E574B0 /* TableViewPresenter.swift */,
+				F3A361952832BCAA00690696 /* TableView.storyboard */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				F3D866D82816A5AE00E574B0 /* InputCell.xib in Resources */,
 				F3D866DC2816A5AE00E574B0 /* SeparatorCell.xib in Resources */,
 				F3F499F62815899E00BD71CE /* FormView.storyboard in Resources */,
+				F3A361962832BCAA00690696 /* TableView.storyboard in Resources */,
 				F3D866E42816A5AE00E574B0 /* HeaderTextCell.xib in Resources */,
 				F3D866E72816A5AE00E574B0 /* BodyTextCell.xib in Resources */,
 				F3D866E12816A5AE00E574B0 /* PaddingCell.xib in Resources */,
