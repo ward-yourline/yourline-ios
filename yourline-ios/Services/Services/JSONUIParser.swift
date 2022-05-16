@@ -16,7 +16,7 @@ public struct InjectedProperties {
 
 public class JSONUIParser {
     
-    static func parseJSON(with name: String?, injectableSections: [Rows]?, completion: ((Application?, Error?)->())?) {
+    public static func parseJSON(with name: String?, injectableSections: [Rows]?, completion: ((Application?, Error?)->())?) {
         
         guard let name = name, let completion = completion else { return }
         

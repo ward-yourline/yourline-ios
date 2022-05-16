@@ -53,35 +53,35 @@ public struct Row: Decodable {
 
 public extension Row {
     
-    static func inputRowInit(title: String?, inputKey: String?,  placeholder: String?, errorTitle: String?, isSecure: Bool, inputType: RowInputType, isRequired: Bool?) -> Row {
+    public static func inputRowInit(title: String?, inputKey: String?,  placeholder: String?, errorTitle: String?, isSecure: Bool, inputType: RowInputType, isRequired: Bool?) -> Row {
         
         let row = Row(content: placeholder, title: title, errorTitle: errorTitle, height: nil, type: .inputCell, inputKey: inputKey, alignment: nil, cellInputType: inputType, action: nil, isSecure: isSecure, isRequired: isRequired, isBordered: false, headerType: nil)
         
         return row
     }
     
-    static func bodyTextInit(content: String, alignment: RowAlignmentType, isBordered: Bool) -> Row {
+    public static func bodyTextInit(content: String, alignment: RowAlignmentType, isBordered: Bool) -> Row {
         
         let row = Row(content: content, title: nil, errorTitle: nil, height: nil, type: .bodyTextCell, inputKey: nil, alignment: alignment, cellInputType: nil, action: nil, isSecure: nil, isRequired: false, isBordered: isBordered, headerType: nil)
         
         return row
     }
     
-    static func headerRowInit(content: String, alignment: RowAlignmentType, isBordered: Bool, headerType: HeaderType) -> Row {
+    public static func headerRowInit(content: String, alignment: RowAlignmentType, isBordered: Bool, headerType: HeaderType) -> Row {
         
         let row = Row(content: content, title: nil, errorTitle: nil, height: nil, type: .headerCell, inputKey: nil, alignment: alignment, cellInputType: nil, action: nil, isSecure: nil, isRequired: false, isBordered: isBordered, headerType: headerType)
         
         return row
     }
     
-    static func singleActionInit(content: String, action: Action?) -> Row {
+    public static func singleActionInit(content: String, action: Action?) -> Row {
         
         let row = Row(content: content, title: nil, errorTitle: nil, height: nil, type: .singleActionButtonCell, inputKey: nil, alignment: nil, cellInputType: nil, action: action, isSecure: nil, isRequired: false, isBordered: false, headerType: nil)
         
         return row
     }
     
-    static func paddingInit(height: PaddingSize) -> Row {
+    public static func paddingInit(height: PaddingSize) -> Row {
         
         let row = Row(content: nil, title: nil, errorTitle: nil, height: height, type: .paddingCell, inputKey: nil, alignment: nil, cellInputType: nil, action: nil, isSecure: nil, isRequired: false, isBordered: false, headerType: nil)
         

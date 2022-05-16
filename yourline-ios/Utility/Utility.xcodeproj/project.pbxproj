@@ -15,7 +15,6 @@
 		F3D866752816A4E300E574B0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866742816A4E300E574B0 /* UIView+Extensions.swift */; };
 		F3D8667E2816A51700E574B0 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8667D2816A51700E574B0 /* Shared.swift */; };
 		F3D8672C2816A8DE00E574B0 /* PaddingSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8672B2816A8DE00E574B0 /* PaddingSize.swift */; };
-		F3D867392816B07D00E574B0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D867382816B07D00E574B0 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,6 @@
 		F3D866742816A4E300E574B0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F3D8667D2816A51700E574B0 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		F3D8672B2816A8DE00E574B0 /* PaddingSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingSize.swift; sourceTree = "<group>"; };
-		F3D867382816B07D00E574B0 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 		F3D8666D281591CF00E574B0 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				F3D867382816B07D00E574B0 /* Coordinator.swift */,
 				F3D8666B2815914200E574B0 /* Routing.swift */,
 			);
 			name = Protocols;
@@ -227,7 +224,6 @@
 			files = (
 				F3D8667E2816A51700E574B0 /* Shared.swift in Sources */,
 				F3D8672C2816A8DE00E574B0 /* PaddingSize.swift in Sources */,
-				F3D867392816B07D00E574B0 /* Coordinator.swift in Sources */,
 				F3D866752816A4E300E574B0 /* UIView+Extensions.swift in Sources */,
 				F3D8666C2815914300E574B0 /* Routing.swift in Sources */,
 				F3D8664F2815910900E574B0 /* Utility.docc in Sources */,

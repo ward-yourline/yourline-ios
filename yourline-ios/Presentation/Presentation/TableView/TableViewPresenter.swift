@@ -22,7 +22,7 @@ public class TableViewPresenter: TableViewPresenting {
     
     private weak var view: TableViewing?
     private var screen: Screen?
-    private weak var coordinator: Coordinator?
+    private weak var router: Routing?
     private var dataCallbackBlock: DataCallbackBlock?
     private var asyncQueue = OperationQueue()
     private lazy var rowAttributesList: [RowAttribute?] = {
@@ -30,10 +30,10 @@ public class TableViewPresenter: TableViewPresenting {
         return [RowAttribute]()
     }()
     
-    required public init(screen: Screen?, view: TableViewing?, coordinator: Coordinator?, dataCallbackBlock: DataCallbackBlock?) {
+    required public init(screen: Screen?, view: TableViewing?, router: Routing?, dataCallbackBlock: DataCallbackBlock?) {
         
         self.view = view
-        self.coordinator = coordinator
+        self.router = router
         self.screen = screen
         self.dataCallbackBlock = dataCallbackBlock
     }
@@ -206,7 +206,7 @@ public class TableViewPresenter: TableViewPresenting {
                     return
                 }
                 
-                self.coordinator?.returnedData?(jsonData)
+                self.router?.returnedData?(jsonData)
             }
         }
     }

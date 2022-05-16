@@ -35,5 +35,5 @@ public protocol TableViewPresenting: AnyObject {
     func numberOfRows(with section: Int) -> Int
     func actionAtIndexPath(_ indexPath: IndexPath)
     
-    init(screen: Screen?, view: TableViewing?, coordinator: Coordinator?, dataCallbackBlock: DataCallbackBlock?)
+    init(screen: Screen?, view: TableViewing?, router: Routing?, dataCallbackBlock: DataCallbackBlock?)
 }

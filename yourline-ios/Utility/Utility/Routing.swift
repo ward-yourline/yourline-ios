@@ -7,4 +7,8 @@
 
 import Foundation
 
-public protocol Routing: AnyObject {}
+@objc public protocol Routing: AnyObject {
+    
+    @objc optional func nextScreen()
+    @objc optional func returnedData(_ data: Any?)
+}

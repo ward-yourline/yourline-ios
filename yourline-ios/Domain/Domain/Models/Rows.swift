@@ -13,6 +13,12 @@ public struct Rows: Decodable {
         case isInjected = "is_injected"
     }
     
+    public init(groupKey: String? = nil, isInjected: Bool? = nil, rows: [Row]? = nil) {
+        self.groupKey = groupKey
+        self.isInjected = isInjected
+        self.rows = rows
+    }
+    
     public func updateValues(rows: [Row]?) -> Rows {
         
         return Rows(rows: rows ?? self.rows)

@@ -2,7 +2,7 @@ import UIKit
 import Utility
 import Domain
 
-class TableViewController: UIViewController, TableViewing {
+public class TableViewController: UIViewController, TableViewing {
     
     // MARK: - Public properties
     
@@ -23,7 +23,7 @@ class TableViewController: UIViewController, TableViewing {
     private var tableViewDataSource: TableViewDataSource?
     private var tableViewDelegate: TableViewDelegate?
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         setupTableView()
@@ -68,12 +68,12 @@ class TableViewController: UIViewController, TableViewing {
         tableView.tableFooterView = UIView()
     }
     
-    func scrollToIndexPath(_ indexPath: IndexPath) {
+    public func scrollToIndexPath(_ indexPath: IndexPath) {
 
         tableView.scrollToRow(at: indexPath, at: .middle, animated: true)
     }
     
-    func update(with indexPath: IndexPath?) {
+    public func update(with indexPath: IndexPath?) {
         
         if let indexPath = indexPath {
             tableView.reloadRows(at: [indexPath], with: .none)
