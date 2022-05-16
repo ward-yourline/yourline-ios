@@ -8,6 +8,7 @@
 
 import Foundation
 import Domain
+import Utility
 
 public final class ApplicationLoader {
     
@@ -17,7 +18,10 @@ public final class ApplicationLoader {
         var config: Application? = nil
         
         queue.async {
-            if let path = Bundle.main.path(forResource: name, ofType: "json") {
+           
+            if
+                let bundle = Bundle(identifier: BundleNames.resources.rawValue),
+                let path = bundle.path(forResource: name, ofType: "json") {
                 do {
                     let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                     let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)

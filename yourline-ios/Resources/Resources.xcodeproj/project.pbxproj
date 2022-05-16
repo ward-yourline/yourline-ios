@@ -7,182 +7,156 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3A362112832CA5800690696 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A362102832CA5800690696 /* Resources.framework */; };
-		F3D867082816A69100E574B0 /* Services.docc in Sources */ = {isa = PBXBuildFile; fileRef = F3D867072816A69100E574B0 /* Services.docc */; };
-		F3D8670E2816A69100E574B0 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D867032816A69100E574B0 /* Services.framework */; };
-		F3D867132816A69100E574B0 /* ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D867122816A69100E574B0 /* ServicesTests.swift */; };
-		F3D867142816A69100E574B0 /* Services.h in Headers */ = {isa = PBXBuildFile; fileRef = F3D867062816A69100E574B0 /* Services.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3D8671F2816A69A00E574B0 /* JSONUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8671D2816A69900E574B0 /* JSONUtilities.swift */; };
-		F3D867202816A69A00E574B0 /* JSONUIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8671E2816A69A00E574B0 /* JSONUIParser.swift */; };
-		F3D867222816A6AD00E574B0 /* ApplicationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D867212816A6AD00E574B0 /* ApplicationLoader.swift */; };
-		F3D867262816A6C600E574B0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D867242816A6C600E574B0 /* Domain.framework */; };
-		F3D867282816A6C600E574B0 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D867252816A6C600E574B0 /* Utility.framework */; };
+		F3A361F32832C35800690696 /* Resources.docc in Sources */ = {isa = PBXBuildFile; fileRef = F3A361F22832C35800690696 /* Resources.docc */; };
+		F3A361F92832C35900690696 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A361EE2832C35800690696 /* Resources.framework */; };
+		F3A361FE2832C35900690696 /* ResourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A361FD2832C35900690696 /* ResourcesTests.swift */; };
+		F3A361FF2832C35900690696 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A361F12832C35800690696 /* Resources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3A362182832CAAA00690696 /* example_injected_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A362082832C38700690696 /* example_injected_configuration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F3D8670F2816A69100E574B0 /* PBXContainerItemProxy */ = {
+		F3A361FA2832C35900690696 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F3D866FA2816A69100E574B0 /* Project object */;
+			containerPortal = F3A361E52832C35800690696 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F3D867022816A69100E574B0;
-			remoteInfo = Services;
+			remoteGlobalIDString = F3A361ED2832C35800690696;
+			remoteInfo = Resources;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F3A362102832CA5800690696 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D867032816A69100E574B0 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D867062816A69100E574B0 /* Services.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
-		F3D867072816A69100E574B0 /* Services.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Services.docc; sourceTree = "<group>"; };
-		F3D8670D2816A69100E574B0 /* ServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D867122816A69100E574B0 /* ServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTests.swift; sourceTree = "<group>"; };
-		F3D8671D2816A69900E574B0 /* JSONUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONUtilities.swift; sourceTree = "<group>"; };
-		F3D8671E2816A69A00E574B0 /* JSONUIParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONUIParser.swift; sourceTree = "<group>"; };
-		F3D867212816A6AD00E574B0 /* ApplicationLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationLoader.swift; sourceTree = "<group>"; };
-		F3D867242816A6C600E574B0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D867252816A6C600E574B0 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A361EE2832C35800690696 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A361F12832C35800690696 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
+		F3A361F22832C35800690696 /* Resources.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Resources.docc; sourceTree = "<group>"; };
+		F3A361F82832C35900690696 /* ResourcesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResourcesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A361FD2832C35900690696 /* ResourcesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTests.swift; sourceTree = "<group>"; };
+		F3A362082832C38700690696 /* example_injected_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example_injected_configuration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F3D867002816A69100E574B0 /* Frameworks */ = {
+		F3A361EB2832C35800690696 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D867262816A6C600E574B0 /* Domain.framework in Frameworks */,
-				F3D867282816A6C600E574B0 /* Utility.framework in Frameworks */,
-				F3A362112832CA5800690696 /* Resources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3D8670A2816A69100E574B0 /* Frameworks */ = {
+		F3A361F52832C35900690696 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D8670E2816A69100E574B0 /* Services.framework in Frameworks */,
+				F3A361F92832C35900690696 /* Resources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F3D866F92816A69100E574B0 = {
+		F3A361E42832C35800690696 = {
 			isa = PBXGroup;
 			children = (
-				F3D867052816A69100E574B0 /* Services */,
-				F3D867112816A69100E574B0 /* ServicesTests */,
-				F3D867042816A69100E574B0 /* Products */,
-				F3D867232816A6C600E574B0 /* Frameworks */,
+				F3A361F02832C35800690696 /* Resources */,
+				F3A361FC2832C35900690696 /* ResourcesTests */,
+				F3A361EF2832C35800690696 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F3D867042816A69100E574B0 /* Products */ = {
+		F3A361EF2832C35800690696 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F3D867032816A69100E574B0 /* Services.framework */,
-				F3D8670D2816A69100E574B0 /* ServicesTests.xctest */,
+				F3A361EE2832C35800690696 /* Resources.framework */,
+				F3A361F82832C35900690696 /* ResourcesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F3D867052816A69100E574B0 /* Services */ = {
+		F3A361F02832C35800690696 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F3D867062816A69100E574B0 /* Services.h */,
-				F3D867212816A6AD00E574B0 /* ApplicationLoader.swift */,
-				F3D8671E2816A69A00E574B0 /* JSONUIParser.swift */,
-				F3D8671D2816A69900E574B0 /* JSONUtilities.swift */,
-				F3D867072816A69100E574B0 /* Services.docc */,
+				F3A362082832C38700690696 /* example_injected_configuration.json */,
+				F3A361F12832C35800690696 /* Resources.h */,
+				F3A361F22832C35800690696 /* Resources.docc */,
 			);
-			path = Services;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		F3D867112816A69100E574B0 /* ServicesTests */ = {
+		F3A361FC2832C35900690696 /* ResourcesTests */ = {
 			isa = PBXGroup;
 			children = (
-				F3D867122816A69100E574B0 /* ServicesTests.swift */,
+				F3A361FD2832C35900690696 /* ResourcesTests.swift */,
 			);
-			path = ServicesTests;
-			sourceTree = "<group>";
-		};
-		F3D867232816A6C600E574B0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F3A362102832CA5800690696 /* Resources.framework */,
-				F3D867242816A6C600E574B0 /* Domain.framework */,
-				F3D867252816A6C600E574B0 /* Utility.framework */,
-			);
-			name = Frameworks;
+			path = ResourcesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F3D866FE2816A69100E574B0 /* Headers */ = {
+		F3A361E92832C35800690696 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D867142816A69100E574B0 /* Services.h in Headers */,
+				F3A361FF2832C35900690696 /* Resources.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F3D867022816A69100E574B0 /* Services */ = {
+		F3A361ED2832C35800690696 /* Resources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3D867172816A69100E574B0 /* Build configuration list for PBXNativeTarget "Services" */;
+			buildConfigurationList = F3A362022832C35900690696 /* Build configuration list for PBXNativeTarget "Resources" */;
 			buildPhases = (
-				F3D866FE2816A69100E574B0 /* Headers */,
-				F3D866FF2816A69100E574B0 /* Sources */,
-				F3D867002816A69100E574B0 /* Frameworks */,
-				F3D867012816A69100E574B0 /* Resources */,
+				F3A361E92832C35800690696 /* Headers */,
+				F3A361EA2832C35800690696 /* Sources */,
+				F3A361EB2832C35800690696 /* Frameworks */,
+				F3A361EC2832C35800690696 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Services;
-			productName = Services;
-			productReference = F3D867032816A69100E574B0 /* Services.framework */;
+			name = Resources;
+			productName = Resources;
+			productReference = F3A361EE2832C35800690696 /* Resources.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F3D8670C2816A69100E574B0 /* ServicesTests */ = {
+		F3A361F72832C35900690696 /* ResourcesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3D8671A2816A69100E574B0 /* Build configuration list for PBXNativeTarget "ServicesTests" */;
+			buildConfigurationList = F3A362052832C35900690696 /* Build configuration list for PBXNativeTarget "ResourcesTests" */;
 			buildPhases = (
-				F3D867092816A69100E574B0 /* Sources */,
-				F3D8670A2816A69100E574B0 /* Frameworks */,
-				F3D8670B2816A69100E574B0 /* Resources */,
+				F3A361F42832C35900690696 /* Sources */,
+				F3A361F52832C35900690696 /* Frameworks */,
+				F3A361F62832C35900690696 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F3D867102816A69100E574B0 /* PBXTargetDependency */,
+				F3A361FB2832C35900690696 /* PBXTargetDependency */,
 			);
-			name = ServicesTests;
-			productName = ServicesTests;
-			productReference = F3D8670D2816A69100E574B0 /* ServicesTests.xctest */;
+			name = ResourcesTests;
+			productName = ResourcesTests;
+			productReference = F3A361F82832C35900690696 /* ResourcesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F3D866FA2816A69100E574B0 /* Project object */ = {
+		F3A361E52832C35800690696 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					F3D867022816A69100E574B0 = {
+					F3A361ED2832C35800690696 = {
 						CreatedOnToolsVersion = 13.3;
 					};
-					F3D8670C2816A69100E574B0 = {
+					F3A361F72832C35900690696 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
-			buildConfigurationList = F3D866FD2816A69100E574B0 /* Build configuration list for PBXProject "Services" */;
+			buildConfigurationList = F3A361E82832C35800690696 /* Build configuration list for PBXProject "Resources" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -190,26 +164,27 @@
 				en,
 				Base,
 			);
-			mainGroup = F3D866F92816A69100E574B0;
-			productRefGroup = F3D867042816A69100E574B0 /* Products */;
+			mainGroup = F3A361E42832C35800690696;
+			productRefGroup = F3A361EF2832C35800690696 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3D867022816A69100E574B0 /* Services */,
-				F3D8670C2816A69100E574B0 /* ServicesTests */,
+				F3A361ED2832C35800690696 /* Resources */,
+				F3A361F72832C35900690696 /* ResourcesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F3D867012816A69100E574B0 /* Resources */ = {
+		F3A361EC2832C35800690696 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A362182832CAAA00690696 /* example_injected_configuration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3D8670B2816A69100E574B0 /* Resources */ = {
+		F3A361F62832C35900690696 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,37 +194,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F3D866FF2816A69100E574B0 /* Sources */ = {
+		F3A361EA2832C35800690696 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D867202816A69A00E574B0 /* JSONUIParser.swift in Sources */,
-				F3D867222816A6AD00E574B0 /* ApplicationLoader.swift in Sources */,
-				F3D8671F2816A69A00E574B0 /* JSONUtilities.swift in Sources */,
-				F3D867082816A69100E574B0 /* Services.docc in Sources */,
+				F3A361F32832C35800690696 /* Resources.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3D867092816A69100E574B0 /* Sources */ = {
+		F3A361F42832C35900690696 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D867132816A69100E574B0 /* ServicesTests.swift in Sources */,
+				F3A361FE2832C35900690696 /* ResourcesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F3D867102816A69100E574B0 /* PBXTargetDependency */ = {
+		F3A361FB2832C35900690696 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F3D867022816A69100E574B0 /* Services */;
-			targetProxy = F3D8670F2816A69100E574B0 /* PBXContainerItemProxy */;
+			target = F3A361ED2832C35800690696 /* Resources */;
+			targetProxy = F3A361FA2832C35900690696 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F3D867152816A69100E574B0 /* Debug */ = {
+		F3A362002832C35900690696 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -312,7 +284,7 @@
 			};
 			name = Debug;
 		};
-		F3D867162816A69100E574B0 /* Release */ = {
+		F3A362012832C35900690696 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -369,7 +341,7 @@
 			};
 			name = Release;
 		};
-		F3D867182816A69100E574B0 /* Debug */ = {
+		F3A362032832C35900690696 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -388,16 +360,17 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.services;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.resources;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		F3D867192816A69100E574B0 /* Release */ = {
+		F3A362042832C35900690696 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -416,25 +389,25 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.services;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.resources;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		F3D8671B2816A69100E574B0 /* Debug */ = {
+		F3A362062832C35900690696 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T4TFC62RFB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.services.ServicesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.resources.ResourcesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -442,16 +415,15 @@
 			};
 			name = Debug;
 		};
-		F3D8671C2816A69100E574B0 /* Release */ = {
+		F3A362072832C35900690696 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T4TFC62RFB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.services.ServicesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.resources.ResourcesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -462,34 +434,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F3D866FD2816A69100E574B0 /* Build configuration list for PBXProject "Services" */ = {
+		F3A361E82832C35800690696 /* Build configuration list for PBXProject "Resources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3D867152816A69100E574B0 /* Debug */,
-				F3D867162816A69100E574B0 /* Release */,
+				F3A362002832C35900690696 /* Debug */,
+				F3A362012832C35900690696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		F3D867172816A69100E574B0 /* Build configuration list for PBXNativeTarget "Services" */ = {
+		F3A362022832C35900690696 /* Build configuration list for PBXNativeTarget "Resources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3D867182816A69100E574B0 /* Debug */,
-				F3D867192816A69100E574B0 /* Release */,
+				F3A362032832C35900690696 /* Debug */,
+				F3A362042832C35900690696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		F3D8671A2816A69100E574B0 /* Build configuration list for PBXNativeTarget "ServicesTests" */ = {
+		F3A362052832C35900690696 /* Build configuration list for PBXNativeTarget "ResourcesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3D8671B2816A69100E574B0 /* Debug */,
-				F3D8671C2816A69100E574B0 /* Release */,
+				F3A362062832C35900690696 /* Debug */,
+				F3A362072832C35900690696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F3D866FA2816A69100E574B0 /* Project object */;
+	rootObject = F3A361E52832C35800690696 /* Project object */;
 }

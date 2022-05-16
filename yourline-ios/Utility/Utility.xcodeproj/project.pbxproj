@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3A3620A2832C3A200690696 /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A362092832C3A200690696 /* StoryboardNames.swift */; };
+		F3A3620C2832C3A800690696 /* BundleNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3620B2832C3A800690696 /* BundleNames.swift */; };
 		F3D8664F2815910900E574B0 /* Utility.docc in Sources */ = {isa = PBXBuildFile; fileRef = F3D8664E2815910900E574B0 /* Utility.docc */; };
 		F3D866552815910A00E574B0 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8664A2815910900E574B0 /* Utility.framework */; };
 		F3D8665A2815910A00E574B0 /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866592815910A00E574B0 /* UtilityTests.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3A362092832C3A200690696 /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
+		F3A3620B2832C3A800690696 /* BundleNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleNames.swift; sourceTree = "<group>"; };
 		F3D8664A2815910900E574B0 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8664D2815910900E574B0 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		F3D8664E2815910900E574B0 /* Utility.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Utility.docc; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 			children = (
 				F3D8664D2815910900E574B0 /* Utility.h */,
 				F3D8667D2816A51700E574B0 /* Shared.swift */,
+				F3A362092832C3A200690696 /* StoryboardNames.swift */,
+				F3A3620B2832C3A800690696 /* BundleNames.swift */,
 				F3D8672B2816A8DE00E574B0 /* PaddingSize.swift */,
 				F3D866762816A4E900E574B0 /* Extensions */,
 				F3D8666D281591CF00E574B0 /* Protocols */,
@@ -225,6 +231,8 @@
 				F3D8667E2816A51700E574B0 /* Shared.swift in Sources */,
 				F3D8672C2816A8DE00E574B0 /* PaddingSize.swift in Sources */,
 				F3D866752816A4E300E574B0 /* UIView+Extensions.swift in Sources */,
+				F3A3620A2832C3A200690696 /* StoryboardNames.swift in Sources */,
+				F3A3620C2832C3A800690696 /* BundleNames.swift in Sources */,
 				F3D8666C2815914300E574B0 /* Routing.swift in Sources */,
 				F3D8664F2815910900E574B0 /* Utility.docc in Sources */,
 			);
@@ -388,7 +396,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.utility.Utility;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.utility;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -417,7 +425,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.utility.Utility;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourline.utility;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
