@@ -93,7 +93,6 @@ target 'Utility' do
   use_frameworks!
   
   pod 'SwiftDate', '~> 5.0'
-  pod 'SwiftValidator', '3.0.1'
   pod 'KeychainAccess'
   pod 'SwifterSwift'
   pod 'SnapKit', '~> 5.6.0'

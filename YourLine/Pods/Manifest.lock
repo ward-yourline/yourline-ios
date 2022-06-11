@@ -37,7 +37,6 @@ PODS:
   - SwifterSwift/StoreKit (5.2.0)
   - SwifterSwift/SwiftStdlib (5.2.0)
   - SwifterSwift/UIKit (5.2.0)
-  - SwiftValidator (3.0.1)
   - ViewAnimator (3.1.0)
 
 DEPENDENCIES:
@@ -51,7 +50,6 @@ DEPENDENCIES:
   - SnapKit (~> 5.6.0)
   - SwiftDate (~> 5.0)
   - SwifterSwift
-  - SwiftValidator (= 3.0.1)
   - ViewAnimator
 
 SPEC REPOS:
@@ -66,7 +64,6 @@ SPEC REPOS:
     - SnapKit
     - SwiftDate
     - SwifterSwift
-    - SwiftValidator
     - ViewAnimator
 
 SPEC CHECKSUMS:
@@ -80,9 +77,8 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
-  SwiftValidator: c59223144754045d7691febdc3b3ecc2e73b609c
   ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
 
-PODFILE CHECKSUM: 5a27de667cce52de20560bc60773ba9b56dbe1fb
+PODFILE CHECKSUM: a8f5342d475ac91ed572040b7b7ee1e203cb1c04
 
 COCOAPODS: 1.11.3

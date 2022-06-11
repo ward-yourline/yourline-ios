@@ -12,6 +12,7 @@
 		F3A361FE2832C35900690696 /* ResourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A361FD2832C35900690696 /* ResourcesTests.swift */; };
 		F3A361FF2832C35900690696 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A361F12832C35800690696 /* Resources.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3A362182832CAAA00690696 /* example_injected_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A362082832C38700690696 /* example_injected_configuration.json */; };
+		F3CAF16C28550E4700E61B8A /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF16B28550E4700E61B8A /* Utility.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		F3A361F82832C35900690696 /* ResourcesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResourcesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A361FD2832C35900690696 /* ResourcesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTests.swift; sourceTree = "<group>"; };
 		F3A362082832C38700690696 /* example_injected_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example_injected_configuration.json; sourceTree = "<group>"; };
+		F3CAF16B28550E4700E61B8A /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CAF16C28550E4700E61B8A /* Utility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 				F3A361F02832C35800690696 /* Resources */,
 				F3A361FC2832C35900690696 /* ResourcesTests */,
 				F3A361EF2832C35800690696 /* Products */,
+				F3CAF16A28550E4700E61B8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +90,14 @@
 				F3A361FD2832C35900690696 /* ResourcesTests.swift */,
 			);
 			path = ResourcesTests;
+			sourceTree = "<group>";
+		};
+		F3CAF16A28550E4700E61B8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3CAF16B28550E4700E61B8A /* Utility.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
