@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Utility
+import Resources
 
 class MainViewRouter: MainViewRouting {
     
@@ -40,5 +41,9 @@ class MainViewRouter: MainViewRouting {
             context.setNavigationBarHidden(true, animated: false)
             context.setViewControllers([mainView], animated: false)
         }
+    }
+    
+    private func initialise() {
+        Fonts.install()
     }
 }

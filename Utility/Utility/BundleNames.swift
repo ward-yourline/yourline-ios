@@ -14,3 +14,20 @@ public enum BundleNames: String {
     case utility = "com.yourline.utility"
     case services = "com.yourline.services"
 }
+
+let prefix = "com.yourline."
+
+public enum BundleIdentifiers: String {
+    
+    case resources = "resources"
+    case domain = "domain"
+    case presentation = "presentation"
+    case data = "data"
+    case servics = "services"
+    case googleServices = "googleServices"
+    case networking = "networking"
+    
+    public var bundleName: String {
+        return prefix + self.rawValue
+    }
+}
