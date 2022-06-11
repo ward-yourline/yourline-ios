@@ -24,6 +24,11 @@ class MainViewController: UIViewController, MainViewing {
         setupChildrenIfNeeded()
     }
     
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
     func addChildViews(_ views: [UIViewController]?) {
         childViews = views
     }
