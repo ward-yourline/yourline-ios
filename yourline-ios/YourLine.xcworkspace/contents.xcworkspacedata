@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Utility/Utility.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Domain/Domain.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Resources/Resources.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Services/Services.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Presentation/Presentation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/warrdadlani/Projects/yourline-ios/yourline-ios/YourLine.xcodeproj">
+   </FileRef>
+</Workspace>
