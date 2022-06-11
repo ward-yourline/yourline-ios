@@ -20,7 +20,7 @@
       location = "group:../Presentation/Presentation.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/warrdadlani/Projects/yourline-ios/yourline-ios/YourLine.xcodeproj">
+      location = "group:YourLine.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

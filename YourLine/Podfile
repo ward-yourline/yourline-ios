@@ -1,13 +1,9 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '14.0'
+# platform :ios, '9.0'
 
 workspace 'YourLine'
 
-project 'YourLine/YourLine.xcodeproj'
-project '../Presentation/Presentation.xcodeproj'
-project '../Analytics/Analytics.xcodeproj'
-project '../Data/Data.xcodeproj'
-project '../Services/Services.xcodeproj'
+project 'YourLine.xcodeproj'
 project '../Utility/Utility.xcodeproj'
 
 def ui_pods
@@ -18,13 +14,10 @@ def shared_pods
 end
 
 target 'YourLine' do
-  # Comment the next line if you don't want to use dynamic frameworks
+  project 'YourLine'
   use_frameworks!
 
   # Pods for YourLine
-  pod 'SwiftDate', '~> 5.0'
-  pod 'KeychainAccess'
-  ui_pods
 
   target 'YourLineTests' do
     inherit! :search_paths
@@ -54,6 +47,7 @@ target 'Presentation' do
     ui_pods
   end
 end
+
 
 # Services targets
 
@@ -94,7 +88,8 @@ target 'Utility' do
   use_frameworks!
   
   pod 'SwiftDate', '~> 5.0'
-  
+  pod 'SwiftValidator', '3.0.1'
+
   inhibit_all_warnings!
 
   target 'UtilityTests' do

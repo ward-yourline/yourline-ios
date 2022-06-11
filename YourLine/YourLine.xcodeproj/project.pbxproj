@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3207580CF5033F869944E4EA /* Pods_YourLine_YourLineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3FBF9856B64495CD894047 /* Pods_YourLine_YourLineUITests.framework */; };
+		75AC8C3B64C7744A08C1E05D /* Pods_YourLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C688A27FD193237DE55B9ED0 /* Pods_YourLine.framework */; };
+		CFEE3D72D9B2BACB067CECF3 /* Pods_YourLineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C4AB7DF134CF38C85C57F7 /* Pods_YourLineTests.framework */; };
 		F31FCFA6285501E400399A35 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA1285501E300399A35 /* Data.framework */; };
 		F31FCFA7285501E400399A35 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA1285501E300399A35 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F31FCFA8285501E400399A35 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA2285501E300399A35 /* Domain.framework */; };
@@ -78,8 +81,11 @@
 
 /* Begin PBXFileReference section */
 		132E7B74848E6A557D95B8A5 /* Pods-YourLine-YourLineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLine-YourLineUITests.debug.xcconfig"; path = "Target Support Files/Pods-YourLine-YourLineUITests/Pods-YourLine-YourLineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F3FBF9856B64495CD894047 /* Pods_YourLine_YourLineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourLine_YourLineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FDE66C53514347F591A217 /* Pods-YourLine-YourLineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLine-YourLineUITests.release.xcconfig"; path = "Target Support Files/Pods-YourLine-YourLineUITests/Pods-YourLine-YourLineUITests.release.xcconfig"; sourceTree = "<group>"; };
 		852C6A584BFFFC61608D2BD9 /* Pods-YourLineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLineTests.release.xcconfig"; path = "Target Support Files/Pods-YourLineTests/Pods-YourLineTests.release.xcconfig"; sourceTree = "<group>"; };
+		97C4AB7DF134CF38C85C57F7 /* Pods_YourLineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourLineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C688A27FD193237DE55B9ED0 /* Pods_YourLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0698A76A4D133DA97638648 /* Pods-YourLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLine.release.xcconfig"; path = "Target Support Files/Pods-YourLine/Pods-YourLine.release.xcconfig"; sourceTree = "<group>"; };
 		F31FCFA1285501E300399A35 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31FCFA2285501E300399A35 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +131,7 @@
 				F31FCFAC285501E400399A35 /* Services.framework in Frameworks */,
 				F31FCFAE285501E400399A35 /* Utility.framework in Frameworks */,
 				F31FCFAA285501E400399A35 /* Resources.framework in Frameworks */,
+				75AC8C3B64C7744A08C1E05D /* Pods_YourLine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEE3D72D9B2BACB067CECF3 /* Pods_YourLineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3207580CF5033F869944E4EA /* Pods_YourLine_YourLineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +271,9 @@
 				F31FCFA3285501E300399A35 /* Resources.framework */,
 				F31FCFA4285501E300399A35 /* Services.framework */,
 				F31FCFA5285501E300399A35 /* Utility.framework */,
+				C688A27FD193237DE55B9ED0 /* Pods_YourLine.framework */,
+				1F3FBF9856B64495CD894047 /* Pods_YourLine_YourLineUITests.framework */,
+				97C4AB7DF134CF38C85C57F7 /* Pods_YourLineTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

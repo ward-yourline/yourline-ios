@@ -1,0 +1,30 @@
+PODS:
+  - KeychainAccess (4.2.1)
+  - SDWebImage (5.10.3):
+    - SDWebImage/Core (= 5.10.3)
+  - SDWebImage/Core (5.10.3)
+  - SwiftDate (5.1.0)
+  - SwiftValidator (3.0.1)
+
+DEPENDENCIES:
+  - KeychainAccess
+  - SDWebImage (~> 5.0)
+  - SwiftDate (~> 5.0)
+  - SwiftValidator (= 3.0.1)
+
+SPEC REPOS:
+  trunk:
+    - KeychainAccess
+    - SDWebImage
+    - SwiftDate
+    - SwiftValidator
+
+SPEC CHECKSUMS:
+  KeychainAccess: 9b07f665298d13c3a85881bd3171f6f49b8151c1
+  SDWebImage: e378178472b735e84b007bfb55514c97948a0598
+  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
+  SwiftValidator: c59223144754045d7691febdc3b3ecc2e73b609c
+
+PODFILE CHECKSUM: 70f4e64b92594f3056d6a043a3fed3a4f4b2092a
+
+COCOAPODS: 1.11.3
