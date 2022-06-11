@@ -17,21 +17,7 @@
                BlueprintIdentifier = "F3D866492815910900E574B0"
                BuildableName = "Utility.framework"
                BlueprintName = "Utility"
-               ReferencedContainer = "container:Utility/Utility.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F3D866882816A55400E574B0"
-               BuildableName = "Domain.framework"
-               BlueprintName = "Domain"
-               ReferencedContainer = "container:Domain/Domain.xcodeproj">
+               ReferencedContainer = "container:../Utility/Utility.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -45,7 +31,35 @@
                BlueprintIdentifier = "F3A361ED2832C35800690696"
                BuildableName = "Resources.framework"
                BlueprintName = "Resources"
-               ReferencedContainer = "container:Resources/Resources.xcodeproj">
+               ReferencedContainer = "container:../Resources/Resources.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F3D866882816A55400E574B0"
+               BuildableName = "Domain.framework"
+               BlueprintName = "Domain"
+               ReferencedContainer = "container:../Domain/Domain.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F31FCF862855018E00399A35"
+               BuildableName = "Data.framework"
+               BlueprintName = "Data"
+               ReferencedContainer = "container:../Data/Data.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -59,7 +73,7 @@
                BlueprintIdentifier = "F3D867022816A69100E574B0"
                BuildableName = "Services.framework"
                BlueprintName = "Services"
-               ReferencedContainer = "container:Services/Services.xcodeproj">
+               ReferencedContainer = "container:../Services/Services.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -73,7 +87,7 @@
                BlueprintIdentifier = "F3F499D2281588D700BD71CE"
                BuildableName = "Presentation.framework"
                BlueprintName = "Presentation"
-               ReferencedContainer = "container:Presentation/Presentation.xcodeproj">
+               ReferencedContainer = "container:../Presentation/Presentation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry

@@ -1,11 +1,30 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '14.0'
+
+workspace 'YourLine'
+
+project 'YourLine/YourLine.xcodeproj'
+project '../Presentation/Presentation.xcodeproj'
+project '../Analytics/Analytics.xcodeproj'
+project '../Data/Data.xcodeproj'
+project '../Services/Services.xcodeproj'
+project '../Utility/Utility.xcodeproj'
+
+def ui_pods
+  pod 'SDWebImage', '~> 5.0'
+end
+
+def shared_pods
+end
 
 target 'YourLine' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for YourLine
+  pod 'SwiftDate', '~> 5.0'
+  pod 'KeychainAccess'
+  ui_pods
 
   target 'YourLineTests' do
     inherit! :search_paths
@@ -17,3 +36,70 @@ target 'YourLine' do
   end
 
 end
+
+# Presentation targets
+
+target 'Presentation' do
+  project '../Presentation/Presentation'
+  inherit! :search_paths
+  use_frameworks!
+  
+  inhibit_all_warnings!
+  
+  ui_pods
+  
+  target 'PresentationTests' do
+    inherit! :search_paths
+        
+    ui_pods
+  end
+end
+
+# Services targets
+
+target 'Services' do
+  project '../Services/Services'
+  inherit! :search_paths
+  
+  use_frameworks!
+  
+  inhibit_all_warnings!
+
+  target 'ServicesTests' do
+    inherit! :search_paths
+
+  end
+end
+
+target 'Data' do
+  project '../Data/Data'
+  inherit! :search_paths
+  
+  use_frameworks!
+  
+  pod 'KeychainAccess'
+  
+  inhibit_all_warnings!
+
+  target 'DataTests' do
+    inherit! :search_paths
+
+  end
+end
+
+target 'Utility' do
+  project '../Utility/Utility'
+  inherit! :search_paths
+  
+  use_frameworks!
+  
+  pod 'SwiftDate', '~> 5.0'
+  
+  inhibit_all_warnings!
+
+  target 'UtilityTests' do
+    inherit! :search_paths
+
+  end
+end
+

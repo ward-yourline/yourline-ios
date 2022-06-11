@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C9EBB0213A59DC6397C4909 /* Pods_YourLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E2941D330A7D74764D6D89 /* Pods_YourLine.framework */; };
-		99EC9656FE3F84F40098A400 /* Pods_YourLine_YourLineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0037E2F3786166A12C8ECA46 /* Pods_YourLine_YourLineUITests.framework */; };
+		F31FCFA6285501E400399A35 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA1285501E300399A35 /* Data.framework */; };
+		F31FCFA7285501E400399A35 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA1285501E300399A35 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31FCFA8285501E400399A35 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA2285501E300399A35 /* Domain.framework */; };
+		F31FCFA9285501E400399A35 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA2285501E300399A35 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31FCFAA285501E400399A35 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA3285501E300399A35 /* Resources.framework */; };
+		F31FCFAB285501E400399A35 /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA3285501E300399A35 /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31FCFAC285501E400399A35 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA4285501E300399A35 /* Services.framework */; };
+		F31FCFAD285501E400399A35 /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA4285501E300399A35 /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31FCFAE285501E400399A35 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA5285501E300399A35 /* Utility.framework */; };
+		F31FCFAF285501E400399A35 /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA5285501E300399A35 /* Utility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31FCFB12855038D00399A35 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFB02855038D00399A35 /* Presentation.framework */; };
+		F31FCFB22855039400399A35 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFB02855038D00399A35 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F37C890A28097C4000F148EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890928097C4000F148EB /* AppDelegate.swift */; };
 		F37C890E28097C4000F148EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890D28097C4000F148EB /* MainViewController.swift */; };
 		F37C891128097C4000F148EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37C890F28097C4000F148EB /* Main.storyboard */; };
@@ -20,8 +30,6 @@
 		F37C893028097C4400F148EB /* YourLineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */; };
 		F3A3618F2832B6B700690696 /* SignUpViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3618E2832B6B700690696 /* SignUpViewProtocols.swift */; };
 		F3A361912832B6C200690696 /* SignUpViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A361902832B6C200690696 /* SignUpViewRouter.swift */; };
-		F3A3620E2832C85900690696 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A3620D2832C85900690696 /* Resources.framework */; };
-		F3A3620F2832C85900690696 /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A3620D2832C85900690696 /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3AB7628280985B2002AF45D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB7627280985B2002AF45D /* SignInViewController.swift */; };
 		F3AB762A280985BA002AF45D /* SignInView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AB7629280985BA002AF45D /* SignInView.storyboard */; };
 		F3AB762C280985C8002AF45D /* MainViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB762B280985C8002AF45D /* MainViewProtocols.swift */; };
@@ -29,14 +37,7 @@
 		F3AB7630280989C8002AF45D /* SignInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB762F280989C7002AF45D /* SignInProtocols.swift */; };
 		F3AB7632280989CF002AF45D /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB7631280989CF002AF45D /* SignInRouter.swift */; };
 		F3AB763628098A50002AF45D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB763528098A50002AF45D /* Constants.swift */; };
-		F3D866662815912F00E574B0 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499EE281588F000BD71CE /* Presentation.framework */; };
-		F3D866672815912F00E574B0 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499EE281588F000BD71CE /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F3D866692815913100E574B0 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866642815912300E574B0 /* Utility.framework */; };
-		F3D8666A2815913100E574B0 /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866642815912300E574B0 /* Utility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866722815984A00E574B0 /* SignInPresenter.swift */; };
-		F3D866EF2816A5D600E574B0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866EE2816A5D600E574B0 /* Domain.framework */; };
-		F3D866F02816A5D600E574B0 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866EE2816A5D600E574B0 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F60A63963777AF186B551F48 /* Pods_YourLineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A885881C82EC8859A4EC31D /* Pods_YourLineTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +64,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F3D866F02816A5D600E574B0 /* Domain.framework in Embed Frameworks */,
-				F3D866672815912F00E574B0 /* Presentation.framework in Embed Frameworks */,
-				F3A3620F2832C85900690696 /* Resources.framework in Embed Frameworks */,
-				F3D8666A2815913100E574B0 /* Utility.framework in Embed Frameworks */,
+				F31FCFB22855039400399A35 /* Presentation.framework in Embed Frameworks */,
+				F31FCFA9285501E400399A35 /* Domain.framework in Embed Frameworks */,
+				F31FCFA7285501E400399A35 /* Data.framework in Embed Frameworks */,
+				F31FCFAD285501E400399A35 /* Services.framework in Embed Frameworks */,
+				F31FCFAF285501E400399A35 /* Utility.framework in Embed Frameworks */,
+				F31FCFAB285501E400399A35 /* Resources.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,13 +77,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0037E2F3786166A12C8ECA46 /* Pods_YourLine_YourLineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourLine_YourLineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		132E7B74848E6A557D95B8A5 /* Pods-YourLine-YourLineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLine-YourLineUITests.debug.xcconfig"; path = "Target Support Files/Pods-YourLine-YourLineUITests/Pods-YourLine-YourLineUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		66FDE66C53514347F591A217 /* Pods-YourLine-YourLineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLine-YourLineUITests.release.xcconfig"; path = "Target Support Files/Pods-YourLine-YourLineUITests/Pods-YourLine-YourLineUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7A885881C82EC8859A4EC31D /* Pods_YourLineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourLineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		852C6A584BFFFC61608D2BD9 /* Pods-YourLineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLineTests.release.xcconfig"; path = "Target Support Files/Pods-YourLineTests/Pods-YourLineTests.release.xcconfig"; sourceTree = "<group>"; };
-		C0E2941D330A7D74764D6D89 /* Pods_YourLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0698A76A4D133DA97638648 /* Pods-YourLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLine.release.xcconfig"; path = "Target Support Files/Pods-YourLine/Pods-YourLine.release.xcconfig"; sourceTree = "<group>"; };
+		F31FCFA1285501E300399A35 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31FCFA2285501E300399A35 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31FCFA3285501E300399A35 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31FCFA4285501E300399A35 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31FCFA5285501E300399A35 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31FCFB02855038D00399A35 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37C890628097C4000F148EB /* YourLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37C890928097C4000F148EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37C890D28097C4000F148EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +102,6 @@
 		F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F3A3618E2832B6B700690696 /* SignUpViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewProtocols.swift; sourceTree = "<group>"; };
 		F3A361902832B6C200690696 /* SignUpViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewRouter.swift; sourceTree = "<group>"; };
-		F3A3620D2832C85900690696 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AB7627280985B2002AF45D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F3AB7629280985BA002AF45D /* SignInView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInView.storyboard; sourceTree = "<group>"; };
 		F3AB762B280985C8002AF45D /* MainViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocols.swift; sourceTree = "<group>"; };
@@ -104,10 +109,7 @@
 		F3AB762F280989C7002AF45D /* SignInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocols.swift; sourceTree = "<group>"; };
 		F3AB7631280989CF002AF45D /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
 		F3AB763528098A50002AF45D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F3D866642815912300E574B0 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D866722815984A00E574B0 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
-		F3D866EE2816A5D600E574B0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3F499EE281588F000BD71CE /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F582069CF3021214A30DF19C /* Pods-YourLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLineTests.debug.xcconfig"; path = "Target Support Files/Pods-YourLineTests/Pods-YourLineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FCBB93033153565916ABA696 /* Pods-YourLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLine.debug.xcconfig"; path = "Target Support Files/Pods-YourLine/Pods-YourLine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,11 +119,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D866EF2816A5D600E574B0 /* Domain.framework in Frameworks */,
-				F3D866662815912F00E574B0 /* Presentation.framework in Frameworks */,
-				F3A3620E2832C85900690696 /* Resources.framework in Frameworks */,
-				F3D866692815913100E574B0 /* Utility.framework in Frameworks */,
-				4C9EBB0213A59DC6397C4909 /* Pods_YourLine.framework in Frameworks */,
+				F31FCFB12855038D00399A35 /* Presentation.framework in Frameworks */,
+				F31FCFA8285501E400399A35 /* Domain.framework in Frameworks */,
+				F31FCFA6285501E400399A35 /* Data.framework in Frameworks */,
+				F31FCFAC285501E400399A35 /* Services.framework in Frameworks */,
+				F31FCFAE285501E400399A35 /* Utility.framework in Frameworks */,
+				F31FCFAA285501E400399A35 /* Resources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +132,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F60A63963777AF186B551F48 /* Pods_YourLineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99EC9656FE3F84F40098A400 /* Pods_YourLine_YourLineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +155,6 @@
 				F582069CF3021214A30DF19C /* Pods-YourLineTests.debug.xcconfig */,
 				852C6A584BFFFC61608D2BD9 /* Pods-YourLineTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -256,13 +256,12 @@
 		F3F499ED281588F000BD71CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F3A3620D2832C85900690696 /* Resources.framework */,
-				F3D866EE2816A5D600E574B0 /* Domain.framework */,
-				F3D866642815912300E574B0 /* Utility.framework */,
-				F3F499EE281588F000BD71CE /* Presentation.framework */,
-				C0E2941D330A7D74764D6D89 /* Pods_YourLine.framework */,
-				0037E2F3786166A12C8ECA46 /* Pods_YourLine_YourLineUITests.framework */,
-				7A885881C82EC8859A4EC31D /* Pods_YourLineTests.framework */,
+				F31FCFB02855038D00399A35 /* Presentation.framework */,
+				F31FCFA1285501E300399A35 /* Data.framework */,
+				F31FCFA2285501E300399A35 /* Domain.framework */,
+				F31FCFA3285501E300399A35 /* Resources.framework */,
+				F31FCFA4285501E300399A35 /* Services.framework */,
+				F31FCFA5285501E300399A35 /* Utility.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
