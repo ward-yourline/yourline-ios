@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+public enum StoryboardNames: String {
+    case signUpView = "SignUpView"
+    
+    public var name: String { return rawValue }
+}

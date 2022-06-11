@@ -25,7 +25,7 @@ public extension Fonts {
             fatalError("unable to load font's bundle")
         }
         for each in Fonts.allCases {
-            if let cfURL = bundle.url(forResource:each.rawValue, withExtension: "otf") {
+            if let cfURL = bundle.url(forResource:each.rawValue, withExtension: "ttf") {
                 CTFontManagerRegisterFontsForURL(cfURL as CFURL, .process, nil)
             } else {
                 assertionFailure("Could not find font:\(each.rawValue) in bundle:\(bundle)")

@@ -40,7 +40,7 @@ class SignInRouter: SignInRouting {
     }
     
     func openSignUp() {
-        let router = SignUpViewRouter(context: signInContext)
+        let router = SignUpRouter(context: signInContext)
         childRouters.append(router)
         router.start()
 //        let presentationBundle = Bundle(identifier: "com.yourline.presentation")

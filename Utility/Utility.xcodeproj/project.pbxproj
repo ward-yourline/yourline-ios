@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		71A862166A46E5A9F1C813C0 /* Pods_UtilityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1C91F86294C5C39F2C05A1 /* Pods_UtilityTests.framework */; };
 		BC1E0D64D5DC0161C5852584 /* Pods_Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D74B182C400C094D7AE9A1 /* Pods_Utility.framework */; };
+		F323FEA9285518D1004C4FC9 /* YourLineViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323FEA8285518D1004C4FC9 /* YourLineViews.swift */; };
 		F3A3620A2832C3A200690696 /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A362092832C3A200690696 /* StoryboardNames.swift */; };
 		F3A3620C2832C3A800690696 /* BundleNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3620B2832C3A800690696 /* BundleNames.swift */; };
 		F3CAF17A28550F5200E61B8A /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF17628550F5200E61B8A /* IQKeyboardManager.framework */; };
@@ -42,6 +43,7 @@
 		64C89484617F7FCDBABD456D /* Pods-Utility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utility.release.xcconfig"; path = "Target Support Files/Pods-Utility/Pods-Utility.release.xcconfig"; sourceTree = "<group>"; };
 		D1F674683C0AF3D969FA2251 /* Pods-UtilityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UtilityTests.release.xcconfig"; path = "Target Support Files/Pods-UtilityTests/Pods-UtilityTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE1C91F86294C5C39F2C05A1 /* Pods_UtilityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UtilityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F323FEA8285518D1004C4FC9 /* YourLineViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineViews.swift; sourceTree = "<group>"; };
 		F3A362092832C3A200690696 /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
 		F3A3620B2832C3A800690696 /* BundleNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleNames.swift; sourceTree = "<group>"; };
 		F3CAF17628550F5200E61B8A /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 			children = (
 				F3D8664D2815910900E574B0 /* Utility.h */,
 				F3D8667D2816A51700E574B0 /* Shared.swift */,
+				F323FEA8285518D1004C4FC9 /* YourLineViews.swift */,
 				F3A362092832C3A200690696 /* StoryboardNames.swift */,
 				F3A3620B2832C3A800690696 /* BundleNames.swift */,
 				F3D8672B2816A8DE00E574B0 /* PaddingSize.swift */,
@@ -329,6 +332,7 @@
 				F3D8667E2816A51700E574B0 /* Shared.swift in Sources */,
 				F3D8672C2816A8DE00E574B0 /* PaddingSize.swift in Sources */,
 				F3D866752816A4E300E574B0 /* UIView+Extensions.swift in Sources */,
+				F323FEA9285518D1004C4FC9 /* YourLineViews.swift in Sources */,
 				F3A3620A2832C3A200690696 /* StoryboardNames.swift in Sources */,
 				F3A3620C2832C3A800690696 /* BundleNames.swift in Sources */,
 				F3D8666C2815914300E574B0 /* Routing.swift in Sources */,

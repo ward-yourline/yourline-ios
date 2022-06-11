@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		337F80CBADB2D52636940D35 /* Pods_PresentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8822F8117B16B13AEB3B4E /* Pods_PresentationTests.framework */; };
 		F3A361962832BCAA00690696 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A361952832BCAA00690696 /* TableView.storyboard */; };
-		F3A361992832BF6C00690696 /* UserTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A361982832BF6C00690696 /* UserTypeSelectionViewController.swift */; };
-		F3A3619B2832BF7600690696 /* UserTypeSelectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A3619A2832BF7600690696 /* UserTypeSelectionView.storyboard */; };
 		F3A362152832CA9100690696 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A362142832CA9100690696 /* Resources.framework */; };
 		F3CAF18428550F7100E61B8A /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF18328550F7100E61B8A /* SDWebImage.framework */; };
 		F3CAF18C28550F7D00E61B8A /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF18B28550F7D00E61B8A /* SideMenu.framework */; };
@@ -73,8 +71,6 @@
 		9E8822F8117B16B13AEB3B4E /* Pods_PresentationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresentationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43AD043FF747B9CCAF1033F /* Pods-Presentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.debug.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.debug.xcconfig"; sourceTree = "<group>"; };
 		F3A361952832BCAA00690696 /* TableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
-		F3A361982832BF6C00690696 /* UserTypeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewController.swift; sourceTree = "<group>"; };
-		F3A3619A2832BF7600690696 /* UserTypeSelectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTypeSelectionView.storyboard; sourceTree = "<group>"; };
 		F3A362142832CA9100690696 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CAF18328550F7100E61B8A /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CAF18728550F7900E61B8A /* Instructions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Instructions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,15 +157,6 @@
 			);
 			name = Pods;
 			path = ../YourLine/Pods;
-			sourceTree = "<group>";
-		};
-		F3A361972832BF5800690696 /* UserTypeSelection */ = {
-			isa = PBXGroup;
-			children = (
-				F3A361982832BF6C00690696 /* UserTypeSelectionViewController.swift */,
-				F3A3619A2832BF7600690696 /* UserTypeSelectionView.storyboard */,
-			);
-			path = UserTypeSelection;
 			sourceTree = "<group>";
 		};
 		F3D866BA2816A5AE00E574B0 /* TableView */ = {
@@ -309,7 +296,6 @@
 		F3F499D5281588D700BD71CE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F3A361972832BF5800690696 /* UserTypeSelection */,
 				F3D867312816A9A100E574B0 /* Shared */,
 				F3D866BA2816A5AE00E574B0 /* TableView */,
 				F3F499F22815895C00BD71CE /* Form */,
@@ -437,7 +423,6 @@
 				F3D866DC2816A5AE00E574B0 /* SeparatorCell.xib in Resources */,
 				F3F499F62815899E00BD71CE /* FormView.storyboard in Resources */,
 				F3A361962832BCAA00690696 /* TableView.storyboard in Resources */,
-				F3A3619B2832BF7600690696 /* UserTypeSelectionView.storyboard in Resources */,
 				F3D866E42816A5AE00E574B0 /* HeaderTextCell.xib in Resources */,
 				F3D866E72816A5AE00E574B0 /* BodyTextCell.xib in Resources */,
 				F3D866E12816A5AE00E574B0 /* PaddingCell.xib in Resources */,
@@ -543,7 +528,6 @@
 				F3D866DB2816A5AE00E574B0 /* SeparatorCell.swift in Sources */,
 				F3D866E52816A5AE00E574B0 /* HeaderTextCell.swift in Sources */,
 				F3D866EA2816A5AE00E574B0 /* TableViewDelegate.swift in Sources */,
-				F3A361992832BF6C00690696 /* UserTypeSelectionViewController.swift in Sources */,
 				F3D866712815920F00E574B0 /* FormTableDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

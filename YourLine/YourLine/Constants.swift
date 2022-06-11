@@ -6,17 +6,3 @@
 //
 
 import Foundation
-
-enum YourLineViews: String {
-    case mainView = "MainViewController"
-    case signInView = "SignInViewController"
-    
-    var name: String {
-        switch self {
-        case .mainView:
-            return rawValue
-        case .signInView:
-            return rawValue
-        }
-    }
-}

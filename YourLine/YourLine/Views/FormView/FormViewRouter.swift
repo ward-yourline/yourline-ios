@@ -12,7 +12,7 @@ import Presentation
 import Utility
 import Services
 
-class SignUpViewRouter: Routing {
+class FormViewRouter: Routing {
     
     private weak var context: UIViewController?
     private var application: Application? {

@@ -26,6 +26,8 @@ class MainViewRouter: MainViewRouting {
         self.window?.makeKeyAndVisible()
         
         self.window = window
+        
+        initialise()
     }
     
     func start() {
