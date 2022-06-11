@@ -11,6 +11,10 @@
 		BC1E0D64D5DC0161C5852584 /* Pods_Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D74B182C400C094D7AE9A1 /* Pods_Utility.framework */; };
 		F3A3620A2832C3A200690696 /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A362092832C3A200690696 /* StoryboardNames.swift */; };
 		F3A3620C2832C3A800690696 /* BundleNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3620B2832C3A800690696 /* BundleNames.swift */; };
+		F3CAF17A28550F5200E61B8A /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF17628550F5200E61B8A /* IQKeyboardManager.framework */; };
+		F3CAF17C28550F5200E61B8A /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF17728550F5200E61B8A /* KeychainAccess.framework */; };
+		F3CAF17E28550F5200E61B8A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF17828550F5200E61B8A /* SnapKit.framework */; };
+		F3CAF18028550F5200E61B8A /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF17928550F5200E61B8A /* SwiftDate.framework */; };
 		F3D8664F2815910900E574B0 /* Utility.docc in Sources */ = {isa = PBXBuildFile; fileRef = F3D8664E2815910900E574B0 /* Utility.docc */; };
 		F3D866552815910A00E574B0 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8664A2815910900E574B0 /* Utility.framework */; };
 		F3D8665A2815910A00E574B0 /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866592815910A00E574B0 /* UtilityTests.swift */; };
@@ -40,6 +44,10 @@
 		DE1C91F86294C5C39F2C05A1 /* Pods_UtilityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UtilityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A362092832C3A200690696 /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
 		F3A3620B2832C3A800690696 /* BundleNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleNames.swift; sourceTree = "<group>"; };
+		F3CAF17628550F5200E61B8A /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAF17728550F5200E61B8A /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAF17828550F5200E61B8A /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAF17928550F5200E61B8A /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8664A2815910900E574B0 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8664D2815910900E574B0 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		F3D8664E2815910900E574B0 /* Utility.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Utility.docc; sourceTree = "<group>"; };
@@ -56,7 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CAF17C28550F5200E61B8A /* KeychainAccess.framework in Frameworks */,
+				F3CAF18028550F5200E61B8A /* SwiftDate.framework in Frameworks */,
 				BC1E0D64D5DC0161C5852584 /* Pods_Utility.framework in Frameworks */,
+				F3CAF17A28550F5200E61B8A /* IQKeyboardManager.framework in Frameworks */,
+				F3CAF17E28550F5200E61B8A /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +99,10 @@
 		756FCC75D1282D6BB485F956 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3CAF17628550F5200E61B8A /* IQKeyboardManager.framework */,
+				F3CAF17728550F5200E61B8A /* KeychainAccess.framework */,
+				F3CAF17828550F5200E61B8A /* SnapKit.framework */,
+				F3CAF17928550F5200E61B8A /* SwiftDate.framework */,
 				00D74B182C400C094D7AE9A1 /* Pods_Utility.framework */,
 				DE1C91F86294C5C39F2C05A1 /* Pods_UtilityTests.framework */,
 			);

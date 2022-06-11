@@ -12,6 +12,12 @@
 		F3A361992832BF6C00690696 /* UserTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A361982832BF6C00690696 /* UserTypeSelectionViewController.swift */; };
 		F3A3619B2832BF7600690696 /* UserTypeSelectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A3619A2832BF7600690696 /* UserTypeSelectionView.storyboard */; };
 		F3A362152832CA9100690696 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A362142832CA9100690696 /* Resources.framework */; };
+		F3CAF18428550F7100E61B8A /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF18328550F7100E61B8A /* SDWebImage.framework */; };
+		F3CAF18C28550F7D00E61B8A /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF18B28550F7D00E61B8A /* SideMenu.framework */; };
+		F3CAF18F28550F8100E61B8A /* ViewAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF18E28550F8100E61B8A /* ViewAnimator.framework */; };
+		F3CAF19228550F8500E61B8A /* SkeletonView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF19128550F8500E61B8A /* SkeletonView.framework */; };
+		F3CAF19528550F8D00E61B8A /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF19428550F8D00E61B8A /* NVActivityIndicatorView.framework */; };
+		F3CAF1982855103900E61B8A /* Instructions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF1972855103900E61B8A /* Instructions.framework */; };
 		F3D8666F2815920600E574B0 /* FormTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8666E2815920600E574B0 /* FormTableDelegate.swift */; };
 		F3D866712815920F00E574B0 /* FormTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866702815920F00E574B0 /* FormTableDataSource.swift */; };
 		F3D866D82816A5AE00E574B0 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D866BD2816A5AE00E574B0 /* InputCell.xib */; };
@@ -70,6 +76,13 @@
 		F3A361982832BF6C00690696 /* UserTypeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewController.swift; sourceTree = "<group>"; };
 		F3A3619A2832BF7600690696 /* UserTypeSelectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTypeSelectionView.storyboard; sourceTree = "<group>"; };
 		F3A362142832CA9100690696 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAF18328550F7100E61B8A /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAF18728550F7900E61B8A /* Instructions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Instructions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAF18B28550F7D00E61B8A /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAF18E28550F8100E61B8A /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAF19128550F8500E61B8A /* SkeletonView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SkeletonView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAF19428550F8D00E61B8A /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAF1972855103900E61B8A /* Instructions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Instructions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8666E2815920600E574B0 /* FormTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDelegate.swift; sourceTree = "<group>"; };
 		F3D866702815920F00E574B0 /* FormTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDataSource.swift; sourceTree = "<group>"; };
 		F3D866BD2816A5AE00E574B0 /* InputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
@@ -112,10 +125,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CAF19228550F8500E61B8A /* SkeletonView.framework in Frameworks */,
+				F3CAF18F28550F8100E61B8A /* ViewAnimator.framework in Frameworks */,
+				F3CAF18C28550F7D00E61B8A /* SideMenu.framework in Frameworks */,
 				F3D866F32816A5E200E574B0 /* Domain.framework in Frameworks */,
 				F3D867332816AF5700E574B0 /* Services.framework in Frameworks */,
 				F3A362152832CA9100690696 /* Resources.framework in Frameworks */,
+				F3CAF19528550F8D00E61B8A /* NVActivityIndicatorView.framework in Frameworks */,
+				F3CAF1982855103900E61B8A /* Instructions.framework in Frameworks */,
 				F3D866F72816A5E600E574B0 /* Utility.framework in Frameworks */,
+				F3CAF18428550F7100E61B8A /* SDWebImage.framework in Frameworks */,
 				F5EE2D09584C5FDDE82D4758 /* Pods_Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +261,13 @@
 		F3D866F12816A5E200E574B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3CAF1972855103900E61B8A /* Instructions.framework */,
+				F3CAF19428550F8D00E61B8A /* NVActivityIndicatorView.framework */,
+				F3CAF19128550F8500E61B8A /* SkeletonView.framework */,
+				F3CAF18E28550F8100E61B8A /* ViewAnimator.framework */,
+				F3CAF18B28550F7D00E61B8A /* SideMenu.framework */,
+				F3CAF18728550F7900E61B8A /* Instructions.framework */,
+				F3CAF18328550F7100E61B8A /* SDWebImage.framework */,
 				F3A362142832CA9100690696 /* Resources.framework */,
 				F3D867322816AF5700E574B0 /* Services.framework */,
 				F3D866F62816A5E600E574B0 /* Utility.framework */,
