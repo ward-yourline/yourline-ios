@@ -361,7 +361,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-ra-80h">
                                         <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
-                                        <color key="backgroundColor" name="Light Blue"/>
+                                        <color key="backgroundColor" red="0.36078431372549019" green="0.61176470588235299" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="qdn-4h-bit"/>
                                             <constraint firstAttribute="width" constant="28" id="vs0-k8-jKE"/>
@@ -495,6 +495,11 @@
                     <navigationItem key="navigationItem" id="8xN-hv-gzD"/>
                     <connections>
                         <outlet property="containerView" destination="45A-g0-LvN" id="cCF-Bb-Jg2"/>
+                        <outletCollection property="pageViews" destination="bhC-ra-80h" collectionClass="NSMutableArray" id="U8Q-vK-fuJ"/>
+                        <outletCollection property="pageViews" destination="WSz-kU-SE6" collectionClass="NSMutableArray" id="IQI-I7-nxF"/>
+                        <outletCollection property="pageViews" destination="GPl-8q-gdd" collectionClass="NSMutableArray" id="JbP-b2-uKS"/>
+                        <outletCollection property="pageViews" destination="K71-x2-6UM" collectionClass="NSMutableArray" id="lpI-L3-fv1"/>
+                        <outletCollection property="pageViews" destination="RJO-fN-zmU" collectionClass="NSMutableArray" id="MLh-wc-y9k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cg0-y6-Ied" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -513,7 +518,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InputFieldCell" rowHeight="259" id="x6k-Ad-QsQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InputFieldCell" rowHeight="259" id="x6k-Ad-QsQ">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="259"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x6k-Ad-QsQ" id="dHq-MB-bY9">

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		71A862166A46E5A9F1C813C0 /* Pods_UtilityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1C91F86294C5C39F2C05A1 /* Pods_UtilityTests.framework */; };
 		BC1E0D64D5DC0161C5852584 /* Pods_Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D74B182C400C094D7AE9A1 /* Pods_Utility.framework */; };
+		F320148F285625410032101B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320148E285625410032101B /* UIColor+Extensions.swift */; };
 		F323FEA9285518D1004C4FC9 /* YourLineViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323FEA8285518D1004C4FC9 /* YourLineViews.swift */; };
 		F3A3620A2832C3A200690696 /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A362092832C3A200690696 /* StoryboardNames.swift */; };
 		F3A3620C2832C3A800690696 /* BundleNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3620B2832C3A800690696 /* BundleNames.swift */; };
@@ -43,6 +44,7 @@
 		64C89484617F7FCDBABD456D /* Pods-Utility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utility.release.xcconfig"; path = "Target Support Files/Pods-Utility/Pods-Utility.release.xcconfig"; sourceTree = "<group>"; };
 		D1F674683C0AF3D969FA2251 /* Pods-UtilityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UtilityTests.release.xcconfig"; path = "Target Support Files/Pods-UtilityTests/Pods-UtilityTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE1C91F86294C5C39F2C05A1 /* Pods_UtilityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UtilityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F320148E285625410032101B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F323FEA8285518D1004C4FC9 /* YourLineViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineViews.swift; sourceTree = "<group>"; };
 		F3A362092832C3A200690696 /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
 		F3A3620B2832C3A800690696 /* BundleNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleNames.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D866742816A4E300E574B0 /* UIView+Extensions.swift */,
+				F320148E285625410032101B /* UIColor+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				F3A3620A2832C3A200690696 /* StoryboardNames.swift in Sources */,
 				F3A3620C2832C3A800690696 /* BundleNames.swift in Sources */,
 				F3D8666C2815914300E574B0 /* Routing.swift in Sources */,
+				F320148F285625410032101B /* UIColor+Extensions.swift in Sources */,
 				F3D8664F2815910900E574B0 /* Utility.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
