@@ -12,6 +12,8 @@ class SignUpViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
     
+    private var context: UINavigationController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,14 +21,21 @@ class SignUpViewController: UIViewController {
         buildView()
     }
     
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     func buildView() {
         let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
         let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: "SignUpFieldsViewController")
         
-        addChild(signUpFieldView)
-        signUpFieldView.view.frame = containerView.bounds
-        signUpFieldView.didMove(toParent: self)
-        containerView.addSubview(signUpFieldView.view)
+        context = UINavigationController(rootViewController: signUpFieldView)
+        context?.navigationBar.isHidden = true
+        addChild(context!)
+        context?.view.frame = containerView.bounds
+        context?.didMove(toParent: self)
+        containerView.addSubview(context!.view)
     }
     
     /*

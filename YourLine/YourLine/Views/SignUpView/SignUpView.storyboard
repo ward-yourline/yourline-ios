@@ -442,7 +442,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45A-g0-LvN">
-                                <rect key="frame" x="0.0" y="256" width="414" height="506"/>
+                                <rect key="frame" x="0.0" y="272" width="414" height="490"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYp-o8-OdD">
@@ -468,7 +468,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="BYp-o8-OdD" secondAttribute="trailing" constant="16" id="1Zv-EY-rtU"/>
-                            <constraint firstItem="45A-g0-LvN" firstAttribute="top" secondItem="NyA-ju-zI6" secondAttribute="bottom" id="9eJ-MD-gRQ"/>
+                            <constraint firstItem="45A-g0-LvN" firstAttribute="top" secondItem="NyA-ju-zI6" secondAttribute="bottom" constant="16" id="9eJ-MD-gRQ"/>
+                            <constraint firstItem="NyA-ju-zI6" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kdL-SV-jQ3" secondAttribute="bottom" id="AGY-KP-lps"/>
                             <constraint firstItem="BYp-o8-OdD" firstAttribute="leading" secondItem="3HU-Qd-6Tu" secondAttribute="leading" constant="16" id="AhN-ON-Fy6"/>
                             <constraint firstItem="51D-QS-Fw7" firstAttribute="top" secondItem="3HU-Qd-6Tu" secondAttribute="top" id="BgZ-4I-CJN"/>
                             <constraint firstItem="3HU-Qd-6Tu" firstAttribute="bottom" secondItem="BYp-o8-OdD" secondAttribute="bottom" constant="16" id="ICb-HC-67Q"/>
@@ -481,7 +482,6 @@
                             <constraint firstItem="kdL-SV-jQ3" firstAttribute="top" secondItem="qkD-1w-APa" secondAttribute="bottom" constant="32" id="cQT-wG-QM5"/>
                             <constraint firstItem="NyA-ju-zI6" firstAttribute="top" secondItem="xqA-kd-8oW" secondAttribute="top" id="noP-9d-X7O"/>
                             <constraint firstItem="qkD-1w-APa" firstAttribute="top" secondItem="51D-QS-Fw7" secondAttribute="bottom" constant="32" id="o9f-u3-A6H"/>
-                            <constraint firstItem="45A-g0-LvN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kdL-SV-jQ3" secondAttribute="bottom" id="oFs-f4-fSi"/>
                             <constraint firstItem="51D-QS-Fw7" firstAttribute="trailing" secondItem="3HU-Qd-6Tu" secondAttribute="trailing" id="rP1-1i-YG5"/>
                             <constraint firstItem="3HU-Qd-6Tu" firstAttribute="trailing" secondItem="kdL-SV-jQ3" secondAttribute="trailing" constant="16" id="u9l-aH-H4i"/>
                             <constraint firstItem="3HU-Qd-6Tu" firstAttribute="trailing" secondItem="45A-g0-LvN" secondAttribute="trailing" id="v66-7q-Si9"/>
