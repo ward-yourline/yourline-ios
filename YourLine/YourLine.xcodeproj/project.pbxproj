@@ -22,6 +22,8 @@
 		F31FCFAF285501E400399A35 /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFA5285501E300399A35 /* Utility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F31FCFB12855038D00399A35 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFB02855038D00399A35 /* Presentation.framework */; };
 		F31FCFB22855039400399A35 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F31FCFB02855038D00399A35 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F320148A28561E860032101B /* SignUpFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320148928561E860032101B /* SignUpFieldsViewController.swift */; };
+		F320148C28561EC40032101B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320148B28561EC40032101B /* SignUpViewController.swift */; };
 		F323FECD28551BC3004C4FC9 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323FEC928551BC3004C4FC9 /* SignUpRouter.swift */; };
 		F323FECE28551BC3004C4FC9 /* SignUpViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323FECA28551BC3004C4FC9 /* SignUpViewProtocols.swift */; };
 		F323FECF28551BC3004C4FC9 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */; };
@@ -97,6 +99,8 @@
 		F31FCFA4285501E300399A35 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31FCFA5285501E300399A35 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31FCFB02855038D00399A35 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F320148928561E860032101B /* SignUpFieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFieldsViewController.swift; sourceTree = "<group>"; };
+		F320148B28561EC40032101B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F323FEC928551BC3004C4FC9 /* SignUpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
 		F323FECA28551BC3004C4FC9 /* SignUpViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewProtocols.swift; sourceTree = "<group>"; };
 		F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				F323FECA28551BC3004C4FC9 /* SignUpViewProtocols.swift */,
 				F323FEC928551BC3004C4FC9 /* SignUpRouter.swift */,
 				F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */,
+				F320148B28561EC40032101B /* SignUpViewController.swift */,
+				F320148928561E860032101B /* SignUpFieldsViewController.swift */,
 				F323FECC28551BC3004C4FC9 /* SignUpView.storyboard */,
 			);
 			path = SignUpView;
@@ -542,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F323FECD28551BC3004C4FC9 /* SignUpRouter.swift in Sources */,
+				F320148A28561E860032101B /* SignUpFieldsViewController.swift in Sources */,
 				F3AB763628098A50002AF45D /* Constants.swift in Sources */,
 				F3AB7632280989CF002AF45D /* SignInRouter.swift in Sources */,
 				F323FECF28551BC3004C4FC9 /* SelectUserViewController.swift in Sources */,
@@ -550,6 +557,7 @@
 				F323FECE28551BC3004C4FC9 /* SignUpViewProtocols.swift in Sources */,
 				F37C891428097C4000F148EB /* YourLine.xcdatamodeld in Sources */,
 				F3AB7628280985B2002AF45D /* SignInViewController.swift in Sources */,
+				F320148C28561EC40032101B /* SignUpViewController.swift in Sources */,
 				F3A361912832B6C200690696 /* FormViewRouter.swift in Sources */,
 				F3AB7630280989C8002AF45D /* SignInProtocols.swift in Sources */,
 				F3AB762E280985CE002AF45D /* MainViewRouter.swift in Sources */,
