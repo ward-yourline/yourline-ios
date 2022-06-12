@@ -12,6 +12,7 @@ public enum YourLineViews: String {
     case signInView = "SignInViewController"
     case signUpView = "SelectUserViewController"
     case signUpFieldView = "SignUpFieldsViewController"
+    case emailVerificationView = "EmailVerificationViewController"
     
     public var name: String {
         return rawValue

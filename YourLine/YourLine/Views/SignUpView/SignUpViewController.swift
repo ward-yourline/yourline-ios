@@ -8,10 +8,32 @@
 import UIKit
 import Utility
 
+enum SignUpStepName: Int {
+    case user = 1
+    case business = 2
+    case verification = 3
+    case complete = 4
+    
+    var name: String {
+        switch self {
+        case .user:
+            return "Tell us about yourself"
+        case .business:
+            return "Your Business"
+        case .verification:
+            return  "Verification"
+        case .complete:
+            return "Complete"
+        }
+    }
+}
+
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet var pageViews: [UILabel]!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
     
     private var context: UINavigationController?
     private var page = 1
@@ -41,15 +63,21 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func didTapNextButton(_ sender: Any) {
-        if page == 5 {
-            showEmailVerification()
+        if page > 2 {
+            let view = (context?.viewControllers.last as? EmailVerificationViewController)
+            view?.openCompleteSignUpView()
+            nextButton.setTitle("Continue", for: .normal)
         }
-        
-        let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
-        let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signUpFieldView.name)
-        
-        context?.pushViewController(signUpFieldView, animated: true)
-        
+         else if page > 1 {
+            showEmailVerification()
+            nextButton.setTitle("Verify", for: .normal)
+        } else {
+            
+            let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
+            let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signUpFieldView.name)
+            
+            context?.pushViewController(signUpFieldView, animated: true)
+        }
         updatePage()
     }
     
@@ -63,11 +91,19 @@ class SignUpViewController: UIViewController {
             view.backgroundColor = color
         }
         page += 1
+        
+        if let title = SignUpStepName(rawValue: page)?.name {
+            titleLabel.text = title
+        }
     }
     
     private func showEmailVerification() {
+        let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
+        let emailVerificationView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.emailVerificationView.name)
         
+        context?.pushViewController(emailVerificationView, animated: true)
     }
+    
     /*
     // MARK: - Navigation
 

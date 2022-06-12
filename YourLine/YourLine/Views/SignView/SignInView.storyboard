@@ -134,7 +134,7 @@
                                         <rect key="frame" x="0.0" y="293" width="382" height="24"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M81-5r-otq">
-                                                <rect key="frame" x="0.0" y="0.0" width="167" height="24"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="137" height="24"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjU-Z0-CIZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -147,8 +147,8 @@
                                                         <state key="normal" title=""/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Remember me" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYq-3x-sOP">
-                                                        <rect key="frame" x="32" y="0.0" width="135" height="24"/>
-                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                        <rect key="frame" x="32" y="0.0" width="105" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -231,52 +231,12 @@
                             <constraint firstItem="Lu9-n5-HSQ" firstAttribute="top" secondItem="wNO-XE-NrH" secondAttribute="bottom" constant="32" id="xDn-cw-nXP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="fRQ-A5-DbR" kind="unwind" identifier="unwindToSignIn" unwindAction="unwind:" id="Xn6-Zv-uPR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="32" id="sZR-7y-05L">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IsT-DA-fFx">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a1O-pf-WW3">
-                                    <rect key="frame" x="134.5" y="0.0" width="145" height="45"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGu-jV-RQO">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="45"/>
-                                            <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="32"/>
-                                            <color key="textColor" systemColor="systemCyanColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ko-Ed-uGL">
-                                            <rect key="frame" x="79" y="0.0" width="66" height="45"/>
-                                            <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="32"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </stackView>
-                            </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="a1O-pf-WW3" secondAttribute="bottom" id="DCh-3j-zxJ"/>
-                                <constraint firstItem="a1O-pf-WW3" firstAttribute="centerY" secondItem="IsT-DA-fFx" secondAttribute="centerY" id="M3e-Nb-4wa"/>
-                                <constraint firstItem="a1O-pf-WW3" firstAttribute="centerX" secondItem="IsT-DA-fFx" secondAttribute="centerX" id="bCL-bm-a5d"/>
-                                <constraint firstItem="a1O-pf-WW3" firstAttribute="top" secondItem="IsT-DA-fFx" secondAttribute="top" id="cCA-xO-FiF"/>
-                                <constraint firstItem="a1O-pf-WW3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IsT-DA-fFx" secondAttribute="leading" id="jJn-Ok-mUG"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="a1O-pf-WW3" secondAttribute="trailing" id="uHY-iv-ZaH"/>
-                            </constraints>
-                        </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Setup your business profile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlO-81-fsV">
-                            <rect key="frame" x="0.0" y="77" width="414" height="22.5"/>
-                            <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="16"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="FuD-pl-kco"/>
-                </stackView>
+                <exit id="fRQ-A5-DbR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="122" y="138"/>
         </scene>

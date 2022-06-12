@@ -24,4 +24,8 @@ class SignInViewController: UIViewController, SignInViewing {
     @IBAction func didTapSignUpButton(_ sender: Any) {
         presenter?.signUp()
     }
+    
+    @IBAction func unwind( _ seg: UIStoryboardSegue) {
+        
+    }
 }

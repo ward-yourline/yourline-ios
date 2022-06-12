@@ -20,7 +20,7 @@ class SignInRouter: SignInRouting {
     }
     
     func start() {
-        let signInStoryboard = UIStoryboard.init(name: "SignInView", bundle: Bundle.main)
+        let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
         let signInView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signInView.name)
         
         if let signInView = signInView as? SignInViewing {
