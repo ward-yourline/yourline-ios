@@ -284,7 +284,7 @@
     </scenes>
     <resources>
         <namedColor name="Light Gray">
-            <color red="0.44705882352941173" green="0.42745098039215684" blue="0.42745098039215684" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.44699999690055847" green="0.42699998617172241" blue="0.42699998617172241" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
