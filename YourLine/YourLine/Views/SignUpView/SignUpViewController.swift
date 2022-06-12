@@ -12,7 +12,8 @@ enum SignUpStepName: Int {
     case user = 1
     case business = 2
     case verification = 3
-    case complete = 4
+    case emailAndPassword = 4
+    case complete = 5
     
     var name: String {
         switch self {
@@ -22,6 +23,8 @@ enum SignUpStepName: Int {
             return "Your Business"
         case .verification:
             return  "Verification"
+        case .emailAndPassword:
+            return "Sign in details"
         case .complete:
             return "Complete"
         }
@@ -63,12 +66,15 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func didTapNextButton(_ sender: Any) {
-        if page > 2 {
-            let view = (context?.viewControllers.last as? EmailVerificationViewController)
+        if page > 3 {
+            let view = (context?.viewControllers.last as? AddEmailAndPasswordViewController)
             view?.openCompleteSignUpView()
+            nextButton.setTitle("Finish", for: .normal)
+        } else if page > 2 {
+            let view = (context?.viewControllers.last as? EmailVerificationViewController)
+            view?.openAddEmailAndPassword()
             nextButton.setTitle("Continue", for: .normal)
-        }
-         else if page > 1 {
+        } else if page > 1 {
             showEmailVerification()
             nextButton.setTitle("Verify", for: .normal)
         } else {

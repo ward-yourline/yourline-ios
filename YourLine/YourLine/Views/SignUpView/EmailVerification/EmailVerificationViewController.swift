@@ -17,8 +17,8 @@ class EmailVerificationViewController: UIViewController {
 //        navigationItem.leftBarButtonItem = closeButton
     }
     
-    public func openCompleteSignUpView() {
-        performSegue(withIdentifier: "SignUpSetupCompleteSegue", sender: self)
+    public func openAddEmailAndPassword() {
+        performSegue(withIdentifier: "emailAndPasswordSegue", sender: self)
     }
     
     @objc private func close() {

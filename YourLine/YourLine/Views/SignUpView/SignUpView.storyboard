@@ -357,7 +357,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="kdL-SV-jQ3">
-                                <rect key="frame" x="103" y="186.5" width="208" height="28"/>
+                                <rect key="frame" x="73" y="186.5" width="268" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-ra-80h">
                                         <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
@@ -423,8 +423,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJO-fN-zmU">
-                                        <rect key="frame" x="208" y="0.0" width="28" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJO-fN-zmU">
+                                        <rect key="frame" x="240" y="0.0" width="28" height="28"/>
                                         <color key="backgroundColor" name="Light Blue"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="28" id="5bU-7R-dHv"/>
@@ -653,7 +653,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9h-NV-6Ux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="RyJ-hJ-7Ra" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3007" y="102"/>
+            <point key="canvasLocation" x="3780" y="100"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="hzr-F6-Dan">
@@ -931,13 +931,106 @@
                     </view>
                     <connections>
                         <segue destination="pnX-PS-PCj" kind="unwind" unwindAction="unwind:" id="I31-7o-Unw"/>
-                        <segue destination="irL-Ml-3Cb" kind="show" identifier="SignUpSetupCompleteSegue" id="Zkm-jo-GrS"/>
+                        <segue destination="Fx7-d5-UF4" kind="show" identifier="emailAndPasswordSegue" id="bKo-j8-ph3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXp-hc-caL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="pnX-PS-PCj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2294" y="102"/>
+        </scene>
+        <!--Add Email And Password View Controller-->
+        <scene sceneID="efY-bS-UHF">
+            <objects>
+                <viewController storyboardIdentifier="AddEmailAndPasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fx7-d5-UF4" customClass="AddEmailAndPasswordViewController" customModule="YourLine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pdB-dR-HvU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="7kN-EO-PfZ">
+                                <rect key="frame" x="16" y="76" width="382" height="195"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bYW-vJ-zJ9">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="81.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Email" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvr-BQ-jhy">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rq0-Wl-KfO">
+                                                <rect key="frame" x="0.0" y="33.5" width="382" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="dFB-xj-Piy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="Light Gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BQ2-It-l7v">
+                                        <rect key="frame" x="0.0" y="113.5" width="382" height="81.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Password" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PP-ru-13e">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIZ-BK-n0a">
+                                                <rect key="frame" x="0.0" y="33.5" width="382" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="oh6-2E-caB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="Light Gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9gr-qW-oG2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7kN-EO-PfZ" firstAttribute="top" secondItem="9gr-qW-oG2" secondAttribute="top" constant="32" id="Adq-WW-3fj"/>
+                            <constraint firstItem="9gr-qW-oG2" firstAttribute="trailing" secondItem="7kN-EO-PfZ" secondAttribute="trailing" constant="16" id="GfB-cp-J9n"/>
+                            <constraint firstItem="7kN-EO-PfZ" firstAttribute="leading" secondItem="9gr-qW-oG2" secondAttribute="leading" constant="16" id="HeH-lM-ltc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="W36-hg-uX3"/>
+                    <connections>
+                        <segue destination="ij0-57-0ec" kind="unwind" identifier="unwindToSignIn" unwindAction="unwind:" id="T3Z-Gh-tck"/>
+                        <segue destination="irL-Ml-3Cb" kind="show" identifier="signUpCompleteSegue" id="568-kk-FiH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COL-J1-u9X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ij0-57-0ec" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3029" y="100"/>
         </scene>
     </scenes>
     <resources>

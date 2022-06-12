@@ -30,6 +30,7 @@
 		F323FECF28551BC3004C4FC9 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */; };
 		F323FED028551BC3004C4FC9 /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F323FECC28551BC3004C4FC9 /* SignUpView.storyboard */; };
 		F323FED228552813004C4FC9 /* CustomAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F323FED128552813004C4FC9 /* CustomAssets.xcassets */; };
+		F36014B3285674A80047245B /* AddEmailAndPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36014B2285674A80047245B /* AddEmailAndPasswordViewController.swift */; };
 		F37C890A28097C4000F148EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890928097C4000F148EB /* AppDelegate.swift */; };
 		F37C890E28097C4000F148EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890D28097C4000F148EB /* MainViewController.swift */; };
 		F37C891128097C4000F148EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37C890F28097C4000F148EB /* Main.storyboard */; };
@@ -108,6 +109,7 @@
 		F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		F323FECC28551BC3004C4FC9 /* SignUpView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpView.storyboard; sourceTree = "<group>"; };
 		F323FED128552813004C4FC9 /* CustomAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = CustomAssets.xcassets; path = ../../Resources/Resources/CustomAssets.xcassets; sourceTree = "<group>"; };
+		F36014B2285674A80047245B /* AddEmailAndPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailAndPasswordViewController.swift; sourceTree = "<group>"; };
 		F37C890628097C4000F148EB /* YourLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37C890928097C4000F148EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37C890D28097C4000F148EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				F320149128562EB70032101B /* EmailVerificationViewController.swift */,
+				F36014B2285674A80047245B /* AddEmailAndPasswordViewController.swift */,
 			);
 			path = EmailVerification;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				F3AB7628280985B2002AF45D /* SignInViewController.swift in Sources */,
 				F320149228562EB70032101B /* EmailVerificationViewController.swift in Sources */,
 				F320148C28561EC40032101B /* SignUpViewController.swift in Sources */,
+				F36014B3285674A80047245B /* AddEmailAndPasswordViewController.swift in Sources */,
 				F3A361912832B6C200690696 /* FormViewRouter.swift in Sources */,
 				F3AB7630280989C8002AF45D /* SignInProtocols.swift in Sources */,
 				F3AB762E280985CE002AF45D /* MainViewRouter.swift in Sources */,
