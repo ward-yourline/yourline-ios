@@ -462,6 +462,9 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapNextButton:" destination="mf3-HF-OMb" eventType="touchUpInside" id="S5e-t2-O1F"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3HU-Qd-6Tu"/>

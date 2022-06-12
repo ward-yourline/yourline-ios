@@ -179,6 +179,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F320148D285623660032101B /* FlowViews */ = {
+			isa = PBXGroup;
+			children = (
+				F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */,
+				F320148928561E860032101B /* SignUpFieldsViewController.swift */,
+			);
+			path = FlowViews;
+			sourceTree = "<group>";
+		};
 		F323FEAA28551942004C4FC9 /* FormView */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,10 +201,9 @@
 			children = (
 				F323FECA28551BC3004C4FC9 /* SignUpViewProtocols.swift */,
 				F323FEC928551BC3004C4FC9 /* SignUpRouter.swift */,
-				F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */,
 				F320148B28561EC40032101B /* SignUpViewController.swift */,
-				F320148928561E860032101B /* SignUpFieldsViewController.swift */,
 				F323FECC28551BC3004C4FC9 /* SignUpView.storyboard */,
+				F320148D285623660032101B /* FlowViews */,
 			);
 			path = SignUpView;
 			sourceTree = "<group>";

@@ -38,6 +38,13 @@ class SignUpViewController: UIViewController {
         containerView.addSubview(context!.view)
     }
     
+    @IBAction func didTapNextButton(_ sender: Any) {
+        let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
+        let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: "SignUpFieldsViewController")
+        
+        context?.pushViewController(signUpFieldView, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
