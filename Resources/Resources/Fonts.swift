@@ -13,7 +13,8 @@ public enum Fonts :String, CaseIterable {
     case regular = "Poppins-Regular"
     case medium = "Poppins-Medium"
     case bold = "Poppins-Bold"
-    case semiBolc = "Poppins-SemiBold"
+    case semiBold = "Poppins-SemiBold"
+    case light = "Poppins-Light"
     
     static var installed = false
 }

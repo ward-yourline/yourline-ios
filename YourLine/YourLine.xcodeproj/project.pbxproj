@@ -188,6 +188,13 @@
 			path = FlowViews;
 			sourceTree = "<group>";
 		};
+		F320149028562A300032101B /* EmailVerification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EmailVerification;
+			sourceTree = "<group>";
+		};
 		F323FEAA28551942004C4FC9 /* FormView */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +206,7 @@
 		F323FEC828551BC3004C4FC9 /* SignUpView */ = {
 			isa = PBXGroup;
 			children = (
+				F320149028562A300032101B /* EmailVerification */,
 				F323FECA28551BC3004C4FC9 /* SignUpViewProtocols.swift */,
 				F323FEC928551BC3004C4FC9 /* SignUpRouter.swift */,
 				F320148B28561EC40032101B /* SignUpViewController.swift */,

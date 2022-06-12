@@ -42,7 +42,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func didTapNextButton(_ sender: Any) {
         if page == 5 {
-            return
+            showEmailVerification()
         }
         
         let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
@@ -65,6 +65,9 @@ class SignUpViewController: UIViewController {
         page += 1
     }
     
+    private func showEmailVerification() {
+        
+    }
     /*
     // MARK: - Navigation
 
