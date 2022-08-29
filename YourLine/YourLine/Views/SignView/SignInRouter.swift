@@ -12,15 +12,16 @@ import Utility
 class SignInRouter: SignInRouting {
     
     private weak var context: UIViewController?
-    private var signInContext: UINavigationController?
+    private weak var parentRouter: MainViewRouting?
     private lazy var childRouters = [Routing]()
     
-    required init(context: UIViewController?) {
+    required init(context: UIViewController?, parentRouter: MainViewRouting?) {
+        self.parentRouter = parentRouter
         self.context = context
     }
     
     func start() {
-        let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
+        let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signInView.name, bundle: Bundle.main)
         let signInView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signInView.name)
         
         if let signInView = signInView as? SignInViewing {
@@ -30,17 +31,18 @@ class SignInRouter: SignInRouting {
         
         signInView.title = "Sign In"
         
-        let navigationController = UINavigationController(rootViewController: signInView)
-        navigationController.setNavigationBarHidden(true, animated: false)
-        signInContext = navigationController
-        
-        if let context = context as? MainViewing {
-            context.addChildViews([navigationController])
+        if let context = context as? UINavigationController {
+            context.setNavigationBarHidden(true, animated: false)
+            context.pushViewController(signInView, animated: true)
         }
     }
     
+    func openHome() {
+        parentRouter?.openHomeView()
+    }
+    
     func openSignUp() {
-        let router = SignUpRouter(context: signInContext)
+        let router = SignUpRouter(context: context)
         childRouters.append(router)
         router.start()
 //        let presentationBundle = Bundle(identifier: "com.yourline.presentation")

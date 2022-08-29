@@ -169,10 +169,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZED-9B-pax">
                                 <rect key="frame" x="16" y="718" width="382" height="112"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEK-29-Yjr">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC0-gY-qtG">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="UDd-MQ-rfh"/>
+                                            <constraint firstAttribute="height" constant="48" id="5tE-EE-3Ow"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
                                         <color key="tintColor" systemColor="labelColor"/>
@@ -191,6 +191,9 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapSignInButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lW5-3T-sU9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5T-F6-Zso">
                                         <rect key="frame" x="0.0" y="64" width="382" height="48"/>

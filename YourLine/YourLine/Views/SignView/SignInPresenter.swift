@@ -18,4 +18,9 @@ class SignInPresenter: SignInPresenting {
     func signUp() {
         router?.openSignUp()
     }
+    
+    func signIn() {
+        // Validate user, then open home
+        router?.openHome()
+    }
 }

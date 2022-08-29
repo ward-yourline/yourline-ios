@@ -14,6 +14,7 @@ class MainViewRouter: MainViewRouting {
     
     private var context: UIViewController?
     private weak var window: UIWindow?
+    private let mainNavigationContext = UINavigationController()
     private lazy var childRouters = {
         [Routing]()
     }()
@@ -33,8 +34,16 @@ class MainViewRouter: MainViewRouting {
     func start() {
         let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
         let mainView = storyboard.instantiateViewController(withIdentifier: YourLineViews.mainView.name)
-
-        let router = SignInRouter(context: mainView)
+                
+        guard
+            let newContext = mainView as? MainViewing
+        else {
+            return
+        }
+        
+        newContext.addChildViews([mainNavigationContext])
+        
+        let router = SignInRouter(context: mainNavigationContext, parentRouter: self)
         router.start()
 
         childRouters.append(router)
@@ -47,5 +56,11 @@ class MainViewRouter: MainViewRouting {
     
     private func initialise() {
         Fonts.install()
+    }
+    
+    func openHomeView() {
+        let router = HomeViewRouter(context: mainNavigationContext)
+        router.start()
+        childRouters.append(router)
     }
 }

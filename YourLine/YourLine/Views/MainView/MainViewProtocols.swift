@@ -14,6 +14,8 @@ protocol MainViewRouting: Routing {
     init(window: UIWindow?)
     
     func start()
+    
+    func openHomeView()
 }
 
 protocol MainViewPresenting {

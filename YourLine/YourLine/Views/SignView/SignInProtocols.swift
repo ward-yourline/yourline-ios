@@ -11,11 +11,12 @@ import Utility
 
 protocol SignInRouting: Routing {
     
-    init(context: UIViewController?)
+    init(context: UIViewController?, parentRouter: MainViewRouting?)
     
     func start()
     
     func openSignUp()
+    func openHome()
 }
 
 protocol SignInViewing {
@@ -27,4 +28,5 @@ protocol SignInPresenting {
     init(router: SignInRouting)
     
     func signUp()
+    func signIn()
 }
