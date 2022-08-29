@@ -11,28 +11,27 @@ class SignUpFieldsViewController: UIViewController {
    
     @IBOutlet weak var tableView: UITableView!
     
+    private var viewModel: SignUpFieldsViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateView() {
+        tableView.reloadData()
     }
-    */
 
+    func setViewModel(_ viewModel: SignUpFieldsViewModel) {
+        
+        self.viewModel = viewModel
+    }
 }
 
 extension SignUpFieldsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "InputFieldCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SignUpInputFieldCell", for: indexPath)
         
         return cell
     }
@@ -44,6 +43,6 @@ extension SignUpFieldsViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.numberOfRows
     }
 }

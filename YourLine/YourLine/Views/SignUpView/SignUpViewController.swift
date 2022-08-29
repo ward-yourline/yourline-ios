@@ -54,8 +54,18 @@ class SignUpViewController: UIViewController {
     }
     
     func buildView() {
+        
+        // This needs to be streamlined. This method is creating the context and adding the view which is being rebuilt and added in didTapNextButton.
         let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
-        let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signUpFieldView.name)
+        
+        guard
+            let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signUpFieldView.name) as? SignUpFieldsViewController
+        else {
+            return
+        }
+        
+        let viewModel = SignUpFieldsViewModel(viewType: .theUser, view: signUpFieldView)
+        signUpFieldView.setViewModel(viewModel)
         
         context = UINavigationController(rootViewController: signUpFieldView)
         context?.navigationBar.isHidden = true
@@ -67,22 +77,23 @@ class SignUpViewController: UIViewController {
     
     @IBAction func didTapNextButton(_ sender: Any) {
         if page > 3 {
-            let view = (context?.viewControllers.last as? AddEmailAndPasswordViewController)
-            view?.openCompleteSignUpView()
-            nextButton.setTitle("Finish", for: .normal)
-        } else if page > 2 {
             let view = (context?.viewControllers.last as? EmailVerificationViewController)
-            view?.openAddEmailAndPassword()
+            view?.openCompleteSignUpView()
             nextButton.setTitle("Continue", for: .normal)
         } else if page > 1 {
             showEmailVerification()
             nextButton.setTitle("Verify", for: .normal)
         } else {
-            
+            // This needs to be streamlined. Refer to comment in buildView
             let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
-            let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signUpFieldView.name)
+            if
+                let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signUpFieldView.name) as? SignUpFieldsViewController {
             
-            context?.pushViewController(signUpFieldView, animated: true)
+                let viewModel = SignUpFieldsViewModel(viewType: .theUser, view: signUpFieldView)
+                signUpFieldView.setViewModel(viewModel)
+                
+                context?.pushViewController(signUpFieldView, animated: true)
+            }
         }
         updatePage()
     }

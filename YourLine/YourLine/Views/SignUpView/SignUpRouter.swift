@@ -15,6 +15,7 @@ import Services
 class SignUpRouter: Routing {
     
     private weak var context: UIViewController?
+    private let signUpContext = UINavigationController()
         
     required init(context: UIViewController?) {
         self.context = context

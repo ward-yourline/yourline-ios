@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3A521FD28BCD8F8006A048B /* SignUpField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A521FC28BCD8F8006A048B /* SignUpField.swift */; };
 		F3CAF16728550E4100E61B8A /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF16628550E4100E61B8A /* Utility.framework */; };
 		F3D8668E2816A55400E574B0 /* Domain.docc in Sources */ = {isa = PBXBuildFile; fileRef = F3D8668D2816A55400E574B0 /* Domain.docc */; };
 		F3D866942816A55500E574B0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866892816A55400E574B0 /* Domain.framework */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3A521FC28BCD8F8006A048B /* SignUpField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpField.swift; sourceTree = "<group>"; };
 		F3CAF16628550E4100E61B8A /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D866892816A55400E574B0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8668C2816A55400E574B0 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3A521FB28BCD8ED006A048B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F3A521FC28BCD8F8006A048B /* SignUpField.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		F3CAF16528550E4100E61B8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		F3D8668B2816A55400E574B0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				F3A521FB28BCD8ED006A048B /* SignUp */,
 				F3D866A42816A56F00E574B0 /* Models */,
 				F3D8668C2816A55400E574B0 /* Domain.h */,
 				F3D8668D2816A55400E574B0 /* Domain.docc */,
@@ -235,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A521FD28BCD8F8006A048B /* SignUpField.swift in Sources */,
 				F3D866AC2816A56F00E574B0 /* Rows.swift in Sources */,
 				F3D866B12816A56F00E574B0 /* Application.swift in Sources */,
 				F3D8668E2816A55400E574B0 /* Domain.docc in Sources */,

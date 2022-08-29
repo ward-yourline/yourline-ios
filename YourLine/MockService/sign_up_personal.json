@@ -1,0 +1,20 @@
+{
+  "view_name": "signup_up_personal",
+  "sign_up": [
+    "{name: \"full_name\"",
+    "copy: \"Full name\"",
+    "type: \"string\"}",
+    "{name: \"username\"",
+    "copy: \"Username\"",
+    "type: \"string\"}",
+    "{name: \"password\"",
+    "copy: \"Password\"",
+    "type: \"string\"}",
+    "{name: \"phone_number\"",
+    "copy: \"Phone number\"",
+    "type: \"String\"}",
+    "{name: \"email_address\"",
+    "copy: \"Email address\"",
+    "type: \"string\"}"
+  ]
+}

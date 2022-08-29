@@ -1,0 +1,10 @@
+{
+  "view_name": "signup_up_business",
+  "sign_up": [
+    "business_name",
+    "business_address",
+    "country",
+    "currency",
+    "number_of_employees"
+  ]
+}
