@@ -16,7 +16,7 @@ class SignUpFieldsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        viewModel.viewDidLoad()
     }
     
     func updateView() {
@@ -31,7 +31,13 @@ class SignUpFieldsViewController: UIViewController {
 
 extension SignUpFieldsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SignUpInputFieldCell", for: indexPath)
+        guard
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SignUpInputFieldCell", for: indexPath) as? SignUpInputFieldCell
+        else {
+            return UITableViewCell()
+        }
+        
+        viewModel.setupCell(cell, at: indexPath)
         
         return cell
     }

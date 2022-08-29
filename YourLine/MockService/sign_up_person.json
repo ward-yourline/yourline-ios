@@ -1,0 +1,30 @@
+{
+  "view_name": "signup_personal",
+  "fields": [
+    {
+      "name": "full_name",
+      "copy": "Full name",
+      "type": "string"
+    },
+    {
+      "name": "username",
+      "copy": "Username",
+      "type": "string"
+    },
+    {
+      "name": "password",
+      "copy": "Password",
+      "type": "string"
+    },
+    {
+      "name": "phone_number",
+      "copy": "Phone number",
+      "type": "string"
+    },
+    {
+      "name": "email_address",
+      "copy": "Email address",
+      "type": "string"
+    }
+  ]
+}

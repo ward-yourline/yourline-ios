@@ -40,7 +40,7 @@
 		F37C892E28097C4400F148EB /* YourLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892D28097C4400F148EB /* YourLineUITests.swift */; };
 		F37C893028097C4400F148EB /* YourLineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */; };
 		F3A361912832B6C200690696 /* FormViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A361902832B6C200690696 /* FormViewRouter.swift */; };
-		F3A521F628BCD7E1006A048B /* sign_up_personal.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A521F528BCD7E1006A048B /* sign_up_personal.json */; };
+		F3A521F628BCD7E1006A048B /* sign_up_person.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A521F528BCD7E1006A048B /* sign_up_person.json */; };
 		F3A521F828BCD7FB006A048B /* sign_up_business.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A521F728BCD7FB006A048B /* sign_up_business.json */; };
 		F3A521FA28BCD873006A048B /* SignUpFieldsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A521F928BCD873006A048B /* SignUpFieldsViewModel.swift */; };
 		F3A521FF28BCDD71006A048B /* SignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A521FE28BCDD71006A048B /* SignUpConstants.swift */; };
@@ -127,7 +127,7 @@
 		F37C892D28097C4400F148EB /* YourLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineUITests.swift; sourceTree = "<group>"; };
 		F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F3A361902832B6C200690696 /* FormViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewRouter.swift; sourceTree = "<group>"; };
-		F3A521F528BCD7E1006A048B /* sign_up_personal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sign_up_personal.json; sourceTree = "<group>"; };
+		F3A521F528BCD7E1006A048B /* sign_up_person.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sign_up_person.json; sourceTree = "<group>"; };
 		F3A521F728BCD7FB006A048B /* sign_up_business.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sign_up_business.json; sourceTree = "<group>"; };
 		F3A521F928BCD873006A048B /* SignUpFieldsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFieldsViewModel.swift; sourceTree = "<group>"; };
 		F3A521FE28BCDD71006A048B /* SignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConstants.swift; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 		F3A521F428BCD7C1006A048B /* MockService */ = {
 			isa = PBXGroup;
 			children = (
-				F3A521F528BCD7E1006A048B /* sign_up_personal.json */,
+				F3A521F528BCD7E1006A048B /* sign_up_person.json */,
 				F3A521F728BCD7FB006A048B /* sign_up_business.json */,
 			);
 			path = MockService;
@@ -471,7 +471,7 @@
 				F323FED228552813004C4FC9 /* CustomAssets.xcassets in Resources */,
 				F37C891128097C4000F148EB /* Main.storyboard in Resources */,
 				F3AB762A280985BA002AF45D /* SignInView.storyboard in Resources */,
-				F3A521F628BCD7E1006A048B /* sign_up_personal.json in Resources */,
+				F3A521F628BCD7E1006A048B /* sign_up_person.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 		F323FEA9285518D1004C4FC9 /* YourLineViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323FEA8285518D1004C4FC9 /* YourLineViews.swift */; };
 		F3A3620A2832C3A200690696 /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A362092832C3A200690696 /* StoryboardNames.swift */; };
 		F3A3620C2832C3A800690696 /* BundleNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A3620B2832C3A800690696 /* BundleNames.swift */; };
+		F3A5220428BCE326006A048B /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5220328BCE326006A048B /* JSONHandler.swift */; };
 		F3CAF17A28550F5200E61B8A /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF17628550F5200E61B8A /* IQKeyboardManager.framework */; };
 		F3CAF17C28550F5200E61B8A /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF17728550F5200E61B8A /* KeychainAccess.framework */; };
 		F3CAF17E28550F5200E61B8A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF17828550F5200E61B8A /* SnapKit.framework */; };
@@ -48,6 +49,7 @@
 		F323FEA8285518D1004C4FC9 /* YourLineViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineViews.swift; sourceTree = "<group>"; };
 		F3A362092832C3A200690696 /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
 		F3A3620B2832C3A800690696 /* BundleNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleNames.swift; sourceTree = "<group>"; };
+		F3A5220328BCE326006A048B /* JSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
 		F3CAF17628550F5200E61B8A /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CAF17728550F5200E61B8A /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CAF17828550F5200E61B8A /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 				F3A362092832C3A200690696 /* StoryboardNames.swift */,
 				F3A3620B2832C3A800690696 /* BundleNames.swift */,
 				F3D8672B2816A8DE00E574B0 /* PaddingSize.swift */,
+				F3A5220328BCE326006A048B /* JSONHandler.swift */,
 				F3D866762816A4E900E574B0 /* Extensions */,
 				F3D8666D281591CF00E574B0 /* Protocols */,
 				F3D8664E2815910900E574B0 /* Utility.docc */,
@@ -338,6 +341,7 @@
 				F323FEA9285518D1004C4FC9 /* YourLineViews.swift in Sources */,
 				F3A3620A2832C3A200690696 /* StoryboardNames.swift in Sources */,
 				F3A3620C2832C3A800690696 /* BundleNames.swift in Sources */,
+				F3A5220428BCE326006A048B /* JSONHandler.swift in Sources */,
 				F3D8666C2815914300E574B0 /* Routing.swift in Sources */,
 				F320148F285625410032101B /* UIColor+Extensions.swift in Sources */,
 				F3D8664F2815910900E574B0 /* Utility.docc in Sources */,

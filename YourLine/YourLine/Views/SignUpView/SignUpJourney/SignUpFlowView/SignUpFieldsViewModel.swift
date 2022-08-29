@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Domain
+import Utility
 
 class SignUpFieldsViewModel {
         
@@ -29,11 +30,21 @@ class SignUpFieldsViewModel {
     }
     
     func viewDidLoad() {
-        
+        getSignUpPersonView()
     }
     
     private func getSignUpPersonView() {
-        
+        let jsonFile = "sign_up_person"
+        JSONHandler.parseJSON(with: jsonFile, bundle: .main, for: SignUpFields.self) { [weak self] json, error in
+            if let error = error {
+                print(error)
+            }
+            
+            if let fields = json as? SignUpFields {
+                self?.fields = fields
+                self?.view?.updateView()
+            }
+        }
     }
     
     private func getSignUpBusinessView() {
@@ -47,6 +58,6 @@ class SignUpFieldsViewModel {
             return
         }
         
-        cell.setupCell(with: field.name)
+        cell.setupCell(with: field.copy)
     }
 }
