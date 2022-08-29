@@ -1,10 +1,30 @@
 {
-  "view_name": "signup_up_business",
-  "sign_up": [
-    "business_name",
-    "business_address",
-    "country",
-    "currency",
-    "number_of_employees"
+  "view_name": "sign_up_business",
+  "fields": [
+    {
+      "name": "business_name",
+      "copy": "Business name",
+      "type": "string"
+    },
+    {
+      "name": "business_address",
+      "copy": "Business address",
+      "type": "string"
+    },
+    {
+      "name": "country",
+      "copy": "Country",
+      "type": "string"
+    },
+    {
+      "name": "currency",
+      "copy": "Ccurrency",
+      "type": "string"
+    },
+    {
+      "name": "number_of_employees",
+      "copy": "Number of employees",
+      "type": "int"
+    }
   ]
 }

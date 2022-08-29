@@ -30,17 +30,36 @@ class SignUpFieldsViewModel {
     }
     
     func viewDidLoad() {
-        getSignUpPersonView()
+        
+        switch viewType {
+        case .userType:
+            break
+        case .theUser:
+            getSignUpPersonView()
+
+        case .theBusiness:
+            getSignUpBusinessView()
+        case .emailVerification:
+            break
+        case .finish:
+            break
+        }
+    }
+    
+    fileprivate func loadFields(_ jsonFile: String, with completion: ((Any?, Error?)->())?) {
+        JSONHandler.parseJSON(with: jsonFile, bundle: .main, for: SignUpFields.self) { json, error in
+            completion?(json, error)
+        }
     }
     
     private func getSignUpPersonView() {
         let jsonFile = "sign_up_person"
-        JSONHandler.parseJSON(with: jsonFile, bundle: .main, for: SignUpFields.self) { [weak self] json, error in
+        loadFields(jsonFile) { [weak self]  fields, error in
             if let error = error {
                 print(error)
             }
             
-            if let fields = json as? SignUpFields {
+            if let fields = fields as? SignUpFields {
                 self?.fields = fields
                 self?.view?.updateView()
             }
@@ -48,7 +67,17 @@ class SignUpFieldsViewModel {
     }
     
     private func getSignUpBusinessView() {
-        view?.updateView()
+        let jsonFile = "sign_up_business"
+        loadFields(jsonFile) { [weak self]  fields, error in
+            if let error = error {
+                print(error)
+            }
+            
+            if let fields = fields as? SignUpFields {
+                self?.fields = fields
+                self?.view?.updateView()
+            }
+        }
     }
     
     func setupCell(_ cell: SignUpInputFieldCell, at indexPath: IndexPath) {

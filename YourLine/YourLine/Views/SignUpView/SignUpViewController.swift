@@ -89,7 +89,7 @@ class SignUpViewController: UIViewController {
             if
                 let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signUpFieldView.name) as? SignUpFieldsViewController {
             
-                let viewModel = SignUpFieldsViewModel(viewType: .theUser, view: signUpFieldView)
+                let viewModel = SignUpFieldsViewModel(viewType: .theBusiness, view: signUpFieldView)
                 signUpFieldView.setViewModel(viewModel)
                 
                 context?.pushViewController(signUpFieldView, animated: true)

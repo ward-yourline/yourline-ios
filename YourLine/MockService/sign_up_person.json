@@ -1,5 +1,5 @@
 {
-  "view_name": "signup_personal",
+  "view_name": "sign_up_personal",
   "fields": [
     {
       "name": "full_name",
