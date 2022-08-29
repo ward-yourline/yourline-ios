@@ -141,13 +141,29 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rbH-EK-tJw">
+                                                            <rect key="frame" x="318.5" y="16" width="47.5" height="22.5"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="arrow_up" translatesAutoresizingMaskIntoConstraints="NO" id="Qfz-0i-qpt">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="30" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxB-xS-rX1">
+                                                                    <rect key="frame" x="28" y="0.0" width="19.5" height="22.5"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="rbH-EK-tJw" secondAttribute="trailing" constant="16" id="3bK-eD-koX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="sJB-WX-kdx" secondAttribute="trailing" constant="16" id="7Xe-1v-Cfl"/>
                                                         <constraint firstItem="sJB-WX-kdx" firstAttribute="leading" secondItem="1JF-Ol-ilX" secondAttribute="leading" constant="20" id="DSk-I4-PPG"/>
                                                         <constraint firstItem="sJB-WX-kdx" firstAttribute="top" secondItem="1JF-Ol-ilX" secondAttribute="top" constant="20" id="PYj-9v-Tab"/>
+                                                        <constraint firstItem="rbH-EK-tJw" firstAttribute="top" secondItem="1JF-Ol-ilX" secondAttribute="top" constant="16" id="hGX-7l-vXL"/>
                                                         <constraint firstAttribute="bottom" secondItem="sJB-WX-kdx" secondAttribute="bottom" constant="16" id="igi-44-Tik"/>
-                                                        <constraint firstAttribute="trailing" secondItem="sJB-WX-kdx" secondAttribute="trailing" constant="16" id="zcQ-xg-vyj"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -206,6 +222,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow_up" width="20" height="20"/>
         <image name="menu" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
