@@ -71,24 +71,16 @@ extension HomeViewController: UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return CGFloat.leastNonzeroMagnitude
-    }
-    
-    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        return CGFloat.leastNonzeroMagnitude
-    }
-    
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         guard
             let section = HomeSections(rawValue: section)
         else {
-            return CGFloat.leastNonzeroMagnitude
+            return CGFloat.leastNormalMagnitude
         }
                 
         switch section {
         case .sales, .visits, .alerts:
-            return CGFloat.leastNonzeroMagnitude
+            return CGFloat.leastNormalMagnitude
         case .restock:
             return 16.0
         }
@@ -98,12 +90,12 @@ extension HomeViewController: UITableViewDataSource {
         guard
             let section = HomeSections(rawValue: section)
         else {
-            return CGFloat.leastNonzeroMagnitude
+            return CGFloat.leastNormalMagnitude
         }
         
         switch section {
         case .sales, .visits, .alerts:
-            return CGFloat.leastNonzeroMagnitude
+            return CGFloat.leastNormalMagnitude
         case .restock:
             return 16.0
         }

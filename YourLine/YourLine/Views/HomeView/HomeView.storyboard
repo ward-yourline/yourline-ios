@@ -36,16 +36,16 @@
                                         <state key="normal" image="menu"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WVC-vl-4Xd">
-                                        <rect key="frame" x="56" y="19.5" width="89" height="25.5"/>
+                                        <rect key="frame" x="56" y="21.5" width="78" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEj-5e-uuZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="43.5" height="25.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="21"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                                 <color key="textColor" systemColor="systemCyanColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO4-wH-U17">
-                                                <rect key="frame" x="51.5" y="0.0" width="37.5" height="25.5"/>
+                                                <rect key="frame" x="44" y="0.0" width="34" height="21"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -88,24 +88,24 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BU9-aD-So3">
-                                <rect key="frame" x="16" y="124" width="382" height="70"/>
+                                <rect key="frame" x="16" y="124" width="382" height="60.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Hi Anna," lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpx-Fw-isv">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="28"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Hi AnnaHere’s whats happening at your shop today" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1G-ZL-X9R">
-                                        <rect key="frame" x="0.0" y="50" width="382" height="20"/>
+                                        <rect key="frame" x="0.0" y="44" width="382" height="16.5"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X0k-gi-DNf">
-                                <rect key="frame" x="0.0" y="202" width="414" height="1798"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X0k-gi-DNf">
+                                <rect key="frame" x="0.0" y="192.5" width="414" height="1807.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeAlertTableCell" rowHeight="128" id="gcP-9h-5pT" customClass="HomeAlertTableCell" customModule="YourLine" customModuleProvider="target">
@@ -116,16 +116,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Mw-ZV-WK5">
-                                                    <rect key="frame" x="16" y="0.0" width="382" height="57.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="53"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="umj-oa-zuP">
-                                                            <rect key="frame" x="16" y="16" width="129" height="25.5"/>
+                                                            <rect key="frame" x="16" y="16" width="117.5" height="21"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="arrow_up" translatesAutoresizingMaskIntoConstraints="NO" id="wwH-sX-WY0">
-                                                                    <rect key="frame" x="0.0" y="3" width="20" height="20"/>
+                                                                    <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Total sales " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLg-mT-JT3">
-                                                                    <rect key="frame" x="28" y="0.0" width="101" height="25.5"/>
+                                                                    <rect key="frame" x="28" y="0.0" width="89.5" height="21"/>
                                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -133,7 +133,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="d7A-tn-Yc2">
-                                                            <rect key="frame" x="353.5" y="2" width="12.5" height="54"/>
+                                                            <rect key="frame" x="353.5" y="2" width="12.5" height="49.5"/>
                                                             <color key="tintColor" red="0.36078431370000003" green="0.61176470589999998" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </imageView>
                                                     </subviews>
@@ -180,25 +180,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JF-Ol-ilX">
-                                                    <rect key="frame" x="16" y="0.0" width="382" height="135"/>
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="120"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="sJB-WX-kdx">
-                                                            <rect key="frame" x="20" y="20" width="346" height="99"/>
+                                                            <rect key="frame" x="20" y="20" width="346" height="84"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Total sales " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQd-HW-XzT">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="346" height="25.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="346" height="21"/>
                                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="£2500.86" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cma-9T-Foe">
-                                                                    <rect key="frame" x="0.0" y="32.5" width="346" height="34"/>
+                                                                    <rect key="frame" x="0.0" y="28" width="346" height="28"/>
                                                                     <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="24"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="200 Total sales " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exS-yc-bkR">
-                                                                    <rect key="frame" x="0.0" y="73.5" width="346" height="25.5"/>
+                                                                    <rect key="frame" x="0.0" y="63" width="346" height="21"/>
                                                                     <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -206,13 +206,13 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rbH-EK-tJw">
-                                                            <rect key="frame" x="318.5" y="16" width="47.5" height="22.5"/>
+                                                            <rect key="frame" x="320" y="16" width="46" height="20"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="arrow_up" translatesAutoresizingMaskIntoConstraints="NO" id="Qfz-0i-qpt">
                                                                     <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="30" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxB-xS-rX1">
-                                                                    <rect key="frame" x="28" y="0.0" width="19.5" height="22.5"/>
+                                                                    <rect key="frame" x="28" y="0.0" width="18" height="19"/>
                                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -266,43 +266,43 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQs-09-XXc">
-                                                    <rect key="frame" x="16" y="0.0" width="382" height="117"/>
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="106"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tBF-Zb-vMj">
-                                                            <rect key="frame" x="20" y="20" width="346" height="81"/>
+                                                            <rect key="frame" x="20" y="20" width="346" height="70"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6C-ew-UOy">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="346" height="25.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="346" height="21"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart" translatesAutoresizingMaskIntoConstraints="NO" id="gEO-L1-43q">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="32" height="25.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="32" height="21"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="32" id="Qse-54-rR9"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fWq-kT-PF1">
-                                                                            <rect key="frame" x="32" y="0.0" width="314" height="25.5"/>
+                                                                            <rect key="frame" x="32" y="0.0" width="314" height="21"/>
                                                                             <subviews>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBx-tl-mAy">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="314" height="25.5"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="314" height="21"/>
                                                                                     <subviews>
                                                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZq-i9-MDa">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="213.5" height="25.5"/>
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="186.5" height="21"/>
                                                                                             <subviews>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Re-stock with " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vt4-h0-Biy">
-                                                                                                    <rect key="frame" x="0.0" y="0.0" width="132.5" height="25.5"/>
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="116.5" height="21"/>
                                                                                                     <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                                                                                     <nil key="textColor"/>
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Q0-bS-EhZ">
-                                                                                                    <rect key="frame" x="132.5" y="0.0" width="43.5" height="25.5"/>
+                                                                                                    <rect key="frame" x="116.5" y="0.0" width="36" height="21"/>
                                                                                                     <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                                                                                     <color key="textColor" systemColor="systemCyanColor"/>
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOd-XU-7En">
-                                                                                                    <rect key="frame" x="176" y="0.0" width="37.5" height="25.5"/>
+                                                                                                    <rect key="frame" x="152.5" y="0.0" width="34" height="21"/>
                                                                                                     <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                                                                                     <nil key="textColor"/>
                                                                                                     <nil key="highlightedColor"/>
@@ -322,7 +322,7 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Anna, you can restock your ingredients with Your Line 20% cheaper " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhq-Gt-EE6">
-                                                                    <rect key="frame" x="0.0" y="41.5" width="346" height="39.5"/>
+                                                                    <rect key="frame" x="0.0" y="37" width="346" height="33"/>
                                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
