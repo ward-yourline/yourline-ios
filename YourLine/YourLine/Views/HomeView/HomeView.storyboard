@@ -104,7 +104,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X0k-gi-DNf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="X0k-gi-DNf">
                                 <rect key="frame" x="0.0" y="192.5" width="414" height="1807.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -266,7 +266,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQs-09-XXc">
-                                                    <rect key="frame" x="16" y="0.0" width="382" height="106"/>
+                                                    <rect key="frame" x="16" y="16" width="382" height="106"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tBF-Zb-vMj">
                                                             <rect key="frame" x="20" y="20" width="346" height="70"/>
@@ -351,7 +351,7 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="EQs-09-XXc" firstAttribute="top" secondItem="94c-xK-EP4" secondAttribute="top" id="9r4-ax-uN8"/>
+                                                <constraint firstItem="EQs-09-XXc" firstAttribute="top" secondItem="94c-xK-EP4" secondAttribute="top" constant="16" id="9r4-ax-uN8"/>
                                                 <constraint firstItem="EQs-09-XXc" firstAttribute="leading" secondItem="94c-xK-EP4" secondAttribute="leading" constant="16" id="JKJ-m3-zg4"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EQs-09-XXc" secondAttribute="bottom" constant="16" id="e6D-cN-iRz"/>
                                                 <constraint firstAttribute="trailing" secondItem="EQs-09-XXc" secondAttribute="trailing" constant="16" id="lmw-mY-DXv"/>
