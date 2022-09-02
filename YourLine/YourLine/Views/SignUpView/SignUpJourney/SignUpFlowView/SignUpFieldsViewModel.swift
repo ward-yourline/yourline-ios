@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import Domain
 import Utility
+import Networking
 
 class SignUpFieldsViewModel {
         
@@ -20,6 +21,7 @@ class SignUpFieldsViewModel {
         
         return fields.fields.count
     }
+    private lazy var webservice: MockWebservice = { return MockWebservice() }()
     private let viewType: SignUpView
     private weak var view: SignUpFieldsViewController?
     private var fields: SignUpFields?
@@ -53,8 +55,7 @@ class SignUpFieldsViewModel {
     }
     
     private func getSignUpPersonView() {
-        let jsonFile = "sign_up_person"
-        loadFields(jsonFile) { [weak self]  fields, error in
+        webservice.getSignUpPersonView(completion: { [weak self]  fields, error in
             if let error = error {
                 print(error)
             }
@@ -63,12 +64,11 @@ class SignUpFieldsViewModel {
                 self?.fields = fields
                 self?.view?.updateView()
             }
-        }
+        })
     }
     
     private func getSignUpBusinessView() {
-        let jsonFile = "sign_up_business"
-        loadFields(jsonFile) { [weak self]  fields, error in
+        webservice.getSignUpBusinessView(completion: { [weak self]  fields, error in
             if let error = error {
                 print(error)
             }
@@ -77,7 +77,7 @@ class SignUpFieldsViewModel {
                 self?.fields = fields
                 self?.view?.updateView()
             }
-        }
+        })
     }
     
     func setupCell(_ cell: SignUpInputFieldCell, at indexPath: IndexPath) {

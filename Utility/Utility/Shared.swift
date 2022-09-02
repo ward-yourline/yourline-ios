@@ -9,3 +9,4 @@
 import Foundation
 
 public typealias DataCallbackBlock = (Any)->()
+public typealias NetworkCallbackBlock = (Any?, Error?)->()

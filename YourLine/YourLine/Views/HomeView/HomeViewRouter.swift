@@ -23,13 +23,23 @@ class HomeViewRouter: Routing {
     
     func start() {
         let storyboard = UIStoryboard.init(name: StoryboardNames.homeView.name, bundle: Bundle.main)
-        let view = storyboard.instantiateViewController(withIdentifier: YourLineViews.homeView.name)
+        
+        guard
+            let view = storyboard.instantiateViewController(withIdentifier: YourLineViews.homeView.name) as? HomeViewing
+        else {
+            fatalError()
+        }
+        
+        let interactor = HomeViewInteractor()
+        let presenter = HomeViewPresenter(view: view, interactor: interactor)
+        
+        view.setPresenter(presenter)
         
         guard let context = context as? UINavigationController else {
             return
         }
         
         context.setNavigationBarHidden(true, animated: false)
-        context.pushViewController(view, animated: true)
+        context.pushViewController(view as! UIViewController, animated: true)
     }
 }

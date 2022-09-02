@@ -40,8 +40,6 @@
 		F37C892E28097C4400F148EB /* YourLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892D28097C4400F148EB /* YourLineUITests.swift */; };
 		F37C893028097C4400F148EB /* YourLineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */; };
 		F3A361912832B6C200690696 /* FormViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A361902832B6C200690696 /* FormViewRouter.swift */; };
-		F3A521F628BCD7E1006A048B /* sign_up_person.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A521F528BCD7E1006A048B /* sign_up_person.json */; };
-		F3A521F828BCD7FB006A048B /* sign_up_business.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A521F728BCD7FB006A048B /* sign_up_business.json */; };
 		F3A521FA28BCD873006A048B /* SignUpFieldsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A521F928BCD873006A048B /* SignUpFieldsViewModel.swift */; };
 		F3A521FF28BCDD71006A048B /* SignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A521FE28BCDD71006A048B /* SignUpConstants.swift */; };
 		F3A5220228BCDEFD006A048B /* SignUpInputFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5220128BCDEFD006A048B /* SignUpInputFieldCell.swift */; };
@@ -56,6 +54,11 @@
 		F3AB7630280989C8002AF45D /* SignInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB762F280989C7002AF45D /* SignInProtocols.swift */; };
 		F3AB7632280989CF002AF45D /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB7631280989CF002AF45D /* SignInRouter.swift */; };
 		F3AB763628098A50002AF45D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB763528098A50002AF45D /* Constants.swift */; };
+		F3D1A4EF28C21F77000D4677 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D1A4EE28C21F77000D4677 /* Networking.framework */; };
+		F3D1A4F028C21F77000D4677 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3D1A4EE28C21F77000D4677 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3D1A4F428C22001000D4677 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A4F328C22001000D4677 /* HomeViewPresenter.swift */; };
+		F3D1A4F728C22022000D4677 /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A4F628C22022000D4677 /* HomeViewProtocols.swift */; };
+		F3D1A4F928C220FF000D4677 /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A4F828C220FF000D4677 /* HomeViewInteractor.swift */; };
 		F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866722815984A00E574B0 /* SignInPresenter.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +92,7 @@
 				F31FCFAD285501E400399A35 /* Services.framework in Embed Frameworks */,
 				F31FCFAF285501E400399A35 /* Utility.framework in Embed Frameworks */,
 				F31FCFAB285501E400399A35 /* Resources.framework in Embed Frameworks */,
+				F3D1A4F028C21F77000D4677 /* Networking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,8 +135,6 @@
 		F37C892D28097C4400F148EB /* YourLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineUITests.swift; sourceTree = "<group>"; };
 		F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F3A361902832B6C200690696 /* FormViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewRouter.swift; sourceTree = "<group>"; };
-		F3A521F528BCD7E1006A048B /* sign_up_person.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sign_up_person.json; sourceTree = "<group>"; };
-		F3A521F728BCD7FB006A048B /* sign_up_business.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sign_up_business.json; sourceTree = "<group>"; };
 		F3A521F928BCD873006A048B /* SignUpFieldsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFieldsViewModel.swift; sourceTree = "<group>"; };
 		F3A521FE28BCDD71006A048B /* SignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConstants.swift; sourceTree = "<group>"; };
 		F3A5220128BCDEFD006A048B /* SignUpInputFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInputFieldCell.swift; sourceTree = "<group>"; };
@@ -147,6 +149,10 @@
 		F3AB762F280989C7002AF45D /* SignInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocols.swift; sourceTree = "<group>"; };
 		F3AB7631280989CF002AF45D /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
 		F3AB763528098A50002AF45D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F3D1A4EE28C21F77000D4677 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D1A4F328C22001000D4677 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		F3D1A4F628C22022000D4677 /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
+		F3D1A4F828C220FF000D4677 /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
 		F3D866722815984A00E574B0 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
 		F582069CF3021214A30DF19C /* Pods-YourLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLineTests.debug.xcconfig"; path = "Target Support Files/Pods-YourLineTests/Pods-YourLineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FCBB93033153565916ABA696 /* Pods-YourLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLine.debug.xcconfig"; path = "Target Support Files/Pods-YourLine/Pods-YourLine.debug.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D1A4EF28C21F77000D4677 /* Networking.framework in Frameworks */,
 				F31FCFB12855038D00399A35 /* Presentation.framework in Frameworks */,
 				F31FCFA8285501E400399A35 /* Domain.framework in Frameworks */,
 				F31FCFA6285501E400399A35 /* Data.framework in Frameworks */,
@@ -241,7 +248,6 @@
 		F37C88FD28097C4000F148EB = {
 			isa = PBXGroup;
 			children = (
-				F3A521F428BCD7C1006A048B /* MockService */,
 				F37C890828097C4000F148EB /* YourLine */,
 				F37C892228097C4400F148EB /* YourLineTests */,
 				F37C892C28097C4400F148EB /* YourLineUITests */,
@@ -293,15 +299,6 @@
 			path = YourLineUITests;
 			sourceTree = "<group>";
 		};
-		F3A521F428BCD7C1006A048B /* MockService */ = {
-			isa = PBXGroup;
-			children = (
-				F3A521F528BCD7E1006A048B /* sign_up_person.json */,
-				F3A521F728BCD7FB006A048B /* sign_up_business.json */,
-			);
-			path = MockService;
-			sourceTree = "<group>";
-		};
 		F3A5220028BCDEC1006A048B /* SignUpFlowView */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,9 +312,12 @@
 		F3A5220528BCFE49006A048B /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				F3D1A4F628C22022000D4677 /* HomeViewProtocols.swift */,
 				F3A5220C28BD0156006A048B /* HomeViewRouter.swift */,
+				F3D1A4F328C22001000D4677 /* HomeViewPresenter.swift */,
+				F3D1A4F828C220FF000D4677 /* HomeViewInteractor.swift */,
 				F3A5220628BCFE66006A048B /* HomeViewController.swift */,
-				F3A5220A28BCFFBA006A048B /* HomeSummaryCell.swift */,
+				F3D1A4F528C2200B000D4677 /* Views */,
 				F3A5220828BCFE6E006A048B /* HomeView.storyboard */,
 			);
 			path = HomeView;
@@ -358,9 +358,18 @@
 			path = SignView;
 			sourceTree = "<group>";
 		};
+		F3D1A4F528C2200B000D4677 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3A5220A28BCFFBA006A048B /* HomeSummaryCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F3F499ED281588F000BD71CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3D1A4EE28C21F77000D4677 /* Networking.framework */,
 				F31FCFB02855038D00399A35 /* Presentation.framework */,
 				F31FCFA1285501E300399A35 /* Data.framework */,
 				F31FCFA2285501E300399A35 /* Domain.framework */,
@@ -485,14 +494,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A5220928BCFE6E006A048B /* HomeView.storyboard in Resources */,
-				F3A521F828BCD7FB006A048B /* sign_up_business.json in Resources */,
 				F37C891928097C4400F148EB /* LaunchScreen.storyboard in Resources */,
 				F37C891628097C4400F148EB /* Assets.xcassets in Resources */,
 				F323FED028551BC3004C4FC9 /* SignUpView.storyboard in Resources */,
 				F323FED228552813004C4FC9 /* CustomAssets.xcassets in Resources */,
 				F37C891128097C4000F148EB /* Main.storyboard in Resources */,
 				F3AB762A280985BA002AF45D /* SignInView.storyboard in Resources */,
-				F3A521F628BCD7E1006A048B /* sign_up_person.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,9 +647,12 @@
 				F3AB762E280985CE002AF45D /* MainViewRouter.swift in Sources */,
 				F3A521FF28BCDD71006A048B /* SignUpConstants.swift in Sources */,
 				F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */,
+				F3D1A4F928C220FF000D4677 /* HomeViewInteractor.swift in Sources */,
 				F3AB762C280985C8002AF45D /* MainViewProtocols.swift in Sources */,
 				F3A521FA28BCD873006A048B /* SignUpFieldsViewModel.swift in Sources */,
+				F3D1A4F428C22001000D4677 /* HomeViewPresenter.swift in Sources */,
 				F3A5220228BCDEFD006A048B /* SignUpInputFieldCell.swift in Sources */,
+				F3D1A4F728C22022000D4677 /* HomeViewProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

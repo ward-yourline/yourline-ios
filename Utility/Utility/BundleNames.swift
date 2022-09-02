@@ -13,6 +13,7 @@ public enum BundleNames: String {
     case domain = "com.yourline.domain"
     case utility = "com.yourline.utility"
     case services = "com.yourline.services"
+    case networking = "com.yourline.networking"
 }
 
 let prefix = "com.yourline."

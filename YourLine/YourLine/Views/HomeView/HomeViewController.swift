@@ -7,9 +7,11 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, HomeViewing {
     
     @IBOutlet private weak var tableView: UITableView!
+    
+    private var presenter: HomeViewPresenting!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,18 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         
         tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
+    }
+    
+    func updateView() {
+        tableView.reloadData()
+    }
+    
+    func setPresenter(_ presenter: HomeViewPresenting) {
+        self.presenter = presenter
+    }
+    
+    func showError(with error: String) {
+        // TODO
     }
 }
 

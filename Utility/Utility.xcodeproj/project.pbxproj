@@ -139,14 +139,14 @@
 			isa = PBXGroup;
 			children = (
 				F3D8664D2815910900E574B0 /* Utility.h */,
+				F3D866762816A4E900E574B0 /* Extensions */,
+				F3D8666D281591CF00E574B0 /* Protocols */,
 				F3D8667D2816A51700E574B0 /* Shared.swift */,
 				F323FEA8285518D1004C4FC9 /* YourLineViews.swift */,
 				F3A362092832C3A200690696 /* StoryboardNames.swift */,
 				F3A3620B2832C3A800690696 /* BundleNames.swift */,
 				F3D8672B2816A8DE00E574B0 /* PaddingSize.swift */,
 				F3A5220328BCE326006A048B /* JSONHandler.swift */,
-				F3D866762816A4E900E574B0 /* Extensions */,
-				F3D8666D281591CF00E574B0 /* Protocols */,
 				F3D8664E2815910900E574B0 /* Utility.docc */,
 			);
 			path = Utility;
