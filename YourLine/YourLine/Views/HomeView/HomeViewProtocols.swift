@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import Domain
 import Utility
+import Presentation
 
 protocol HomeViewRouting {
     init(context: UIViewController?)
@@ -22,7 +23,11 @@ protocol HomeViewing: AnyObject {
 }
 
 protocol HomeViewPresenting {
+    var numberOfSections: Int { get }
+    
     func viewDidLoad()
+    func numberOfRows(in section: Int) -> Int
+    func setupCell(_ cell: CellPresentable, at indexPath: IndexPath)
 }
 
 protocol HomeViewInteracting {

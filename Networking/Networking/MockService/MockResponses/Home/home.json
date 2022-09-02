@@ -1,0 +1,31 @@
+{
+   "home":{
+      "sales":{
+         "sales_amount":"2500.86",
+         "total_sales":"200",
+         "points":"30"
+      },
+      "visits":{
+         "total_visits":"50000",
+         "total_sales":"55000",
+         "points":{
+            "count":"250",
+            "direction":"up"
+         }
+      },
+      "alerts":[
+         {
+            "title":"17+ orders to fufill"
+         },
+         {
+            "title":"70+ payments to approve"
+         },
+         {
+            "title":"1 refund to review"
+         },
+         {
+            "title":"2 deliveries expected"
+         }
+      ]
+   }
+}

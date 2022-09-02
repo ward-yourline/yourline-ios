@@ -8,11 +8,20 @@
 import Foundation
 import Utility
 import Domain
+import Presentation
+
+public enum HomeSections: Int, CaseIterable {
+    case sales
+    case visits
+    case alerts
+}
 
 class HomeViewPresenter: HomeViewPresenting {
+    var numberOfSections: Int { HomeSections.allCases.count }
     
     private weak var view: HomeViewing!
     private let interactor: HomeViewInteracting
+    private var homeModel: HomeModel?
 
     init(view: HomeViewing, interactor: HomeViewInteracting) {
         self.view = view
@@ -24,10 +33,10 @@ class HomeViewPresenter: HomeViewPresenting {
     }
     
     private func getHome() {
-        interactor.getHome(with: { [unowned self] home, error in
-            if let home = home {
+        interactor.getHome(with: { [unowned self] homeModel, error in
+            if let homeModel = homeModel as? HomeModel {
                 // TODO
-                
+                self.homeModel = homeModel
                 view?.updateView()
             }
             
@@ -35,5 +44,25 @@ class HomeViewPresenter: HomeViewPresenting {
                 // TODO
             }
         })
+    }
+    
+    func numberOfRows(in section: Int) -> Int {
+        guard let section = HomeSections(rawValue: section) else { return 0 }
+        
+        switch section {
+        case .sales:
+            return 1
+        case .visits:
+            return 1
+        case .alerts:
+            guard let homeModel = homeModel else {
+                return 0
+            }
+            return homeModel.homeModel.alerts.count
+        }
+    }
+    
+    func setupCell(_ cell: CellPresentable, at indexPath: IndexPath) {
+        // TODO
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Presentation
 
 class HomeSummaryCell: UITableViewCell {
 
@@ -34,5 +35,12 @@ class HomeSummaryCell: UITableViewCell {
         containerView.layer.shadowOpacity = 0.3
         containerView.layer.shadowOffset = CGSize(width: 0, height: 4)
         containerView.layer.shadowRadius = 4
+    }
+}
+
+extension HomeSummaryCell: CellPresentable {
+    
+    func setupCell(with viewModel: CellViewModelling?, delegate: CellDelegate?) {
+        // TODO
     }
 }

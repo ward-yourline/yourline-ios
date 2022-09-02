@@ -19,6 +19,7 @@
 		F3D1A50C28C22876000D4677 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D1A50328C22875000D4677 /* Utility.framework */; };
 		F3D1A50F28C22C3E000D4677 /* sign_up_person.json in Resources */ = {isa = PBXBuildFile; fileRef = F3D1A4FA28C222F5000D4677 /* sign_up_person.json */; };
 		F3D1A51028C22C3E000D4677 /* sign_up_business.json in Resources */ = {isa = PBXBuildFile; fileRef = F3D1A4FB28C222F5000D4677 /* sign_up_business.json */; };
+		F3D1A51428C22CD9000D4677 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = F3D1A51328C22CD9000D4677 /* home.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F3D1A50128C22875000D4677 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D1A50228C22875000D4677 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D1A50328C22875000D4677 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D1A51328C22CD9000D4677 /* home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +122,8 @@
 		F3D1A4FD28C222FD000D4677 /* MockResponses */ = {
 			isa = PBXGroup;
 			children = (
-				F3D1A4FA28C222F5000D4677 /* sign_up_person.json */,
-				F3D1A4FB28C222F5000D4677 /* sign_up_business.json */,
+				F3D1A51228C22CC6000D4677 /* Home */,
+				F3D1A51128C22CBB000D4677 /* SignUp */,
 			);
 			path = MockResponses;
 			sourceTree = "<group>";
@@ -136,6 +138,23 @@
 				F3D1A50328C22875000D4677 /* Utility.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3D1A51128C22CBB000D4677 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1A4FA28C222F5000D4677 /* sign_up_person.json */,
+				F3D1A4FB28C222F5000D4677 /* sign_up_business.json */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		F3D1A51228C22CC6000D4677 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1A51328C22CD9000D4677 /* home.json */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D1A50F28C22C3E000D4677 /* sign_up_person.json in Resources */,
+				F3D1A51428C22CD9000D4677 /* home.json in Resources */,
 				F3D1A51028C22C3E000D4677 /* sign_up_business.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

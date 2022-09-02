@@ -29,7 +29,8 @@ extension MockWebservice {
     
     // Home
     public func getHome(with completion: NetworkCallbackBlock?) {
-        
+        let jsonFile = "home"
+        fetch(with: jsonFile, type: HomeModel.self, with: completion)
     }
     
     // Sign up and Sign in requests
