@@ -52,18 +52,12 @@ extension HomeViewController: UITableViewDataSource {
         
         
         switch section {
-        case .sales:
-            // TODO
-            break
-        case .visits:
-            // TODO
+        case .sales, .visits:
+            cell = tableView.dequeueReusableCell(withIdentifier: "HomeSummaryCell", for: indexPath) as? HomeSummaryCell
             break
         case .alerts:
-            // TODO
-            break
+            cell = tableView.dequeueReusableCell(withIdentifier: "HomeAlertTableCell", for: indexPath) as? HomeAlertTableCell
         }
-        
-        cell = tableView.dequeueReusableCell(withIdentifier: "HomeSummaryCell", for: indexPath) as? HomeSummaryCell
         
         if let cell = cell as? CellPresentable {
             presenter.setupCell(cell, at: indexPath)

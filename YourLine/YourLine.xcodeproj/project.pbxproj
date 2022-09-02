@@ -60,6 +60,7 @@
 		F3D1A4F728C22022000D4677 /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A4F628C22022000D4677 /* HomeViewProtocols.swift */; };
 		F3D1A4F928C220FF000D4677 /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A4F828C220FF000D4677 /* HomeViewInteractor.swift */; };
 		F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866722815984A00E574B0 /* SignInPresenter.swift */; };
+		F3FB9FC428C274CB001D8D89 /* HomeAlertTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB9FC328C274CB001D8D89 /* HomeAlertTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,7 @@
 		F3D1A4F628C22022000D4677 /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
 		F3D1A4F828C220FF000D4677 /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
 		F3D866722815984A00E574B0 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		F3FB9FC328C274CB001D8D89 /* HomeAlertTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlertTableCell.swift; sourceTree = "<group>"; };
 		F582069CF3021214A30DF19C /* Pods-YourLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLineTests.debug.xcconfig"; path = "Target Support Files/Pods-YourLineTests/Pods-YourLineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FCBB93033153565916ABA696 /* Pods-YourLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLine.debug.xcconfig"; path = "Target Support Files/Pods-YourLine/Pods-YourLine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -362,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				F3A5220A28BCFFBA006A048B /* HomeSummaryCell.swift */,
+				F3FB9FC328C274CB001D8D89 /* HomeAlertTableCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 				F3A5220B28BCFFBA006A048B /* HomeSummaryCell.swift in Sources */,
 				F3AB7632280989CF002AF45D /* SignInRouter.swift in Sources */,
 				F323FECF28551BC3004C4FC9 /* SelectUserViewController.swift in Sources */,
+				F3FB9FC428C274CB001D8D89 /* HomeAlertTableCell.swift in Sources */,
 				F3A5220728BCFE66006A048B /* HomeViewController.swift in Sources */,
 				F37C890E28097C4000F148EB /* MainViewController.swift in Sources */,
 				F37C890A28097C4000F148EB /* AppDelegate.swift in Sources */,

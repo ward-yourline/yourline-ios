@@ -10,10 +10,17 @@ import Presentation
 import Domain
 
 struct HomeSummaryCellViewModel: CellViewModelling {
-    public let model: HomeModel
     
-    internal init(model: HomeModel) {
-        self.model = model
+    let title: String?
+    let value: String?
+    let summary: String?
+    let points: String?
+    
+    init(title: String?, value: String?, summary: String?, points: String?) {
+        self.title = title
+        self.value = value
+        self.summary = summary
+        self.points = points
     }
 }
 
@@ -56,8 +63,15 @@ class HomeSummaryCell: UITableViewCell {
 extension HomeSummaryCell: CellPresentable {
     
     func setupCell(with viewModel: CellViewModelling?, delegate: CellDelegate?) {
-        guard let viewModel = viewModel as? HomeSummaryCellViewModel else {
+        guard
+            let viewModel = viewModel as? HomeSummaryCellViewModel
+        else {
             return
         }
+        
+        titleLabel.text = viewModel.title
+        valueLabel.text = viewModel.value
+        summaryLabel.text = viewModel.summary
+        pointsLabel.text = viewModel.points
     }
 }

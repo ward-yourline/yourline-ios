@@ -58,7 +58,7 @@ class HomeViewPresenter: HomeViewPresenting {
             guard let homeModel = homeModel else {
                 return 0
             }
-            return homeModel.homeModel.alerts.count
+            return homeModel.homeModel?.alerts?.count ?? 0
         }
     }
     
@@ -73,11 +73,21 @@ class HomeViewPresenter: HomeViewPresenting {
         
         switch section {
         case .sales:
-            cellViewModel = HomeSummaryCellViewModel(model: homeModel)
+            let value = "£\(homeModel.homeModel?.sales?.salesAmount ?? "0")"
+            let summary = "\(homeModel.homeModel?.sales?.totalSales ?? "0") total sales"
+            let points = homeModel.homeModel?.sales?.points
+            cellViewModel = HomeSummaryCellViewModel(title: "Total sales", value: value, summary: summary, points: points?.count)
         case .visits:
-            break
+            let totalVisits = "\(homeModel.homeModel?.visits?.totalVisits ?? "0") total visits"
+            let todaysVisits = "\(homeModel.homeModel?.visits?.todaysVisits ?? "0")"
+            let points = homeModel.homeModel?.visits?.points
+            cellViewModel = HomeSummaryCellViewModel(title: "Today's visits", value: todaysVisits, summary: totalVisits, points: points?.count)
         case .alerts:
-            break
+            if
+                let details = homeModel.homeModel?.alerts?[indexPath.row].details
+            {
+                cellViewModel = HomeAlertCellViewModel(type: .orders, details: details)
+            }
         }
 
         if let cellViewModel = cellViewModel {

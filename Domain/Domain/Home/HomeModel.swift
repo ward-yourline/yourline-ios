@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Home
 public struct HomeModel: Decodable {
-    public let homeModel: HomeData
+    public let homeModel: HomeData?
     
     enum CodingKeys: String, CodingKey {
         case homeModel = "home"
@@ -18,19 +18,20 @@ public struct HomeModel: Decodable {
 
 // MARK: - HomeClass
 public struct HomeData: Decodable {
-    public let sales: HomeSales
-    public let visits: HomeVisits
-    public let alerts: [HomeAlert]
+    public let sales: HomeSales?
+    public let visits: HomeVisits?
+    public let alerts: [HomeAlert]?
 }
 
 // MARK: - Alert
 public struct HomeAlert: Decodable {
-    public let title: String
+    public let details: String?
 }
 
 // MARK: - Sales
 public struct HomeSales: Decodable {
-    public let salesAmount, totalSales, points: String
+    public let salesAmount, totalSales: String?
+    public let points: HomePoints?
 
     enum CodingKeys: String, CodingKey {
         case salesAmount = "sales_amount"
@@ -41,12 +42,12 @@ public struct HomeSales: Decodable {
 
 // MARK: - Visits
 public struct HomeVisits: Decodable {
-    public let totalVisits, totalSales: String
-    public let points: HomePoints
+    public let totalVisits, todaysVisits: String?
+    public let points: HomePoints?
 
     enum CodingKeys: String, CodingKey {
         case totalVisits = "total_visits"
-        case totalSales = "total_sales"
+        case todaysVisits = "todays_visits"
         case points
     }
 }

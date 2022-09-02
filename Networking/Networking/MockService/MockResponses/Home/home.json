@@ -3,28 +3,31 @@
       "sales":{
          "sales_amount":"2500.86",
          "total_sales":"200",
-         "points":"30"
+         "points": {
+            "count":"30",
+            "direction":"up"
+         }
       },
       "visits":{
-         "total_visits":"50000",
-         "total_sales":"55000",
-         "points":{
+         "todays_visits":"50000",
+         "total_visits":"55000",
+         "points": {
             "count":"250",
             "direction":"up"
          }
       },
       "alerts":[
          {
-            "title":"17+ orders to fufill"
+            "details": "17+ orders to fufill"
          },
          {
-            "title":"70+ payments to approve"
+            "details": "70+ payments to approve"
          },
          {
-            "title":"1 refund to review"
+            "details": "1 refund to review"
          },
          {
-            "title":"2 deliveries expected"
+            "details": "2 deliveries expected"
          }
       ]
    }
