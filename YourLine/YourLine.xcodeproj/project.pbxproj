@@ -39,6 +39,7 @@
 		F37C892428097C4400F148EB /* YourLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892328097C4400F148EB /* YourLineTests.swift */; };
 		F37C892E28097C4400F148EB /* YourLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892D28097C4400F148EB /* YourLineUITests.swift */; };
 		F37C893028097C4400F148EB /* YourLineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */; };
+		F39512FB28C27C420026E0F5 /* HomeRestockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39512FA28C27C420026E0F5 /* HomeRestockCell.swift */; };
 		F3A361912832B6C200690696 /* FormViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A361902832B6C200690696 /* FormViewRouter.swift */; };
 		F3A521FA28BCD873006A048B /* SignUpFieldsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A521F928BCD873006A048B /* SignUpFieldsViewModel.swift */; };
 		F3A521FF28BCDD71006A048B /* SignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A521FE28BCDD71006A048B /* SignUpConstants.swift */; };
@@ -135,6 +136,7 @@
 		F37C892928097C4400F148EB /* YourLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YourLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37C892D28097C4400F148EB /* YourLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineUITests.swift; sourceTree = "<group>"; };
 		F37C892F28097C4400F148EB /* YourLineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F39512FA28C27C420026E0F5 /* HomeRestockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRestockCell.swift; sourceTree = "<group>"; };
 		F3A361902832B6C200690696 /* FormViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewRouter.swift; sourceTree = "<group>"; };
 		F3A521F928BCD873006A048B /* SignUpFieldsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFieldsViewModel.swift; sourceTree = "<group>"; };
 		F3A521FE28BCDD71006A048B /* SignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConstants.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 			children = (
 				F3A5220A28BCFFBA006A048B /* HomeSummaryCell.swift */,
 				F3FB9FC328C274CB001D8D89 /* HomeAlertTableCell.swift */,
+				F39512FA28C27C420026E0F5 /* HomeRestockCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -650,6 +653,7 @@
 				F3A5220D28BD0156006A048B /* HomeViewRouter.swift in Sources */,
 				F3AB762E280985CE002AF45D /* MainViewRouter.swift in Sources */,
 				F3A521FF28BCDD71006A048B /* SignUpConstants.swift in Sources */,
+				F39512FB28C27C420026E0F5 /* HomeRestockCell.swift in Sources */,
 				F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */,
 				F3D1A4F928C220FF000D4677 /* HomeViewInteractor.swift in Sources */,
 				F3AB762C280985C8002AF45D /* MainViewProtocols.swift in Sources */,

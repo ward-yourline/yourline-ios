@@ -50,13 +50,14 @@ extension HomeViewController: UITableViewDataSource {
         
         var cell: UITableViewCell? = nil
         
-        
         switch section {
         case .sales, .visits:
             cell = tableView.dequeueReusableCell(withIdentifier: "HomeSummaryCell", for: indexPath) as? HomeSummaryCell
             break
         case .alerts:
             cell = tableView.dequeueReusableCell(withIdentifier: "HomeAlertTableCell", for: indexPath) as? HomeAlertTableCell
+        case .restock:
+            cell = tableView.dequeueReusableCell(withIdentifier: "HomeRestockCell", for: indexPath) as? HomeRestockCell
         }
         
         if let cell = cell as? CellPresentable {
@@ -67,8 +68,45 @@ extension HomeViewController: UITableViewDataSource {
             return UITableViewCell()
         }
 
-        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return CGFloat.leastNonzeroMagnitude
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return CGFloat.leastNonzeroMagnitude
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        guard
+            let section = HomeSections(rawValue: section)
+        else {
+            return CGFloat.leastNonzeroMagnitude
+        }
+                
+        switch section {
+        case .sales, .visits, .alerts:
+            return CGFloat.leastNonzeroMagnitude
+        case .restock:
+            return 16.0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
+        guard
+            let section = HomeSections(rawValue: section)
+        else {
+            return CGFloat.leastNonzeroMagnitude
+        }
+        
+        switch section {
+        case .sales, .visits, .alerts:
+            return CGFloat.leastNonzeroMagnitude
+        case .restock:
+            return 16.0
+        }
     }
 }
 

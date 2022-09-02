@@ -14,6 +14,7 @@ public enum HomeSections: Int, CaseIterable {
     case sales
     case visits
     case alerts
+    case restock
 }
 
 class HomeViewPresenter: HomeViewPresenting {
@@ -35,7 +36,6 @@ class HomeViewPresenter: HomeViewPresenting {
     private func getHome() {
         interactor.getHome(with: { [unowned self] homeModel, error in
             if let homeModel = homeModel as? HomeModel {
-                // TODO
                 self.homeModel = homeModel
                 view?.updateView()
             }
@@ -59,6 +59,8 @@ class HomeViewPresenter: HomeViewPresenting {
                 return 0
             }
             return homeModel.homeModel?.alerts?.count ?? 0
+        case .restock:
+            return 1
         }
     }
     
@@ -88,6 +90,7 @@ class HomeViewPresenter: HomeViewPresenting {
             {
                 cellViewModel = HomeAlertCellViewModel(type: .orders, details: details)
             }
+        case .restock: break
         }
 
         if let cellViewModel = cellViewModel {
