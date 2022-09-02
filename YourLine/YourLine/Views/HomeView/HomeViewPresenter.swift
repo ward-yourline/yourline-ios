@@ -73,7 +73,7 @@ class HomeViewPresenter: HomeViewPresenting {
         
         switch section {
         case .sales:
-            cellViewModel = HomeSummaryCellViewModel(model: homeModel!)
+            cellViewModel = HomeSummaryCellViewModel(model: homeModel)
         case .visits:
             break
         case .alerts:
