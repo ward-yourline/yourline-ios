@@ -16,6 +16,7 @@
 		F3CAF19228550F8500E61B8A /* SkeletonView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF19128550F8500E61B8A /* SkeletonView.framework */; };
 		F3CAF19528550F8D00E61B8A /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF19428550F8D00E61B8A /* NVActivityIndicatorView.framework */; };
 		F3CAF1982855103900E61B8A /* Instructions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF1972855103900E61B8A /* Instructions.framework */; };
+		F3D1A51928C26936000D4677 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A51828C26935000D4677 /* UITextField+Extensions.swift */; };
 		F3D8666F2815920600E574B0 /* FormTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8666E2815920600E574B0 /* FormTableDelegate.swift */; };
 		F3D866712815920F00E574B0 /* FormTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866702815920F00E574B0 /* FormTableDataSource.swift */; };
 		F3D866D82816A5AE00E574B0 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D866BD2816A5AE00E574B0 /* InputCell.xib */; };
@@ -79,6 +80,7 @@
 		F3CAF19128550F8500E61B8A /* SkeletonView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SkeletonView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CAF19428550F8D00E61B8A /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CAF1972855103900E61B8A /* Instructions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Instructions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D1A51828C26935000D4677 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		F3D8666E2815920600E574B0 /* FormTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDelegate.swift; sourceTree = "<group>"; };
 		F3D866702815920F00E574B0 /* FormTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableDataSource.swift; sourceTree = "<group>"; };
 		F3D866BD2816A5AE00E574B0 /* InputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D8672F2816A99900E574B0 /* FormCellPresentable.swift */,
+				F3D1A51828C26935000D4677 /* UITextField+Extensions.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				F3D866DA2816A5AE00E574B0 /* InputCell.swift in Sources */,
 				F3D866E82816A5AE00E574B0 /* BodyTextCell.swift in Sources */,
 				F3D866ED2816A5AE00E574B0 /* TableViewPresenter.swift in Sources */,
+				F3D1A51928C26936000D4677 /* UITextField+Extensions.swift in Sources */,
 				F3D866D92816A5AE00E574B0 /* InputCellViewModel.swift in Sources */,
 				F3F499D8281588D700BD71CE /* Presentation.docc in Sources */,
 				F3D866EC2816A5AE00E574B0 /* TableViewProtocols.swift in Sources */,
