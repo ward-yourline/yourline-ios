@@ -25,9 +25,9 @@ class SingleActionButtonCell: UITableViewCell {
     }
 }
 
-extension SingleActionButtonCell: CellPresentable {
+extension SingleActionButtonCell: FormCellPresentable {
     
-    func setupCell(with viewModel: CellViewModelling?, delegate: CellDelegate?) {
+    func setupCell(with viewModel: FormCellViewModelling?, delegate: CellDelegate?) {
         
         guard let viewModel = viewModel as? SingleActionButtonCellViewModel else { return }
         

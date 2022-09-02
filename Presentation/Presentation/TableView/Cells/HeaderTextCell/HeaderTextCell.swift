@@ -21,8 +21,8 @@ class HeaderTextCell: UITableViewCell {
     }
 }
 
-extension HeaderTextCell: CellPresentable {
-    func setupCell(with viewModel: CellViewModelling?, delegate: CellDelegate?) {
+extension HeaderTextCell: FormCellPresentable {
+    func setupCell(with viewModel: FormCellViewModelling?, delegate: CellDelegate?) {
         
         guard let viewModel = viewModel as? HeaderTextCellViewModel else { return }
         

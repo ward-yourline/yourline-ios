@@ -42,7 +42,7 @@
 		F3D866ED2816A5AE00E574B0 /* TableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866D72816A5AE00E574B0 /* TableViewPresenter.swift */; };
 		F3D866F32816A5E200E574B0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866F22816A5E200E574B0 /* Domain.framework */; };
 		F3D866F72816A5E600E574B0 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866F62816A5E600E574B0 /* Utility.framework */; };
-		F3D867302816A99900E574B0 /* CellPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8672F2816A99900E574B0 /* CellPresentable.swift */; };
+		F3D867302816A99900E574B0 /* FormCellPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8672F2816A99900E574B0 /* FormCellPresentable.swift */; };
 		F3D867332816AF5700E574B0 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D867322816AF5700E574B0 /* Services.framework */; };
 		F3F499D8281588D700BD71CE /* Presentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = F3F499D7281588D700BD71CE /* Presentation.docc */; };
 		F3F499DE281588D800BD71CE /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F499D3281588D700BD71CE /* Presentation.framework */; };
@@ -105,7 +105,7 @@
 		F3D866D72816A5AE00E574B0 /* TableViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewPresenter.swift; sourceTree = "<group>"; };
 		F3D866F22816A5E200E574B0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D866F62816A5E600E574B0 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D8672F2816A99900E574B0 /* CellPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellPresentable.swift; sourceTree = "<group>"; };
+		F3D8672F2816A99900E574B0 /* FormCellPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCellPresentable.swift; sourceTree = "<group>"; };
 		F3D867322816AF5700E574B0 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F499D3281588D700BD71CE /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F499D6281588D700BD71CE /* Presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
@@ -268,7 +268,7 @@
 		F3D867312816A9A100E574B0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F3D8672F2816A99900E574B0 /* CellPresentable.swift */,
+				F3D8672F2816A99900E574B0 /* FormCellPresentable.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -513,7 +513,7 @@
 				F3D866EB2816A5AE00E574B0 /* TableViewController.swift in Sources */,
 				F3D866DF2816A5AE00E574B0 /* SingleActionButtonCell.swift in Sources */,
 				F3D866DD2816A5AE00E574B0 /* SingleActionButtonCellViewModel.swift in Sources */,
-				F3D867302816A99900E574B0 /* CellPresentable.swift in Sources */,
+				F3D867302816A99900E574B0 /* FormCellPresentable.swift in Sources */,
 				F3D866E22816A5AE00E574B0 /* PaddingCellViewModel.swift in Sources */,
 				F3D866E62816A5AE00E574B0 /* BodyTextCellViewModel.swift in Sources */,
 				F3D866DA2816A5AE00E574B0 /* InputCell.swift in Sources */,

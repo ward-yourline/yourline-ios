@@ -78,9 +78,9 @@ extension InputCell: UITextFieldDelegate {
     }
 }
 
-extension InputCell: CellPresentable {
+extension InputCell: FormCellPresentable {
     
-    func setupCell(with viewModel: CellViewModelling?, delegate: CellDelegate?) {
+    func setupCell(with viewModel: FormCellViewModelling?, delegate: CellDelegate?) {
         
         guard let viewModel = viewModel as? InputCellViewModel else { return }
         

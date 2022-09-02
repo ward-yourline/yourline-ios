@@ -7,10 +7,25 @@
 
 import UIKit
 import Presentation
+import Domain
+
+struct HomeSummaryCellViewModel: CellViewModelling {
+    public let model: HomeModel
+    
+    internal init(model: HomeModel) {
+        self.model = model
+    }
+}
 
 class HomeSummaryCell: UITableViewCell {
 
     @IBOutlet private weak var containerView: UIView!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var valueLabel: UILabel!
+    @IBOutlet private weak var summaryLabel: UILabel!
+    
+    @IBOutlet private weak var pointsImageView: UIImageView!
+    @IBOutlet private weak var pointsLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,6 +56,8 @@ class HomeSummaryCell: UITableViewCell {
 extension HomeSummaryCell: CellPresentable {
     
     func setupCell(with viewModel: CellViewModelling?, delegate: CellDelegate?) {
-        // TODO
+        guard let viewModel = viewModel as? HomeSummaryCellViewModel else {
+            return
+        }
     }
 }

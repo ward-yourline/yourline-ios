@@ -2,7 +2,7 @@ import Foundation
 import Domain
 import Utility
 
-public class SingleActionButtonCellViewModel: CellViewModelling {
+public class SingleActionButtonCellViewModel: FormCellViewModelling {
     
     public var payload: Payload?
     public var row: Row?

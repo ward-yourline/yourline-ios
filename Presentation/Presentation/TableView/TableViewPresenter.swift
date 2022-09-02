@@ -71,11 +71,11 @@ public class TableViewPresenter: TableViewPresenting {
      * which should override the content picked up from the json configuraion file
      */
     
-    public func setupCell(_ cell: CellPresentable, row: Row?, indexPath: IndexPath?) {
+    public func setupCell(_ cell: FormCellPresentable, row: Row?, indexPath: IndexPath?) {
         
         guard let cellType = row?.type else { return }
         
-        var viewModel: CellViewModelling? = nil
+        var viewModel: FormCellViewModelling? = nil
         
         let payload = Payload(content: row?.content)
         

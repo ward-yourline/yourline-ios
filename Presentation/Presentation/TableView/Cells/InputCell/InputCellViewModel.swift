@@ -12,7 +12,7 @@ public protocol Inputting {
     func setHighlighted(_ isHighlighted: Bool)
 }
 
-public class InputCellViewModel: CellViewModelling, Inputting {
+public class InputCellViewModel: FormCellViewModelling, Inputting {
     
     public var data: String?
     public var payload: Payload?

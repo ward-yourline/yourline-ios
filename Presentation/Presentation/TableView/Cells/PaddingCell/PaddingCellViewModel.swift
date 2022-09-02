@@ -2,7 +2,7 @@ import Foundation
 import Domain
 import Utility
 
-public class PaddingCellViewModel: CellViewModelling {
+public class PaddingCellViewModel: FormCellViewModelling {
     
     public var payload: Payload?
     public var row: Row?

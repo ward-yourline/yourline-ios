@@ -63,6 +63,25 @@ class HomeViewPresenter: HomeViewPresenting {
     }
     
     func setupCell(_ cell: CellPresentable, at indexPath: IndexPath) {
-        // TODO
+        
+        guard
+            let section = HomeSections(rawValue: indexPath.section),
+            let homeModel = self.homeModel
+        else { return }
+        
+        var cellViewModel: CellViewModelling? = nil
+        
+        switch section {
+        case .sales:
+            cellViewModel = HomeSummaryCellViewModel(model: homeModel!)
+        case .visits:
+            break
+        case .alerts:
+            break
+        }
+
+        if let cellViewModel = cellViewModel {
+            cell.setupCell(with: cellViewModel, delegate: nil)
+        }
     }
 }

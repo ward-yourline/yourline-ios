@@ -29,7 +29,7 @@ public protocol TableViewPresenting: AnyObject {
     
     func viewDidLoad()
     func updateView()
-    func setupCell(_ cell: CellPresentable, row: Row?, indexPath: IndexPath?)
+    func setupCell(_ cell: FormCellPresentable, row: Row?, indexPath: IndexPath?)
     func item(at indexPath: IndexPath) -> Row?
     func submit()
     func numberOfRows(with section: Int) -> Int

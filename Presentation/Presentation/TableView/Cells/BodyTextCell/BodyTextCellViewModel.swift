@@ -2,7 +2,7 @@ import Foundation
 import Utility
 import Domain
 
-public class BodyTextCellViewModel: CellViewModelling {
+public class BodyTextCellViewModel: FormCellViewModelling {
     public var payload: Payload?
     public var row: Row?
     public var isBordered: Bool? {

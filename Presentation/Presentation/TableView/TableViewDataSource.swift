@@ -25,7 +25,7 @@ class TableViewDataSource: NSObject, UITableViewDataSource {
         guard let cellIdentifier = row.type?.getIdentifier() else {
                 fatalError("unable to get identifer. Check JSON for any missing or extra un-handled fields")
         }
-        guard let customCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? CellPresentable else {
+        guard let customCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? FormCellPresentable else {
             fatalError("Could not dequeu cell. Check JSON does not have extra/lacking properties")
         }
         

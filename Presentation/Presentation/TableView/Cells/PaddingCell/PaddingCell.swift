@@ -20,9 +20,9 @@ class PaddingCell: UITableViewCell {
     }
 }
 
-extension PaddingCell: CellPresentable {
+extension PaddingCell: FormCellPresentable {
     
-    func setupCell(with viewModel: CellViewModelling?, delegate: CellDelegate?) {
+    func setupCell(with viewModel: FormCellViewModelling?, delegate: CellDelegate?) {
         
         guard let viewModel = viewModel as? PaddingCellViewModel,
             let height = viewModel.height?.convertToCGFloat()

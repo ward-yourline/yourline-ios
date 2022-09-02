@@ -2,7 +2,7 @@ import UIKit
 import Domain
 import Utility
 
-class HeaderTextCellViewModel: CellViewModelling {
+class HeaderTextCellViewModel: FormCellViewModelling {
     
     var payload: Payload?
     var row: Row?
