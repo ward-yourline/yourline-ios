@@ -10,8 +10,9 @@ import Foundation
 public enum YourLineViews: String {
     case mainView = "MainViewController"
     case signInView = "SignInViewController"
-    case signUpView = "SelectUserViewController"
+    case selectUserView = "SelectUserViewController"
     case signUpFieldView = "SignUpFieldsViewController"
+    case signUpView = "SignUpViewController"
     case emailVerificationView = "EmailVerificationViewController"
     case homeView = "HomeViewController"
     

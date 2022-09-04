@@ -10,7 +10,7 @@ import Utility
 import Domain
 import Presentation
 
-public enum HomeSections: Int, CaseIterable {
+enum HomeSections: Int, CaseIterable {
     case sales
     case visits
     case alerts

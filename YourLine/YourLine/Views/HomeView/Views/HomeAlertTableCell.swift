@@ -16,8 +16,8 @@ enum HomeAlertCellType {
 }
 
 struct HomeAlertCellViewModel: CellViewModelling {
-    public let type: HomeAlertCellType
-    public let details: String
+    let type: HomeAlertCellType
+    let details: String
 }
 
 final class HomeAlertTableCell: UITableViewCell {

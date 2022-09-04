@@ -7,10 +7,10 @@
 
 import UIKit
 
-public class SelectUserViewController: UIViewController {
+class SelectUserViewController: UIViewController {
     @IBOutlet var userTypeViews: [UIView]!
     
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         for view in userTypeViews {
@@ -18,38 +18,31 @@ public class SelectUserViewController: UIViewController {
         }
     }
     
-    public override func viewWillAppear(_ animated: Bool) {
+    private var router: SignUpRouter?
+    
+    func setRouter(_ router: SignUpRouter) {
+        self.router = router
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
-    public override func viewWillDisappear(_ animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     @IBAction func didTapBusinessButton(_ sender: Any) {
+        router?.openSignUp(with: .business)
     }
     
     @IBAction func didTapRegularButton(_ sender: Any) {
+        router?.openSignUp(with: .customer)
     }
     
     @IBAction func didTapStudentButton(_ sender: Any) {
-    }
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard
-            let accountType = SignUpAccountTypeSegue(rawValue: segue.identifier ?? ""),
-            let destinationViewController = segue.destination as? SignUpViewController
-        else {
-            return
-        }
-        
-        destinationViewController.setup(with: accountType)
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        router?.openSignUp(with: .student)
     }
 }

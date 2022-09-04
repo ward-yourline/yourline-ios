@@ -22,18 +22,18 @@ class SignUpFieldsViewModel {
         return fields.fields.count
     }
     private lazy var webservice: MockWebservice = { return MockWebservice() }()
-    private let viewType: SignUpView
+    private let state: SignUpView
     private weak var view: SignUpFieldsViewController?
     private var fields: SignUpFields?
     
     init(viewType: SignUpView, view: SignUpFieldsViewController?) {
-        self.viewType = viewType
+        self.state = viewType
         self.view = view
     }
     
     func viewDidLoad() {
         
-        switch viewType {
+        switch state {
         case .userType:
             break
         case .theUser:

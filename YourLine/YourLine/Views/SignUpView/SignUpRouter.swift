@@ -22,13 +22,53 @@ class SignUpRouter: Routing {
     }
     
     func start() {
-        let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
-        let signInView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signUpView.name)
-        
         guard let context = context as? UINavigationController else {
             return
         }
-
-        context.pushViewController(signInView, animated: true)
+        
+        let storyboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
+        guard
+            let view = storyboard.instantiateViewController(withIdentifier: YourLineViews.selectUserView.name) as? SelectUserViewController
+        else { return }
+        
+        view.setRouter(self)
+                
+        context.pushViewController(view, animated: true)
+    }
+    
+    func openSignUp(with type: SignUpAccountType) {
+        guard let context = context as? UINavigationController else {
+            return
+        }
+        
+        let storyboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
+        let view = storyboard.instantiateViewController(withIdentifier: YourLineViews.signUpView.name) as! SignUpViewController
+        
+        view.setup(with: type, router: self)
+        
+        context.pushViewController(view, animated: true)
+    }
+    
+    func showEmailVerification(in context: UINavigationController?) {
+        
+        let storyboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
+        let view = storyboard.instantiateViewController(withIdentifier: YourLineViews.emailVerificationView.name)
+        
+        context?.pushViewController(view, animated: true)
+    }
+    
+    func openSighUpFields(with state: SignUpView, and context: UINavigationController?) {
+        let storyboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
+        
+        guard
+            let view = storyboard.instantiateViewController(withIdentifier: YourLineViews.signUpFieldView.name) as? SignUpFieldsViewController
+        else {
+            fatalError()
+        }
+        
+        let viewModel = SignUpFieldsViewModel(viewType: state, view: view)
+        view.setViewModel(viewModel)
+        
+        context?.pushViewController(view, animated: true)
     }
 }

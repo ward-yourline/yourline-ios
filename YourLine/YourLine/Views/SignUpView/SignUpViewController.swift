@@ -12,8 +12,7 @@ enum SignUpStepName: Int {
     case user = 1
     case business = 2
     case verification = 3
-    case emailAndPassword = 4
-    case complete = 5
+    case complete = 4
     
     var name: String {
         switch self {
@@ -23,8 +22,6 @@ enum SignUpStepName: Int {
             return "Your Business"
         case .verification:
             return  "Verification"
-        case .emailAndPassword:
-            return "Sign in details"
         case .complete:
             return "Complete"
         }
@@ -40,89 +37,74 @@ class SignUpViewController: UIViewController {
     
     private var context: UINavigationController?
     private var page = 1
-    private var signUpType: SignUpAccountTypeSegue = .business
+    private var signUpType: SignUpAccountType = .business
+    private var router: SignUpRouter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        buildView()
+        initialSetup()
     }
     
-    public override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    public func setup(with signUpType: SignUpAccountTypeSegue) {
+    func setup(with signUpType: SignUpAccountType, router: SignUpRouter) {
         self.signUpType = signUpType
+        self.router = router
     }
     
-    func buildView() {
-        
-        // This needs to be streamlined. This method is creating the context and adding the view which is being rebuilt and added in didTapNextButton.
-        let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
-        
-        guard
-            let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signUpFieldView.name) as? SignUpFieldsViewController
-        else {
-            return
-        }
-        
-        let viewModel = SignUpFieldsViewModel(viewType: .theUser, view: signUpFieldView)
-        signUpFieldView.setViewModel(viewModel)
-        
-        context = UINavigationController(rootViewController: signUpFieldView)
+    func initialSetup() {
+        context = UINavigationController()
         context?.navigationBar.isHidden = true
+        
         addChild(context!)
         context?.view.frame = containerView.bounds
         context?.didMove(toParent: self)
         containerView.addSubview(context!.view)
+        
+        router?.openSighUpFields(with: .theUser, and: context)
     }
     
     @IBAction func didTapNextButton(_ sender: Any) {
-        if page > 3 {
+        
+        page += 1
+        guard
+            let step = SignUpStepName(rawValue: page)
+        else {
+            return
+        }
+        
+        switch step {
+        case .user:
+            break
+        case .business:
+            router?.openSighUpFields(with: .theBusiness, and: context)
+        case .verification:
+            router?.showEmailVerification(in: context)
+            nextButton.setTitle("Verify", for: .normal)
+        case .complete:
             let view = (context?.viewControllers.last as? EmailVerificationViewController)
             view?.openCompleteSignUpView()
-            nextButton.setTitle("Continue", for: .normal)
-        } else if page > 1 {
-            showEmailVerification()
-            nextButton.setTitle("Verify", for: .normal)
-        } else {
-            // This needs to be streamlined. Refer to comment in buildView
-            let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
-            if
-                let signUpFieldView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signUpFieldView.name) as? SignUpFieldsViewController {
-            
-                let viewModel = SignUpFieldsViewModel(viewType: .theBusiness, view: signUpFieldView)
-                signUpFieldView.setViewModel(viewModel)
-                
-                context?.pushViewController(signUpFieldView, animated: true)
-            }
+            nextButton.setTitle("Finish", for: .normal)
         }
-        updatePage()
+        
+        updatePage(with: page - 1)
     }
     
-    private func updatePage() {
-        let darkBlueHex = "#89BAC9"
-        let lightBlueHex = "#5C9CAF"
+    private func updatePage(with page: Int) {
+        let lightBlueHex = "#89BAC9"
+        let darkBlueHex = "#5C9CAF"
         
-        for i in 0...4 {
-            let color = page < i ? UIColor(hexString: darkBlueHex) : UIColor(hexString: lightBlueHex)
-            let view = pageViews[i]
-            view.backgroundColor = color
+        if let step = SignUpStepName(rawValue: page) {
+            let view = pageViews[step.rawValue]
+            view.backgroundColor = UIColor(hexString: darkBlueHex)
         }
-        page += 1
-        
         if let title = SignUpStepName(rawValue: page)?.name {
             titleLabel.text = title
         }
-    }
-    
-    private func showEmailVerification() {
-        let signInStoryboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
-        let emailVerificationView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.emailVerificationView.name)
-        
-        context?.pushViewController(emailVerificationView, animated: true)
     }
 }

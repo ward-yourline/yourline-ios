@@ -7,10 +7,10 @@
 
 import Foundation
 
-enum SignUpAccountTypeSegue: String {
-    case business = "business_segue"
-    case student = "student_segue"
-    case customer = "customer_segue"
+enum SignUpAccountType: String {
+    case business = "business"
+    case student = "student"
+    case customer = "customer"
 }
 
 enum SignUpView: Int, CaseIterable {

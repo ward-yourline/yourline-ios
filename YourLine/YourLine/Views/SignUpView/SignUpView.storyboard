@@ -101,7 +101,6 @@
                                         <buttonConfiguration key="configuration" style="plain" title=""/>
                                         <connections>
                                             <action selector="didTapBusinessButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="V18-vO-I0n"/>
-                                            <segue destination="mf3-HF-OMb" kind="show" identifier="business_segue" id="lFh-7Q-SDm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -172,7 +171,6 @@
                                         <buttonConfiguration key="configuration" style="plain" title=""/>
                                         <connections>
                                             <action selector="didTapRegularButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qBS-8c-oBU"/>
-                                            <segue destination="mf3-HF-OMb" kind="show" identifier="custone_segue" id="xwY-GO-Irx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -243,7 +241,6 @@
                                         <buttonConfiguration key="configuration" style="plain" title=""/>
                                         <connections>
                                             <action selector="didTapStudentButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qsF-z8-fn9"/>
-                                            <segue destination="mf3-HF-OMb" kind="show" identifier="student_segue" id="MXK-FO-aOg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -311,7 +308,7 @@
             <objects>
                 <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mf3-HF-OMb" customClass="SignUpViewController" customModule="YourLine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xqA-kd-8oW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NyA-ju-zI6">
@@ -359,7 +356,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="kdL-SV-jQ3">
-                                <rect key="frame" x="73" y="186.5" width="268" height="28"/>
+                                <rect key="frame" x="103" y="186.5" width="208" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-ra-80h">
                                         <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
@@ -425,30 +422,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJO-fN-zmU">
-                                        <rect key="frame" x="240" y="0.0" width="28" height="28"/>
-                                        <color key="backgroundColor" name="Light Blue"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="28" id="5bU-7R-dHv"/>
-                                            <constraint firstAttribute="height" constant="28" id="qLv-y0-zVQ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="14"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45A-g0-LvN">
-                                <rect key="frame" x="0.0" y="272" width="414" height="490"/>
+                                <rect key="frame" x="0.0" y="272" width="414" height="510"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYp-o8-OdD">
-                                <rect key="frame" x="16" y="778" width="382" height="48"/>
+                                <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <color key="backgroundColor" name="Light Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="VC5-Ba-njp"/>
@@ -504,7 +485,6 @@
                         <outletCollection property="pageViews" destination="WSz-kU-SE6" collectionClass="NSMutableArray" id="IQI-I7-nxF"/>
                         <outletCollection property="pageViews" destination="GPl-8q-gdd" collectionClass="NSMutableArray" id="JbP-b2-uKS"/>
                         <outletCollection property="pageViews" destination="K71-x2-6UM" collectionClass="NSMutableArray" id="lpI-L3-fv1"/>
-                        <outletCollection property="pageViews" destination="RJO-fN-zmU" collectionClass="NSMutableArray" id="MLh-wc-y9k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cg0-y6-Ied" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -722,9 +702,6 @@
             <point key="canvasLocation" x="2294" y="102"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="MXK-FO-aOg"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="business_user" width="85" height="80"/>
         <image name="envelope" width="82" height="82"/>
