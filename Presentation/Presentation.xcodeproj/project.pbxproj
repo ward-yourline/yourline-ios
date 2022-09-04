@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		337F80CBADB2D52636940D35 /* Pods_PresentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8822F8117B16B13AEB3B4E /* Pods_PresentationTests.framework */; };
+		F38E611B28C49A0700D28BCD /* ImageTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38E611928C49A0700D28BCD /* ImageTitleCell.xib */; };
+		F38E611C28C49A0700D28BCD /* ImageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E611A28C49A0700D28BCD /* ImageTitleCell.swift */; };
 		F3A361962832BCAA00690696 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A361952832BCAA00690696 /* TableView.storyboard */; };
 		F3A362152832CA9100690696 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A362142832CA9100690696 /* Resources.framework */; };
 		F3CAF18428550F7100E61B8A /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF18328550F7100E61B8A /* SDWebImage.framework */; };
@@ -71,6 +73,8 @@
 		86303D071A1EEF945C357AF7 /* Pods-Presentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.release.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.release.xcconfig"; sourceTree = "<group>"; };
 		9E8822F8117B16B13AEB3B4E /* Pods_PresentationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresentationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43AD043FF747B9CCAF1033F /* Pods-Presentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.debug.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.debug.xcconfig"; sourceTree = "<group>"; };
+		F38E611928C49A0700D28BCD /* ImageTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTitleCell.xib; sourceTree = "<group>"; };
+		F38E611A28C49A0700D28BCD /* ImageTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleCell.swift; sourceTree = "<group>"; };
 		F3A361952832BCAA00690696 /* TableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
 		F3A362142832CA9100690696 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CAF18328550F7100E61B8A /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +163,31 @@
 			);
 			name = Pods;
 			path = ../YourLine/Pods;
+			sourceTree = "<group>";
+		};
+		F38E611628C499F000D28BCD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1A51828C26935000D4677 /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F38E611728C499F600D28BCD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8672F2816A99900E574B0 /* FormCellPresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F38E611828C499FE00D28BCD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F38E611A28C49A0700D28BCD /* ImageTitleCell.swift */,
+				F38E611928C49A0700D28BCD /* ImageTitleCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F3D866BA2816A5AE00E574B0 /* TableView */ = {
@@ -270,8 +299,9 @@
 		F3D867312816A9A100E574B0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F3D8672F2816A99900E574B0 /* FormCellPresentable.swift */,
-				F3D1A51828C26935000D4677 /* UITextField+Extensions.swift */,
+				F38E611828C499FE00D28BCD /* Cells */,
+				F38E611728C499F600D28BCD /* Protocols */,
+				F38E611628C499F000D28BCD /* Extensions */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -429,6 +459,7 @@
 				F3D866E42816A5AE00E574B0 /* HeaderTextCell.xib in Resources */,
 				F3D866E72816A5AE00E574B0 /* BodyTextCell.xib in Resources */,
 				F3D866E12816A5AE00E574B0 /* PaddingCell.xib in Resources */,
+				F38E611B28C49A0700D28BCD /* ImageTitleCell.xib in Resources */,
 				F3D866DE2816A5AE00E574B0 /* SingleActionButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +559,7 @@
 				F3D866EC2816A5AE00E574B0 /* TableViewProtocols.swift in Sources */,
 				F3D866E32816A5AE00E574B0 /* HeaderTextCellHeaderTextCellViewModel.swift in Sources */,
 				F3D866E02816A5AE00E574B0 /* PaddingCell.swift in Sources */,
+				F38E611C28C49A0700D28BCD /* ImageTitleCell.swift in Sources */,
 				F3D8666F2815920600E574B0 /* FormTableDelegate.swift in Sources */,
 				F3D866DB2816A5AE00E574B0 /* SeparatorCell.swift in Sources */,
 				F3D866E52816A5AE00E574B0 /* HeaderTextCell.swift in Sources */,

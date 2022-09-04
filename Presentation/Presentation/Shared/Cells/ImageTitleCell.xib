@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="KGk-i7-Jjw" customClass="ImageTitleCell" customModule="Presentation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0W-IV-mRk">
+                        <rect key="frame" x="16" y="0.0" width="288" height="103"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1pU-jR-Byo">
+                                <rect key="frame" x="16" y="16" width="129" height="71"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="arrow_up" translatesAutoresizingMaskIntoConstraints="NO" id="VN1-mp-4pV">
+                                        <rect key="frame" x="0.0" y="25.5" width="20" height="20"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Total sales " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkI-K4-gTc">
+                                        <rect key="frame" x="28" y="23" width="101" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SIt-dl-zHS">
+                                <rect key="frame" x="259.5" y="2" width="12.5" height="99.5"/>
+                                <color key="tintColor" red="0.36078431370000003" green="0.61176470589999998" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1pU-jR-Byo" firstAttribute="top" secondItem="A0W-IV-mRk" secondAttribute="top" constant="16" id="K0K-ZZ-4iY"/>
+                            <constraint firstItem="SIt-dl-zHS" firstAttribute="top" secondItem="A0W-IV-mRk" secondAttribute="top" id="M91-nM-gGZ"/>
+                            <constraint firstItem="1pU-jR-Byo" firstAttribute="leading" secondItem="A0W-IV-mRk" secondAttribute="leading" constant="16" id="MXR-nH-d1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="SIt-dl-zHS" secondAttribute="trailing" constant="16" id="ShK-0f-VCX"/>
+                            <constraint firstAttribute="bottom" secondItem="1pU-jR-Byo" secondAttribute="bottom" constant="16" id="e6D-0m-bcN"/>
+                            <constraint firstAttribute="bottom" secondItem="SIt-dl-zHS" secondAttribute="bottom" id="nCO-rI-ggs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.36078431370000003" green="0.61176470589999998" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A0W-IV-mRk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0nb-c6-Yu9"/>
+                    <constraint firstItem="A0W-IV-mRk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0pS-81-Ps9"/>
+                    <constraint firstAttribute="bottom" secondItem="A0W-IV-mRk" secondAttribute="bottom" constant="16" id="9XT-tH-RzJ"/>
+                    <constraint firstAttribute="trailing" secondItem="A0W-IV-mRk" secondAttribute="trailing" constant="16" id="quz-lp-2VY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="A0W-IV-mRk" id="608-ED-G3d"/>
+                <outlet property="iconImageView" destination="VN1-mp-4pV" id="QBU-iW-jGl"/>
+                <outlet property="informationLabel" destination="tkI-K4-gTc" id="7W1-Lw-un2"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="43.861607142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_up" width="20" height="20"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
