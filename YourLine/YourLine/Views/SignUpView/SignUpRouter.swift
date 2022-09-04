@@ -70,7 +70,7 @@ class SignUpRouter: Routing {
         let viewModel = SignUpFieldsViewModel(viewType: state, view: view)
         view.setViewModel(viewModel)
         
-        context?.pushViewController(view, animated: true)
+        context?.pushViewController(view, animated: false)
     }
     
     func signIn() {

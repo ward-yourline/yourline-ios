@@ -38,7 +38,6 @@ class SignUpFieldsViewModel {
             break
         case .theUser:
             getSignUpPersonView()
-
         case .theBusiness:
             getSignUpBusinessView()
         case .emailVerification:
