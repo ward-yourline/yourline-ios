@@ -16,9 +16,11 @@ class SignUpRouter: Routing {
     
     private weak var context: UIViewController?
     private let signUpContext = UINavigationController()
+    private weak var parentRouter: MainViewRouting?
         
-    required init(context: UIViewController?) {
+    required init(context: UIViewController?, parentRouter: MainViewRouting?) {
         self.context = context
+        self.parentRouter = parentRouter
     }
     
     func start() {
@@ -50,7 +52,6 @@ class SignUpRouter: Routing {
     }
     
     func showEmailVerification(in context: UINavigationController?) {
-        
         let storyboard = UIStoryboard.init(name: StoryboardNames.signUpView.name, bundle: Bundle.main)
         let view = storyboard.instantiateViewController(withIdentifier: YourLineViews.emailVerificationView.name)
         
@@ -70,5 +71,9 @@ class SignUpRouter: Routing {
         view.setViewModel(viewModel)
         
         context?.pushViewController(view, animated: true)
+    }
+    
+    func signIn() {
+        parentRouter?.openHomeView(insert: true)
     }
 }

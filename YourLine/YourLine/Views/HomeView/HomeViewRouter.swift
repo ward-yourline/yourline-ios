@@ -21,7 +21,7 @@ class HomeViewRouter: Routing {
         self.context = context
     }
     
-    func start() {
+    func start(insert: Bool = false) {
         let storyboard = UIStoryboard.init(name: StoryboardNames.homeView.name, bundle: Bundle.main)
         
         guard
@@ -35,11 +35,19 @@ class HomeViewRouter: Routing {
         
         view.setPresenter(presenter)
         
-        guard let context = context as? UINavigationController else {
+        guard
+            let context = context as? UINavigationController,
+            let firstView = context.viewControllers.first,
+            let view = view as? UIViewController
+        else {
             return
         }
-        
+                
         context.setNavigationBarHidden(true, animated: false)
-        context.pushViewController(view as! UIViewController, animated: true)
+        if insert {
+            context.setViewControllers([firstView, view], animated: true)
+        } else {
+            context.pushViewController(view, animated: true)
+        }
     }
 }

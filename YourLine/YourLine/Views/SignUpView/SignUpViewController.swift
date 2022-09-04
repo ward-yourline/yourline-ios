@@ -8,26 +8,6 @@
 import UIKit
 import Utility
 
-enum SignUpStepName: Int {
-    case user = 1
-    case business = 2
-    case verification = 3
-    case complete = 4
-    
-    var name: String {
-        switch self {
-        case .user:
-            return "Tell us about yourself"
-        case .business:
-            return "Your Business"
-        case .verification:
-            return  "Verification"
-        case .complete:
-            return "Complete"
-        }
-    }
-}
-
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
@@ -71,6 +51,10 @@ class SignUpViewController: UIViewController {
     
     @IBAction func didTapNextButton(_ sender: Any) {
         
+        if page >= SignUpStepName.allCases.count {
+            router?.signIn()
+            return
+        }
         page += 1
         guard
             let step = SignUpStepName(rawValue: page)
@@ -99,6 +83,7 @@ class SignUpViewController: UIViewController {
         let lightBlueHex = "#89BAC9"
         let darkBlueHex = "#5C9CAF"
         
+        if page >= pageViews.count { return }
         if let step = SignUpStepName(rawValue: page) {
             let view = pageViews[step.rawValue]
             view.backgroundColor = UIColor(hexString: darkBlueHex)

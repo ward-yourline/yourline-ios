@@ -38,18 +38,12 @@ class SignInRouter: SignInRouting {
     }
     
     func openHome() {
-        parentRouter?.openHomeView()
+        parentRouter?.openHomeView(insert: false)
     }
     
     func openSignUp() {
-        let router = SignUpRouter(context: context)
+        let router = SignUpRouter(context: context, parentRouter: parentRouter)
         childRouters.append(router)
         router.start()
-//        let presentationBundle = Bundle(identifier: "com.yourline.presentation")
-//        let formViewStoryboard = UIStoryboard(name: "FormView", bundle: presentationBundle)
-//        let formView = formViewStoryboard.instantiateViewController(withIdentifier: "FormViewController")
-//
-//        signInContext?.setNavigationBarHidden(false, animated: false)
-//        signInContext?.pushViewController(formView, animated: true)
     }
 }

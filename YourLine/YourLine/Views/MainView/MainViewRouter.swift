@@ -58,9 +58,9 @@ class MainViewRouter: MainViewRouting {
         Fonts.install()
     }
     
-    func openHomeView() {
+    func openHomeView(insert: Bool = false) {
         let router = HomeViewRouter(context: mainNavigationContext)
-        router.start()
+        router.start(insert: insert)
         childRouters.append(router)
     }
 }

@@ -15,7 +15,7 @@ protocol MainViewRouting: Routing {
     
     func start()
     
-    func openHomeView()
+    func openHomeView(insert: Bool)
 }
 
 protocol MainViewPresenting {

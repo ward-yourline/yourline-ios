@@ -20,3 +20,23 @@ enum SignUpView: Int, CaseIterable {
     case emailVerification
     case finish
 }
+
+enum SignUpStepName: Int, CaseIterable {
+    case user = 1
+    case business = 2
+    case verification = 3
+    case complete = 4
+    
+    var name: String {
+        switch self {
+        case .user:
+            return "Tell us about yourself"
+        case .business:
+            return "Your Business"
+        case .verification:
+            return  "Verification"
+        case .complete:
+            return "Complete"
+        }
+    }
+}
