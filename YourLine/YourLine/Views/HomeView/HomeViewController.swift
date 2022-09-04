@@ -7,18 +7,80 @@
 
 import UIKit
 import Presentation
+import Resources
+import Utility
 
 class MenuSelectionCell: UITableViewCell {
-    
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+
+    func setup(with state: MenuOption) {
+        iconImageView.image = state.image
+        titleLabel.text = state.title
+    }
 }
 
-class MenuUserDetailsCell: UITableViewCell {
-    
-}
+class MenuUserDetailsCell: UITableViewCell {}
 
 enum MenuSection: Int, CaseIterable {
     case user
     case options
+}
+
+enum MenuOption: Int, CaseIterable {
+    
+    case home
+    case products
+    case customers
+    case staff
+    case account
+    case termsAndConditions
+    case settings
+    case yourLine
+    
+    public var image: UIImage? {
+        var imageName = ""
+        switch self {
+        case .home:
+            imageName = "home"
+        case .products:
+            imageName = "basket"
+        case .customers:
+            imageName = "people"
+        case .staff:
+            imageName = "search"
+        case .account:
+            imageName = "account"
+        case .termsAndConditions:
+            imageName = "question"
+        case .settings:
+            imageName = "cog"
+        case .yourLine:
+            imageName = "refresh"
+        }
+        let image = UIImage(named: imageName, in: Bundle(identifier: BundleNames.resources.rawValue), compatibleWith: nil)
+        return image
+    }
+    public var title: String {
+        switch self {
+        case .home:
+            return "Home"
+        case .products:
+            return "Products"
+        case .customers:
+            return "Customers"
+        case .staff:
+            return "Staff"
+        case .account:
+            return "Account"
+        case .termsAndConditions:
+            return "Terms & Conditions"
+        case .settings:
+            return "Settings"
+        case .yourLine:
+            return "Your Line"
+        }
+    }
 }
 
 class MenuTableDataSource: NSObject, UITableViewDataSource {
@@ -37,7 +99,7 @@ class MenuTableDataSource: NSObject, UITableViewDataSource {
         case .user:
             return 1
         case .options:
-            return 8
+            return MenuOption.allCases.count
         }
     }
     
@@ -55,6 +117,7 @@ class MenuTableDataSource: NSObject, UITableViewDataSource {
             cell = tableView.dequeueReusableCell(withIdentifier: "MenuUserDetailsCell")
         case .options:
             cell = tableView.dequeueReusableCell(withIdentifier: "MenuSelectionCell")
+            setupSelectionCell(cell as! MenuSelectionCell, at: indexPath.row)
         }
         
         guard let cell = cell else {
@@ -62,6 +125,17 @@ class MenuTableDataSource: NSObject, UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    private func setupSelectionCell(_ cell: MenuSelectionCell, at row: Int) {
+        
+        guard
+            let row = MenuOption(rawValue: row)
+        else {
+            return
+        }
+        
+        cell.setup(with: row)
     }
 }
 
@@ -105,12 +179,21 @@ class HomeViewController: UIViewController, HomeViewing {
         hiddenMenuConstant = -CGFloat(width + 16)
         
         showMenu(false, animated: false)
+        menuView.isHidden = true
         
         presenter.viewDidLoad()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        menuView.isHidden = false
     }
     
     @IBAction func didTapMenuButton(_ sender: Any) {
         showMenu(!showingMenu)
+    }
+    
+    @IBAction func didTapLogoutButton(_ sender: Any) {
+        presenter.logout()
     }
     
     private func showMenu(_ show: Bool, animated: Bool = true) {

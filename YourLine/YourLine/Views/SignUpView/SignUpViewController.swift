@@ -16,7 +16,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     
     private var context: UINavigationController?
-    private var page = 1
+    private var page = 0
     private var signUpType: SignUpAccountType = .business
     private var router: SignUpRouter?
     
@@ -47,15 +47,21 @@ class SignUpViewController: UIViewController {
         containerView.addSubview(context!.view)
         
         router?.openSighUpFields(with: .theUser, and: context)
+        
+        updatePage()
     }
     
     @IBAction func didTapNextButton(_ sender: Any) {
         
+        updatePage()
+    }
+    
+    private func updatePage() {
         if page >= SignUpStepName.allCases.count {
             router?.signIn()
             return
         }
-        page += 1
+        
         guard
             let step = SignUpStepName(rawValue: page)
         else {
@@ -76,20 +82,19 @@ class SignUpViewController: UIViewController {
             nextButton.setTitle("Finish", for: .normal)
         }
         
-        updatePage(with: page - 1)
-    }
-    
-    private func updatePage(with page: Int) {
         let lightBlueHex = "#89BAC9"
         let darkBlueHex = "#5C9CAF"
         
         if page >= pageViews.count { return }
-        if let step = SignUpStepName(rawValue: page) {
+        if
+            let step = SignUpStepName(rawValue: page) {
             let view = pageViews[step.rawValue]
-            view.backgroundColor = UIColor(hexString: darkBlueHex)
+                view.backgroundColor = UIColor(hexString: darkBlueHex)
         }
         if let title = SignUpStepName(rawValue: page)?.name {
             titleLabel.text = title
         }
+        
+        page += 1
     }
 }

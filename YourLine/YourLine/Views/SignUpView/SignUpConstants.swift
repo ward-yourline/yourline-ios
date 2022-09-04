@@ -22,10 +22,10 @@ enum SignUpView: Int, CaseIterable {
 }
 
 enum SignUpStepName: Int, CaseIterable {
-    case user = 1
-    case business = 2
-    case verification = 3
-    case complete = 4
+    case user
+    case business
+    case verification
+    case complete
     
     var name: String {
         switch self {

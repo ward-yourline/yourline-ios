@@ -12,7 +12,7 @@ import Presentation
 import Utility
 import Services
 
-class HomeViewRouter: Routing {
+class HomeViewRouter: HomeViewRouting {
     
     private weak var context: UIViewController?
     private let signUpContext = UINavigationController()
@@ -31,7 +31,7 @@ class HomeViewRouter: Routing {
         }
         
         let interactor = HomeViewInteractor()
-        let presenter = HomeViewPresenter(view: view, interactor: interactor)
+        let presenter = HomeViewPresenter(view: view, interactor: interactor, router: self)
         
         view.setPresenter(presenter)
         
@@ -49,5 +49,15 @@ class HomeViewRouter: Routing {
         } else {
             context.pushViewController(view, animated: true)
         }
+    }
+    
+    func logout() {
+        guard
+            let context = context as? UINavigationController
+        else {
+            return
+        }
+        
+        context.popToRootViewController(animated: true)
     }
 }

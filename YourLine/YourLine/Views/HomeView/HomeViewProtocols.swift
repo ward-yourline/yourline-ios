@@ -11,9 +11,10 @@ import Domain
 import Utility
 import Presentation
 
-protocol HomeViewRouting {
+protocol HomeViewRouting: Routing {
     init(context: UIViewController?)
-    func start()
+    func start(insert: Bool)
+    func logout()
 }
 
 protocol HomeViewing: AnyObject {
@@ -28,6 +29,7 @@ protocol HomeViewPresenting {
     func viewDidLoad()
     func numberOfRows(in section: Int) -> Int
     func setupCell(_ cell: CellPresentable, at indexPath: IndexPath)
+    func logout()
 }
 
 protocol HomeViewInteracting {

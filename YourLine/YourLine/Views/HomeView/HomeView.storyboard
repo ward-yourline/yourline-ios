@@ -440,14 +440,8 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="N3v-h5-WhY">
                                                                             <rect key="frame" x="0.0" y="61.5" width="59.5" height="17"/>
                                                                             <subviews>
-                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_marker" translatesAutoresizingMaskIntoConstraints="NO" id="pvz-p5-phj">
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="location_marker" translatesAutoresizingMaskIntoConstraints="NO" id="Nun-Qo-6fG">
                                                                                     <rect key="frame" x="0.0" y="0.5" width="13" height="16"/>
-                                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <userDefinedRuntimeAttributes>
-                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                                            <real key="value" value="16"/>
-                                                                                        </userDefinedRuntimeAttribute>
-                                                                                    </userDefinedRuntimeAttributes>
                                                                                 </imageView>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq5-4g-N9r">
                                                                                     <rect key="frame" x="15" y="0.0" width="44.5" height="17"/>
@@ -459,17 +453,11 @@
                                                                         </stackView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HEK-OR-SlS">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HEK-OR-SlS">
                                                                     <rect key="frame" x="270" y="27" width="50" height="17"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piggy_bank" translatesAutoresizingMaskIntoConstraints="NO" id="4SV-pc-fNT">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="piggy_bank" translatesAutoresizingMaskIntoConstraints="NO" id="Dnj-2f-pqt">
                                                                             <rect key="frame" x="0.0" y="0.0" width="18" height="17"/>
-                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <userDefinedRuntimeAttributes>
-                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                                    <real key="value" value="16"/>
-                                                                                </userDefinedRuntimeAttribute>
-                                                                            </userDefinedRuntimeAttributes>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47s-kS-ch7">
                                                                             <rect key="frame" x="20" y="0.0" width="30" height="17"/>
@@ -494,11 +482,11 @@
                                                             </constraints>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuSelectionCell" rowHeight="127" id="Ey8-BO-jfM" customClass="MenuSelectionCell" customModule="YourLine" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuSelectionCell" rowHeight="127" id="Ey8-BO-jfM" customClass="MenuSelectionCell" customModule="YourLine" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="232.5" width="356" height="127"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ey8-BO-jfM" id="5ww-dW-aYe">
-                                                            <rect key="frame" x="0.0" y="0.0" width="356" height="127"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="327.5" height="127"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AOj-ok-LzB">
@@ -517,19 +505,38 @@
                                                                 </stackView>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="AOj-ok-LzB" secondAttribute="bottom" constant="16" id="cpI-cd-X8C"/>
+                                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AOj-ok-LzB" secondAttribute="bottom" constant="16" id="cpI-cd-X8C"/>
                                                                 <constraint firstItem="AOj-ok-LzB" firstAttribute="top" secondItem="5ww-dW-aYe" secondAttribute="top" constant="16" id="u7C-21-8iN"/>
                                                                 <constraint firstItem="AOj-ok-LzB" firstAttribute="leading" secondItem="5ww-dW-aYe" secondAttribute="leading" constant="16" id="w3K-J6-FBp"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="iconImageView" destination="UCD-Zs-UBN" id="0vk-fk-9U8"/>
+                                                            <outlet property="titleLabel" destination="X1M-YV-aad" id="5LN-6z-G0J"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yww-7J-fYN">
                                                 <rect key="frame" x="0.0" y="1764" width="356" height="128"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrQ-t6-Q3x">
+                                                        <rect key="frame" x="16" y="72.5" width="85.5" height="39.5"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Logout">
+                                                            <fontDescription key="titleFontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="didTapLogoutButton:" destination="bzk-aD-7pI" eventType="touchUpInside" id="nmS-1C-elx"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="0bc-n6-PqU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lrQ-t6-Q3x" secondAttribute="bottom" constant="16" id="mnD-wl-m6g"/>
+                                                    <constraint firstItem="lrQ-t6-Q3x" firstAttribute="leading" secondItem="Yww-7J-fYN" secondAttribute="leading" constant="16" id="uXe-nB-01J"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

@@ -23,9 +23,11 @@ class HomeViewPresenter: HomeViewPresenting {
     private weak var view: HomeViewing!
     private let interactor: HomeViewInteracting
     private var homeModel: HomeModel?
+    private let router: HomeViewRouting
 
-    init(view: HomeViewing, interactor: HomeViewInteracting) {
+    init(view: HomeViewing, interactor: HomeViewInteracting, router: HomeViewRouting) {
         self.view = view
+        self.router = router
         self.interactor = interactor
     }
     
@@ -62,6 +64,10 @@ class HomeViewPresenter: HomeViewPresenting {
         case .restock:
             return 1
         }
+    }
+    
+    func logout() {
+        router.logout()
     }
     
     func setupCell(_ cell: CellPresentable, at indexPath: IndexPath) {
