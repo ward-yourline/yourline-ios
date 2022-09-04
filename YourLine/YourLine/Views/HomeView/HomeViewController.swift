@@ -183,10 +183,6 @@ class HomeViewController: UIViewController, HomeViewing {
         
         presenter.viewDidLoad()
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        menuView.isHidden = false
-    }
     
     @IBAction func didTapMenuButton(_ sender: Any) {
         showMenu(!showingMenu)
@@ -198,6 +194,8 @@ class HomeViewController: UIViewController, HomeViewing {
     
     private func showMenu(_ show: Bool, animated: Bool = true) {
         showingMenu = show
+        menuView.isHidden = false
+
         menuTableLeadingConstraint.constant = show ? 0.0 : hiddenMenuConstant
         
         if animated == false { return }
