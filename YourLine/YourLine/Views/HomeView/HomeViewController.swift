@@ -8,9 +8,35 @@
 import UIKit
 import Presentation
 
+class MenuTableDataSource: NSObject, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+
+class MenuTableDelegate: NSObject, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // TODO
+    }
+}
+
 class HomeViewController: UIViewController, HomeViewing {
     
+    @IBOutlet private weak var menuView: UIView!
+    @IBOutlet private weak var menuTableView: UITableView!
+    
+    @IBOutlet private weak var menuTableLeadingConstraint: NSLayoutConstraint!
+    
     @IBOutlet private weak var tableView: UITableView!
+    
+    private var menuTableDataSource: MenuTableDataSource?
+    private var menuTableDelegate: MenuTableDelegate?
+    private var hiddenMenuConstant: CGFloat = 0
+    private var showingMenu = false
     
     private var presenter: HomeViewPresenting!
     
@@ -22,7 +48,33 @@ class HomeViewController: UIViewController, HomeViewing {
         
         tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
         
+        menuTableDelegate = MenuTableDelegate()
+        menuTableDataSource = MenuTableDataSource()
+        
+        menuTableView.delegate = menuTableDelegate
+        menuTableView.dataSource = menuTableDataSource
+        
+        let width = Int(menuView.frame.width)
+        hiddenMenuConstant = -CGFloat(width)
+        
+        showMenu(false, animated: false)
+        
         presenter.viewDidLoad()
+    }
+    
+    @IBAction func didTapMenuButton(_ sender: Any) {
+        showMenu(!showingMenu)
+    }
+    
+    private func showMenu(_ show: Bool, animated: Bool = true) {
+        showingMenu = show
+        menuTableLeadingConstraint.constant = show ? 0.0 : hiddenMenuConstant
+        
+        if animated == false { return }
+        
+        UIView.animate(withDuration: 0.25) { [unowned self] in
+            self.view.layoutIfNeeded()
+        }
     }
     
     func updateView() {
