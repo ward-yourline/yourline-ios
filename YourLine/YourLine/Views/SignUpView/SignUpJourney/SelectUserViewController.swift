@@ -36,4 +36,20 @@ public class SelectUserViewController: UIViewController {
     
     @IBAction func didTapStudentButton(_ sender: Any) {
     }
+    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            let accountType = SignUpAccountTypeSegue(rawValue: segue.identifier ?? ""),
+            let destinationViewController = segue.destination as? SignUpViewController
+        else {
+            return
+        }
+        
+        destinationViewController.setup(with: accountType)
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
 }

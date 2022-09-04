@@ -40,6 +40,7 @@ class SignUpViewController: UIViewController {
     
     private var context: UINavigationController?
     private var page = 1
+    private var signUpType: SignUpAccountTypeSegue = .business
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,10 @@ class SignUpViewController: UIViewController {
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    public func setup(with signUpType: SignUpAccountTypeSegue) {
+        self.signUpType = signUpType
     }
     
     func buildView() {
@@ -120,14 +125,4 @@ class SignUpViewController: UIViewController {
         
         context?.pushViewController(emailVerificationView, animated: true)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

@@ -101,7 +101,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title=""/>
                                         <connections>
                                             <action selector="didTapBusinessButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="V18-vO-I0n"/>
-                                            <segue destination="mf3-HF-OMb" kind="show" id="lFh-7Q-SDm"/>
+                                            <segue destination="mf3-HF-OMb" kind="show" identifier="business_segue" id="lFh-7Q-SDm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -172,6 +172,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title=""/>
                                         <connections>
                                             <action selector="didTapRegularButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qBS-8c-oBU"/>
+                                            <segue destination="mf3-HF-OMb" kind="show" identifier="custone_segue" id="xwY-GO-Irx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -242,6 +243,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title=""/>
                                         <connections>
                                             <action selector="didTapStudentButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qsF-z8-fn9"/>
+                                            <segue destination="mf3-HF-OMb" kind="show" identifier="student_segue" id="MXK-FO-aOg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -720,6 +722,9 @@
             <point key="canvasLocation" x="2294" y="102"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MXK-FO-aOg"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="business_user" width="85" height="80"/>
         <image name="envelope" width="82" height="82"/>
