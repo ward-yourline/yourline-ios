@@ -8,13 +8,60 @@
 import UIKit
 import Presentation
 
+class MenuSelectionCell: UITableViewCell {
+    
+}
+
+class MenuUserDetailsCell: UITableViewCell {
+    
+}
+
+enum MenuSection: Int, CaseIterable {
+    case user
+    case options
+}
+
 class MenuTableDataSource: NSObject, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return MenuSection.allCases.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        guard
+            let section = MenuSection(rawValue: section)
+        else {
+            return 0
+        }
+        
+        switch section {
+        case .user:
+            return 1
+        case .options:
+            return 8
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard
+            let section = MenuSection(rawValue: indexPath.section)
+        else {
+            return UITableViewCell()
+        }
+        
+        var cell: UITableViewCell? = nil
+        
+        switch section {
+        case .user:
+            cell = tableView.dequeueReusableCell(withIdentifier: "MenuUserDetailsCell")
+        case .options:
+            cell = tableView.dequeueReusableCell(withIdentifier: "MenuSelectionCell")
+        }
+        
+        guard let cell = cell else {
+            return UITableViewCell()
+        }
+        
+        return cell
     }
 }
 
@@ -55,7 +102,7 @@ class HomeViewController: UIViewController, HomeViewing {
         menuTableView.dataSource = menuTableDataSource
         
         let width = Int(menuView.frame.width)
-        hiddenMenuConstant = -CGFloat(width)
+        hiddenMenuConstant = -CGFloat(width + 16)
         
         showMenu(false, animated: false)
         
