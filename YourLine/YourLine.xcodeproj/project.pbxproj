@@ -261,6 +261,32 @@
 			path = SignUpView;
 			sourceTree = "<group>";
 		};
+		F370644528D690B500F17CB0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F370644128D68FAB00F17CB0 /* SalesSummaryTableCell.swift */,
+				F370644228D68FAB00F17CB0 /* SalesSummaryTableCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F370644628D690C800F17CB0 /* Dashboards */ = {
+			isa = PBXGroup;
+			children = (
+				F370644728D690FC00F17CB0 /* Shared */,
+				F3BBEBC628D67F5300297200 /* BusinessDashboard */,
+			);
+			path = Dashboards;
+			sourceTree = "<group>";
+		};
+		F370644728D690FC00F17CB0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F370644528D690B500F17CB0 /* Cells */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		F37C88FD28097C4000F148EB = {
 			isa = PBXGroup;
 			children = (
@@ -346,7 +372,7 @@
 				F323FEC828551BC3004C4FC9 /* SignUpView */,
 				F323FEAA28551942004C4FC9 /* FormView */,
 				F3A5220528BCFE49006A048B /* HomeView */,
-				F3BBEBC628D67F5300297200 /* BusinwaaDashboard */,
+				F370644628D690C800F17CB0 /* Dashboards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -374,7 +400,7 @@
 			path = SignView;
 			sourceTree = "<group>";
 		};
-		F3BBEBC628D67F5300297200 /* BusinwaaDashboard */ = {
+		F3BBEBC628D67F5300297200 /* BusinessDashboard */ = {
 			isa = PBXGroup;
 			children = (
 				F3BBEBCD28D6826400297200 /* BusinessDashboardProtocols.swift */,
@@ -383,10 +409,8 @@
 				F3D1A4F828C220FF000D4677 /* BusinessDashboardInteractor.swift */,
 				F3BBEBC728D67F7600297200 /* BusinessDashboardViewController.swift */,
 				F3BBEBC928D67F9D00297200 /* BusinessDashboardView.storyboard */,
-				F370644128D68FAB00F17CB0 /* SalesSummaryTableCell.swift */,
-				F370644228D68FAB00F17CB0 /* SalesSummaryTableCell.xib */,
 			);
-			path = BusinwaaDashboard;
+			path = BusinessDashboard;
 			sourceTree = "<group>";
 		};
 		F3D1A4F528C2200B000D4677 /* Views */ = {
