@@ -14,9 +14,6 @@
         <array key="Poppins-Regular.ttf">
             <string>Poppins-Regular</string>
         </array>
-        <array key="Poppins-SemiBold.ttf">
-            <string>Poppins-SemiBold</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Business Dashboard View Controller-->
@@ -112,94 +109,8 @@
                                             <outlet property="informationLabel" destination="RVr-wF-k9m" id="HVS-pt-cbe"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeSummaryCell" rowHeight="259" id="imM-s0-7M4" customClass="HomeSummaryCell" customModule="YourLine" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="177.5" width="414" height="259"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="imM-s0-7M4" id="2Is-P2-WA6">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="259"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Nm-Di-xIk">
-                                                    <rect key="frame" x="16" y="0.0" width="382" height="135"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Fg6-eQ-63C">
-                                                            <rect key="frame" x="20" y="20" width="346" height="99"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Total sales " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axf-yv-Hfa">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="346" height="25.5"/>
-                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="£2500.86" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tee-T8-RrR">
-                                                                    <rect key="frame" x="0.0" y="32.5" width="346" height="34"/>
-                                                                    <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="24"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="200 Total sales " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imk-6L-W0O">
-                                                                    <rect key="frame" x="0.0" y="73.5" width="346" height="25.5"/>
-                                                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8va-hD-0la">
-                                                            <rect key="frame" x="318.5" y="16" width="47.5" height="22.5"/>
-                                                            <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="arrow_up" translatesAutoresizingMaskIntoConstraints="NO" id="9pb-Tz-dfn">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
-                                                                </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="30" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2d-Ej-5MO">
-                                                                    <rect key="frame" x="28" y="0.0" width="19.5" height="22.5"/>
-                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="Fg6-eQ-63C" secondAttribute="trailing" constant="16" id="Cor-Vb-gbp"/>
-                                                        <constraint firstItem="8va-hD-0la" firstAttribute="top" secondItem="9Nm-Di-xIk" secondAttribute="top" constant="16" id="TYZ-Ee-VcD"/>
-                                                        <constraint firstItem="Fg6-eQ-63C" firstAttribute="leading" secondItem="9Nm-Di-xIk" secondAttribute="leading" constant="20" id="gDx-d8-zQl"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Fg6-eQ-63C" secondAttribute="bottom" constant="16" id="gtI-Vi-MbA"/>
-                                                        <constraint firstItem="Fg6-eQ-63C" firstAttribute="top" secondItem="9Nm-Di-xIk" secondAttribute="top" constant="20" id="uGm-1x-xRL"/>
-                                                        <constraint firstAttribute="trailing" secondItem="8va-hD-0la" secondAttribute="trailing" constant="16" id="vJR-MX-h9w"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="1"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="8"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" red="0.36078431370000003" green="0.61176470589999998" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="9Nm-Di-xIk" firstAttribute="leading" secondItem="2Is-P2-WA6" secondAttribute="leading" constant="16" id="11a-ex-hZR"/>
-                                                <constraint firstAttribute="trailing" secondItem="9Nm-Di-xIk" secondAttribute="trailing" constant="16" id="22O-sF-zZk"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9Nm-Di-xIk" secondAttribute="bottom" constant="16" id="A6V-on-Ak4"/>
-                                                <constraint firstItem="9Nm-Di-xIk" firstAttribute="top" secondItem="2Is-P2-WA6" secondAttribute="top" id="rXE-Hc-ppd"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="containerView" destination="9Nm-Di-xIk" id="3OB-NS-ByR"/>
-                                            <outlet property="pointsImageView" destination="9pb-Tz-dfn" id="rfS-1d-5H4"/>
-                                            <outlet property="pointsLabel" destination="k2d-Ej-5MO" id="nlX-4b-bhc"/>
-                                            <outlet property="summaryLabel" destination="imk-6L-W0O" id="gg9-7M-rPM"/>
-                                            <outlet property="titleLabel" destination="Axf-yv-Hfa" id="R8w-oj-kPa"/>
-                                            <outlet property="valueLabel" destination="tee-T8-RrR" id="qJX-dG-BxA"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeRestockCell" rowHeight="200" id="2uh-fp-egW" customClass="HomeRestockCell" customModule="YourLine" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="436.5" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="177.5" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2uh-fp-egW" id="Tio-DC-dGA">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>

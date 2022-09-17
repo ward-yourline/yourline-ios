@@ -30,6 +30,8 @@
 		F323FECF28551BC3004C4FC9 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */; };
 		F323FED028551BC3004C4FC9 /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F323FECC28551BC3004C4FC9 /* SignUpView.storyboard */; };
 		F323FED228552813004C4FC9 /* CustomAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F323FED128552813004C4FC9 /* CustomAssets.xcassets */; };
+		F370644328D68FAB00F17CB0 /* SalesSummaryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370644128D68FAB00F17CB0 /* SalesSummaryTableCell.swift */; };
+		F370644428D68FAB00F17CB0 /* SalesSummaryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F370644228D68FAB00F17CB0 /* SalesSummaryTableCell.xib */; };
 		F37C890A28097C4000F148EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890928097C4000F148EB /* AppDelegate.swift */; };
 		F37C890E28097C4000F148EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C890D28097C4000F148EB /* MainViewController.swift */; };
 		F37C891128097C4000F148EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37C890F28097C4000F148EB /* Main.storyboard */; };
@@ -46,7 +48,6 @@
 		F3A5220228BCDEFD006A048B /* SignUpInputFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5220128BCDEFD006A048B /* SignUpInputFieldCell.swift */; };
 		F3A5220728BCFE66006A048B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5220628BCFE66006A048B /* HomeViewController.swift */; };
 		F3A5220928BCFE6E006A048B /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A5220828BCFE6E006A048B /* HomeView.storyboard */; };
-		F3A5220B28BCFFBA006A048B /* HomeSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5220A28BCFFBA006A048B /* HomeSummaryCell.swift */; };
 		F3A5220D28BD0156006A048B /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5220C28BD0156006A048B /* HomeViewRouter.swift */; };
 		F3AB7628280985B2002AF45D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AB7627280985B2002AF45D /* SignInViewController.swift */; };
 		F3AB762A280985BA002AF45D /* SignInView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AB7629280985BA002AF45D /* SignInView.storyboard */; };
@@ -128,6 +129,8 @@
 		F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		F323FECC28551BC3004C4FC9 /* SignUpView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpView.storyboard; sourceTree = "<group>"; };
 		F323FED128552813004C4FC9 /* CustomAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = CustomAssets.xcassets; path = ../../Resources/Resources/CustomAssets.xcassets; sourceTree = "<group>"; };
+		F370644128D68FAB00F17CB0 /* SalesSummaryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesSummaryTableCell.swift; sourceTree = "<group>"; };
+		F370644228D68FAB00F17CB0 /* SalesSummaryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalesSummaryTableCell.xib; sourceTree = "<group>"; };
 		F37C890628097C4000F148EB /* YourLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37C890928097C4000F148EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37C890D28097C4000F148EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +151,6 @@
 		F3A5220128BCDEFD006A048B /* SignUpInputFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInputFieldCell.swift; sourceTree = "<group>"; };
 		F3A5220628BCFE66006A048B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3A5220828BCFE6E006A048B /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
-		F3A5220A28BCFFBA006A048B /* HomeSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSummaryCell.swift; sourceTree = "<group>"; };
 		F3A5220C28BD0156006A048B /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
 		F3AB7627280985B2002AF45D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F3AB7629280985BA002AF45D /* SignInView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInView.storyboard; sourceTree = "<group>"; };
@@ -381,6 +383,8 @@
 				F3D1A4F828C220FF000D4677 /* BusinessDashboardInteractor.swift */,
 				F3BBEBC728D67F7600297200 /* BusinessDashboardViewController.swift */,
 				F3BBEBC928D67F9D00297200 /* BusinessDashboardView.storyboard */,
+				F370644128D68FAB00F17CB0 /* SalesSummaryTableCell.swift */,
+				F370644228D68FAB00F17CB0 /* SalesSummaryTableCell.xib */,
 			);
 			path = BusinwaaDashboard;
 			sourceTree = "<group>";
@@ -388,7 +392,6 @@
 		F3D1A4F528C2200B000D4677 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F3A5220A28BCFFBA006A048B /* HomeSummaryCell.swift */,
 				F3FB9FC328C274CB001D8D89 /* HomeAlertTableCell.swift */,
 				F39512FA28C27C420026E0F5 /* HomeRestockCell.swift */,
 			);
@@ -527,6 +530,7 @@
 				F37C891628097C4400F148EB /* Assets.xcassets in Resources */,
 				F323FED028551BC3004C4FC9 /* SignUpView.storyboard in Resources */,
 				F323FED228552813004C4FC9 /* CustomAssets.xcassets in Resources */,
+				F370644428D68FAB00F17CB0 /* SalesSummaryTableCell.xib in Resources */,
 				F37C891128097C4000F148EB /* Main.storyboard in Resources */,
 				F3AB762A280985BA002AF45D /* SignInView.storyboard in Resources */,
 				F3BBEBCA28D67F9D00297200 /* BusinessDashboardView.storyboard in Resources */,
@@ -660,7 +664,6 @@
 				F323FECD28551BC3004C4FC9 /* SignUpRouter.swift in Sources */,
 				F320148A28561E860032101B /* SignUpFieldsViewController.swift in Sources */,
 				F3AB763628098A50002AF45D /* Constants.swift in Sources */,
-				F3A5220B28BCFFBA006A048B /* HomeSummaryCell.swift in Sources */,
 				F3AB7632280989CF002AF45D /* SignInRouter.swift in Sources */,
 				F323FECF28551BC3004C4FC9 /* SelectUserViewController.swift in Sources */,
 				F3FB9FC428C274CB001D8D89 /* HomeAlertTableCell.swift in Sources */,
@@ -672,6 +675,7 @@
 				F3AB7628280985B2002AF45D /* SignInViewController.swift in Sources */,
 				F3BBEBD028D685CF00297200 /* BusinessDashboardRouter.swift in Sources */,
 				F320149228562EB70032101B /* EmailVerificationViewController.swift in Sources */,
+				F370644328D68FAB00F17CB0 /* SalesSummaryTableCell.swift in Sources */,
 				F320148C28561EC40032101B /* SignUpViewController.swift in Sources */,
 				F3A361912832B6C200690696 /* FormViewRouter.swift in Sources */,
 				F3BBEBC828D67F7600297200 /* BusinessDashboardViewController.swift in Sources */,

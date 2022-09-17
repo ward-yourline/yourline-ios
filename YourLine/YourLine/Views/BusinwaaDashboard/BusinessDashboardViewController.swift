@@ -23,12 +23,12 @@ class BusinessDashboardViewController: UIViewController, BusinessDashboardViewin
         
         tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
         
+        tableView.register(
+            SalesSummaryTableCell.nib(),
+            forCellReuseIdentifier: SalesSummaryTableCell.className
+        )
+        
         presenter.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     func setPresenter(_ presenter: BusinessDashboardPresenting) {
@@ -58,7 +58,7 @@ extension BusinessDashboardViewController: UITableViewDataSource {
         
         switch section {
         case .sales, .visits:
-            cell = tableView.dequeueReusableCell(withIdentifier: "HomeSummaryCell", for: indexPath) as? HomeSummaryCell
+            cell = tableView.dequeueReusableCell(withIdentifier: SalesSummaryTableCell.className, for: indexPath) as? SalesSummaryTableCell
             break
         case .alerts:
             cell = tableView.dequeueReusableCell(withIdentifier: "HomeAlertTableCell", for: indexPath) as? HomeAlertTableCell

@@ -78,12 +78,12 @@ class BusinessDashboardPresenter: BusinessDashboardPresenting {
             let value = "£\(businessDashboardModel.businessDashboardModel?.sales?.salesAmount ?? "0")"
             let summary = "\(businessDashboardModel.businessDashboardModel?.sales?.totalSales ?? "0") total sales"
             let points = businessDashboardModel.businessDashboardModel?.sales?.points
-            cellViewModel = HomeSummaryCellViewModel(title: "Total sales", value: value, summary: summary, points: points?.count)
+            cellViewModel = SalesSummaryTableCellViewModel(title: "Total sales", value: value, summary: summary, points: points?.count)
         case .visits:
             let totalVisits = "\(businessDashboardModel.businessDashboardModel?.visits?.totalVisits ?? "0") total visits"
             let todaysVisits = "\(businessDashboardModel.businessDashboardModel?.visits?.todaysVisits ?? "0")"
             let points = businessDashboardModel.businessDashboardModel?.visits?.points
-            cellViewModel = HomeSummaryCellViewModel(title: "Today's visits", value: todaysVisits, summary: totalVisits, points: points?.count)
+            cellViewModel = SalesSummaryTableCellViewModel(title: "Today's visits", value: todaysVisits, summary: totalVisits, points: points?.count)
         case .alerts:
             if
                 let details = businessDashboardModel.businessDashboardModel?.alerts?[indexPath.row].details
