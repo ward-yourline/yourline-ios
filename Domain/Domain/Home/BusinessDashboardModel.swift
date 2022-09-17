@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  BusinessDashboard.swift
 //  Domain
 //
 //  Created by Warrd Adlani on 02/09/2022.
@@ -8,30 +8,30 @@
 import Foundation
 
 // MARK: - Home
-public struct HomeModel: Decodable {
-    public let homeModel: HomeData?
+public struct BusinessDashboardModel: Decodable {
+    public let businessDashboardModel: BusinessDashboardData?
     
     enum CodingKeys: String, CodingKey {
-        case homeModel = "home"
+        case businessDashboardModel = "business_dashboard"
     }
 }
 
 // MARK: - HomeClass
-public struct HomeData: Decodable {
-    public let sales: HomeSales?
-    public let visits: HomeVisits?
-    public let alerts: [HomeAlert]?
+public struct BusinessDashboardData: Decodable {
+    public let sales: BusinessDashboardSales?
+    public let visits: BusinessDashboardVisits?
+    public let alerts: [BusinessDashboardAlert]?
 }
 
 // MARK: - Alert
-public struct HomeAlert: Decodable {
+public struct BusinessDashboardAlert: Decodable {
     public let details: String?
 }
 
 // MARK: - Sales
-public struct HomeSales: Decodable {
+public struct BusinessDashboardSales: Decodable {
     public let salesAmount, totalSales: String?
-    public let points: HomePoints?
+    public let points: BusinessDashboardPoints?
 
     enum CodingKeys: String, CodingKey {
         case salesAmount = "sales_amount"
@@ -41,9 +41,9 @@ public struct HomeSales: Decodable {
 }
 
 // MARK: - Visits
-public struct HomeVisits: Decodable {
+public struct BusinessDashboardVisits: Decodable {
     public let totalVisits, todaysVisits: String?
-    public let points: HomePoints?
+    public let points: BusinessDashboardPoints?
 
     enum CodingKeys: String, CodingKey {
         case totalVisits = "total_visits"
@@ -53,6 +53,6 @@ public struct HomeVisits: Decodable {
 }
 
 // MARK: - Points
-public struct HomePoints: Decodable {
+public struct BusinessDashboardPoints: Decodable {
     public let count, direction: String
 }

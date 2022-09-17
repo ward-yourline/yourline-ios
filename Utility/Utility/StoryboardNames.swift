@@ -11,6 +11,7 @@ public enum StoryboardNames: String {
     case signUpView = "SignUpView"
     case homeView = "HomeView"
     case signInView = "SignInView"
+    case businessDashboardView = "BusinessDashboardView"
     
     public var name: String { return rawValue }
 }
