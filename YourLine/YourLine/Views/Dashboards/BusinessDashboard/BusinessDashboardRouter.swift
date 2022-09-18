@@ -42,7 +42,6 @@ class BusinessDashboardRouter: BusinessDashboardRouting {
             return
         }
                 
-        context.setNavigationBarHidden(true, animated: false)
         context.pushViewController(view, animated: false)
     }
     

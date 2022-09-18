@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HhJ-6b-3qL">
-                                <rect key="frame" x="16" y="44" width="382" height="70"/>
+                                <rect key="frame" x="16" y="60" width="382" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Hi Anna," lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZX-WB-7mi">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
@@ -42,7 +42,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="v0T-6i-wdh">
-                                <rect key="frame" x="0.0" y="122" width="414" height="1878"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="1862"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeAlertTableCell" rowHeight="128" id="Mkl-00-xC4" customClass="HomeAlertTableCell" customModule="YourLine" customModuleProvider="target">
@@ -229,7 +229,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="v0T-6i-wdh" secondAttribute="bottom" id="0hN-Mv-Eo0"/>
                             <constraint firstItem="v0T-6i-wdh" firstAttribute="top" secondItem="HhJ-6b-3qL" secondAttribute="bottom" constant="8" id="40a-L8-vgs"/>
-                            <constraint firstItem="HhJ-6b-3qL" firstAttribute="top" secondItem="YQ6-ci-BOc" secondAttribute="top" id="4Nv-AS-cU5"/>
+                            <constraint firstItem="HhJ-6b-3qL" firstAttribute="top" secondItem="YQ6-ci-BOc" secondAttribute="top" constant="16" id="4Nv-AS-cU5"/>
                             <constraint firstItem="YQ6-ci-BOc" firstAttribute="trailing" secondItem="HhJ-6b-3qL" secondAttribute="trailing" constant="16" id="5oK-3m-y60"/>
                             <constraint firstItem="HhJ-6b-3qL" firstAttribute="leading" secondItem="EC7-OO-Oal" secondAttribute="leading" constant="16" id="nH4-Ne-qwG"/>
                             <constraint firstItem="v0T-6i-wdh" firstAttribute="leading" secondItem="YQ6-ci-BOc" secondAttribute="leading" id="o8D-co-HLv"/>

@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="DKk-cM-mnf">
-                                <rect key="frame" x="0.0" y="157" width="414" height="739"/>
+                                <rect key="frame" x="0.0" y="141" width="414" height="755"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OrderDetailsTableCell" rowHeight="128" id="3yM-sU-EgL" customClass="OrderDetailsTableCell" customModule="YourLine" customModuleProvider="target">
@@ -91,7 +91,7 @@
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dDP-hC-zJ8">
-                                <rect key="frame" x="16" y="60" width="382" height="81"/>
+                                <rect key="frame" x="16" y="44" width="382" height="81"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Order Details" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlJ-ow-dRf">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="45"/>
@@ -114,7 +114,7 @@
                             <constraint firstItem="dDP-hC-zJ8" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="16" id="Ack-N4-Atc"/>
                             <constraint firstItem="DKk-cM-mnf" firstAttribute="top" secondItem="dDP-hC-zJ8" secondAttribute="bottom" constant="16" id="ELS-89-O3X"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dDP-hC-zJ8" secondAttribute="trailing" constant="16" id="IAg-hx-Ef1"/>
-                            <constraint firstItem="dDP-hC-zJ8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="R6x-a9-0Pc"/>
+                            <constraint firstItem="dDP-hC-zJ8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="R6x-a9-0Pc"/>
                             <constraint firstAttribute="trailing" secondItem="DKk-cM-mnf" secondAttribute="trailing" id="fS0-7z-eCg"/>
                             <constraint firstItem="DKk-cM-mnf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="o8v-nr-iuZ"/>
                             <constraint firstAttribute="bottom" secondItem="DKk-cM-mnf" secondAttribute="bottom" id="zhc-1E-24j"/>

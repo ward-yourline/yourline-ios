@@ -17,6 +17,11 @@ class OrderDetailsViewController: UIViewController, OrderDetailsViewing {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
 }
 
 extension OrderDetailsViewController: UITableViewDataSource {

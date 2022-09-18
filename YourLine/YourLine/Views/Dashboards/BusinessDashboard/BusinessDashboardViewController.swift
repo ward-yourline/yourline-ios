@@ -31,6 +31,11 @@ class BusinessDashboardViewController: UIViewController, BusinessDashboardViewin
         presenter.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     func setPresenter(_ presenter: BusinessDashboardPresenting) {
         self.presenter = presenter
     }

@@ -42,6 +42,10 @@ class OrderDetailsRouter: OrderDetailsProtocols {
             return
         }
         
+        context.setNavigationBarHidden(false, animated: false)
+        context.navigationBar.backgroundColor = .clear
+        context.navigationBar.shadowImage = UIImage()
+        
         context.pushViewController(view, animated: true)
     }
 }
