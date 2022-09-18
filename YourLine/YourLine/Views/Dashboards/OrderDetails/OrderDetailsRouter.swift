@@ -1,8 +1,8 @@
 //
-//  BusinessDashboardRouter.swift
+//  OrderDetailsRouter.swift
 //  YourLine
 //
-//  Created by Warrd Adlani on 17/09/2022.
+//  Created by Warrd Adlani on 18/09/2022.
 //
 
 import Foundation
@@ -12,10 +12,9 @@ import Presentation
 import Utility
 import Services
 
-class BusinessDashboardRouter: BusinessDashboardRouting {
-    
+class OrderDetailsRouter: OrderDetailsProtocols {
+
     private weak var context: UIViewController?
-    private let signUpContext = UINavigationController()
         
     required init(context: UIViewController?) {
         self.context = context
@@ -30,34 +29,15 @@ class BusinessDashboardRouter: BusinessDashboardRouting {
             fatalError()
         }
         
-        let interactor = BusinessDashboardInteractor()
-        let presenter = BusinessDashboardPresenter(view: view, interactor: interactor, router: self)
-        
-        view.setPresenter(presenter)
-        
         guard
             let context = context as? UINavigationController,
             let view = view as? UIViewController
         else {
             return
         }
-                
-        context.setNavigationBarHidden(true, animated: false)
-        context.pushViewController(view, animated: false)
-    }
-    
-    func openOrderDetails() {
         
-    }
-    
-    func logout() {
-        guard
-            let context = context as? UINavigationController
-        else {
-            return
-        }
-        
-        context.popToRootViewController(animated: true)
+        context.pushViewController(view, animated: true)
     }
 }
+
 

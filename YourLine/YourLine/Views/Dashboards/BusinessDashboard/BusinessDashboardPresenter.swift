@@ -60,6 +60,14 @@ class BusinessDashboardPresenter: BusinessDashboardPresenting {
         }
     }
     
+    func didSelectRow(at indexPath: IndexPath) {
+        guard
+            let row = BusinessDashboardSections(rawValue: indexPath.section)
+        else {
+            return
+        }
+    }
+    
     func logout() {
         router.logout()
     }

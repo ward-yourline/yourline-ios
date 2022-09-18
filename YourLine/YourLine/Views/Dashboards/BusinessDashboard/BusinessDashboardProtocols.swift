@@ -19,6 +19,7 @@ enum BusinessDashboardSections: Int, CaseIterable {
 
 protocol BusinessDashboardRouting: Routing {
     init(context: UIViewController?)
+    func openOrderDetails()
     func start(insert: Bool)
     func logout()
 }
@@ -35,6 +36,7 @@ protocol BusinessDashboardPresenting {
     func viewDidLoad()
     func numberOfRows(in section: Int) -> Int
     func setupCell(_ cell: CellPresentable, at indexPath: IndexPath)
+    func didSelectRow(at indexPath: IndexPath)
 }
 
 protocol BusinessDashboardInteracting {
