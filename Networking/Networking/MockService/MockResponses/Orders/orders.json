@@ -1,6 +1,6 @@
 {
-   "orders": {
-      "sales":{
+   "orders" : {
+      "sales" : {
          "sales_amount":"2500.86",
          "total_sales":"200",
          "points": {
@@ -8,11 +8,13 @@
             "direction":"up"
          }
       },
-      "orders_excerpt":[
+      "pending_orders" : "10",
+      "orders_excerpt" : [
          {
             "customer_name": "Dorina Kusi",
             "price" : "£50",
-            "number"
+            "order_number" : "450",
+            "order_time" : "12:56 PM"
          }
       ]
    }

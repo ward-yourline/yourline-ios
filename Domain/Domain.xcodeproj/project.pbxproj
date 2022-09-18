@@ -10,6 +10,8 @@
 		F3A521FD28BCD8F8006A048B /* SignUpField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A521FC28BCD8F8006A048B /* SignUpField.swift */; };
 		F3CAF16728550E4100E61B8A /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF16628550E4100E61B8A /* Utility.framework */; };
 		F3D1A51728C24242000D4677 /* BusinessDashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A51628C24242000D4677 /* BusinessDashboardModel.swift */; };
+		F3D84EBE28D74F4400B0B077 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84EBD28D74F4400B0B077 /* Orders.swift */; };
+		F3D84EC028D7505600B0B077 /* Sales.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84EBF28D7505600B0B077 /* Sales.swift */; };
 		F3D8668E2816A55400E574B0 /* Domain.docc in Sources */ = {isa = PBXBuildFile; fileRef = F3D8668D2816A55400E574B0 /* Domain.docc */; };
 		F3D866942816A55500E574B0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D866892816A55400E574B0 /* Domain.framework */; };
 		F3D866992816A55500E574B0 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866982816A55500E574B0 /* DomainTests.swift */; };
@@ -37,6 +39,8 @@
 		F3A521FC28BCD8F8006A048B /* SignUpField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpField.swift; sourceTree = "<group>"; };
 		F3CAF16628550E4100E61B8A /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D1A51628C24242000D4677 /* BusinessDashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDashboardModel.swift; sourceTree = "<group>"; };
+		F3D84EBD28D74F4400B0B077 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		F3D84EBF28D7505600B0B077 /* Sales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sales.swift; sourceTree = "<group>"; };
 		F3D866892816A55400E574B0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8668C2816A55400E574B0 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		F3D8668D2816A55400E574B0 /* Domain.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Domain.docc; sourceTree = "<group>"; };
@@ -87,12 +91,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F3D1A51528C2423B000D4677 /* Home */ = {
+		F3D1A51528C2423B000D4677 /* BusinessDashboard */ = {
 			isa = PBXGroup;
 			children = (
 				F3D1A51628C24242000D4677 /* BusinessDashboardModel.swift */,
 			);
-			path = Home;
+			path = BusinessDashboard;
+			sourceTree = "<group>";
+		};
+		F3D84EBC28D74F3A00B0B077 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				F3D84EBD28D74F4400B0B077 /* Orders.swift */,
+			);
+			path = Orders;
 			sourceTree = "<group>";
 		};
 		F3D8667F2816A55400E574B0 = {
@@ -117,11 +129,13 @@
 		F3D8668B2816A55400E574B0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				F3D1A51528C2423B000D4677 /* Home */,
+				F3D84EBC28D74F3A00B0B077 /* Orders */,
+				F3D1A51528C2423B000D4677 /* BusinessDashboard */,
 				F3A521FB28BCD8ED006A048B /* SignUp */,
 				F3D866A42816A56F00E574B0 /* Models */,
 				F3D8668C2816A55400E574B0 /* Domain.h */,
 				F3D8668D2816A55400E574B0 /* Domain.docc */,
+				F3D84EBF28D7505600B0B077 /* Sales.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -259,6 +273,8 @@
 			files = (
 				F3A521FD28BCD8F8006A048B /* SignUpField.swift in Sources */,
 				F3D866AC2816A56F00E574B0 /* Rows.swift in Sources */,
+				F3D84EC028D7505600B0B077 /* Sales.swift in Sources */,
+				F3D84EBE28D74F4400B0B077 /* Orders.swift in Sources */,
 				F3D1A51728C24242000D4677 /* BusinessDashboardModel.swift in Sources */,
 				F3D866B12816A56F00E574B0 /* Application.swift in Sources */,
 				F3D8668E2816A55400E574B0 /* Domain.docc in Sources */,

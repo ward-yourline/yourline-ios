@@ -6,21 +6,36 @@
 //
 
 import UIKit
+import Presentation
 
-class OrdersViewController: UIViewController, OrderDetailsViewing {
+class OrdersViewController: UIViewController, OrdersViewing {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    private var viewModel: OrdersViewModelling!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.register(SalesSummaryTableCell.nib(), forCellReuseIdentifier: SalesSummaryTableCell.className)
+        
+        viewModel.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    func set(viewModel: OrdersViewModelling) {
+        self.viewModel = viewModel
+    }
+    
+    func updateView() {
+        tableView.reloadData()
     }
 }
 
@@ -28,9 +43,28 @@ extension OrdersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: OrderExcerptTableCell.className, for: indexPath)
+        if let section = OrdersViewSection(rawValue: indexPath.section) {
+            switch section {
+            case .summary:
+                let cell = tableView.dequeueReusableCell(withIdentifier: SalesSummaryTableCell.className, for: indexPath)
+                
+                if let cell = cell as? CellPresentable {
+                    viewModel.setupCell(cell, at: indexPath)
+                }
+                
+                return cell
+            case .orders:
+                let cell = tableView.dequeueReusableCell(withIdentifier: OrderExcerptTableCell.className, for: indexPath)
+                
+                if let cell = cell as? CellPresentable {
+                    viewModel.setupCell(cell, at: indexPath)
+                }
+                
+                return cell
+            }
+        }
         
-        return cell
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -78,10 +112,10 @@ extension OrdersViewController: UITableViewDataSource {
 extension OrdersViewController: UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return viewModel.numberOfSections
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.numberOfRows(in: section)
     }
 }

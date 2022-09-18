@@ -8,13 +8,24 @@
 import Foundation
 import Utility
 import UIKit
+import Presentation
 
-protocol OrdersProtocols: Routing {
+protocol OrdersRouting: Routing {
     init(context: UIViewController?)
     
     func start(insert: Bool)
 }
 
-protocol OrderDetailsViewing {
+protocol OrdersViewing: NSObject {
+    func set(viewModel: OrdersViewModelling)
+    func updateView()
+}
+
+protocol OrdersViewModelling {
+    var numberOfSections: Int { get }
     
+    func numberOfRows(in section: Int) -> Int
+    init(view: OrdersViewing?, router: OrdersRouting)
+    func viewDidLoad()
+    func setupCell(_ cell: CellPresentable, at indexPath: IndexPath)
 }

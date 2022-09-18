@@ -43,4 +43,9 @@ extension MockWebservice {
         let jsonFile = "sign_up_business"
         fetch(with: jsonFile, type: SignUpFields.self, with: completion)
     }
+    
+    public func getOrders(completion: NetworkCallbackBlock?) {
+        let jsonFile = "orders"
+        fetch(with: jsonFile, type: OrdersModel.self, with: completion)
+    }
 }

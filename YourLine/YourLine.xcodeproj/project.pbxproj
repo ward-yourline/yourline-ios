@@ -71,6 +71,8 @@
 		F3D1A4F428C22001000D4677 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A4F328C22001000D4677 /* HomeViewPresenter.swift */; };
 		F3D1A4F728C22022000D4677 /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A4F628C22022000D4677 /* HomeViewProtocols.swift */; };
 		F3D1A4F928C220FF000D4677 /* BusinessDashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A4F828C220FF000D4677 /* BusinessDashboardInteractor.swift */; };
+		F3D84EC228D750E400B0B077 /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84EC128D750E400B0B077 /* OrdersViewModel.swift */; };
+		F3D84EC528D7525000B0B077 /* OrdersExcerptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84EC428D7525000B0B077 /* OrdersExcerptViewModel.swift */; };
 		F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D866722815984A00E574B0 /* SignInPresenter.swift */; };
 		F3FB9FC428C274CB001D8D89 /* HomeAlertTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB9FC328C274CB001D8D89 /* HomeAlertTableCell.swift */; };
 /* End PBXBuildFile section */
@@ -178,6 +180,8 @@
 		F3D1A4F328C22001000D4677 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
 		F3D1A4F628C22022000D4677 /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
 		F3D1A4F828C220FF000D4677 /* BusinessDashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDashboardInteractor.swift; sourceTree = "<group>"; };
+		F3D84EC128D750E400B0B077 /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
+		F3D84EC428D7525000B0B077 /* OrdersExcerptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersExcerptViewModel.swift; sourceTree = "<group>"; };
 		F3D866722815984A00E574B0 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
 		F3FB9FC328C274CB001D8D89 /* HomeAlertTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlertTableCell.swift; sourceTree = "<group>"; };
 		F582069CF3021214A30DF19C /* Pods-YourLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourLineTests.debug.xcconfig"; path = "Target Support Files/Pods-YourLineTests/Pods-YourLineTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -303,7 +307,8 @@
 			children = (
 				F370645128D6978500F17CB0 /* OrdersProtocols.swift */,
 				F370645328D6979F00F17CB0 /* OrdersRouter.swift */,
-				F370644F28D6931300F17CB0 /* OrderExcerptTableCell.swift */,
+				F3D84EC128D750E400B0B077 /* OrdersViewModel.swift */,
+				F3D84EC328D7524100B0B077 /* Cells */,
 				F370644928D6918D00F17CB0 /* OrdersViewController.swift */,
 				F370644D28D691AC00F17CB0 /* OrdersView.storyboard */,
 			);
@@ -443,6 +448,15 @@
 				F39512FA28C27C420026E0F5 /* HomeRestockCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F3D84EC328D7524100B0B077 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3D84EC428D7525000B0B077 /* OrdersExcerptViewModel.swift */,
+				F370644F28D6931300F17CB0 /* OrderExcerptTableCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F3F499ED281588F000BD71CE /* Frameworks */ = {
@@ -729,6 +743,7 @@
 				F3A361912832B6C200690696 /* FormViewRouter.swift in Sources */,
 				F370644A28D6918D00F17CB0 /* OrdersViewController.swift in Sources */,
 				F370645028D6931300F17CB0 /* OrderExcerptTableCell.swift in Sources */,
+				F3D84EC228D750E400B0B077 /* OrdersViewModel.swift in Sources */,
 				F3BBEBC828D67F7600297200 /* BusinessDashboardViewController.swift in Sources */,
 				F3AB7630280989C8002AF45D /* SignInProtocols.swift in Sources */,
 				F3A5220D28BD0156006A048B /* HomeViewRouter.swift in Sources */,
@@ -737,6 +752,7 @@
 				F39512FB28C27C420026E0F5 /* HomeRestockCell.swift in Sources */,
 				F3BBEBCC28D6810000297200 /* BusinessDashboardPresenter.swift in Sources */,
 				F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */,
+				F3D84EC528D7525000B0B077 /* OrdersExcerptViewModel.swift in Sources */,
 				F3D1A4F928C220FF000D4677 /* BusinessDashboardInteractor.swift in Sources */,
 				F3AB762C280985C8002AF45D /* MainViewProtocols.swift in Sources */,
 				F3A521FA28BCD873006A048B /* SignUpFieldsViewModel.swift in Sources */,

@@ -12,7 +12,7 @@ import Presentation
 import Utility
 import Services
 
-class OrdersRouter: OrdersProtocols {
+class OrdersRouter: OrdersRouting {
 
     private weak var context: UIViewController?
         
@@ -30,10 +30,14 @@ class OrdersRouter: OrdersProtocols {
         guard
             let view = storyboard.instantiateViewController(
                 withIdentifier: YourLineViews.ordersView.name
-            ) as? OrderDetailsViewing
+            ) as? OrdersViewing
         else {
             fatalError()
         }
+        
+        let viewModel = OrdersViewModel(view: view, router: self)
+        
+        view.set(viewModel: viewModel)
         
         guard
             let context = context as? UINavigationController,

@@ -11,8 +11,12 @@ import Utility
 
 class OrderExcerptTableCell: UITableViewCell {
 
-    @IBOutlet private weak var informationLabel: UILabel!
     @IBOutlet private weak var containerView: UIView!
+    
+    @IBOutlet private weak var userNameLabel: UILabel!
+    @IBOutlet private weak var orderNumberLabel: UILabel!
+    @IBOutlet private weak var orderPriceLabel: UILabel!
+    @IBOutlet private weak var orderTimeLabel: UILabel!
     
     override func awakeFromNib() {
         
@@ -33,5 +37,18 @@ class OrderExcerptTableCell: UITableViewCell {
         containerView.layer.shadowOpacity = 0.3
         containerView.layer.shadowOffset = CGSize(width: 0, height: 4)
         containerView.layer.shadowRadius = 4
+    }
+}
+
+extension OrderExcerptTableCell: CellPresentable {
+    func setupCell(with viewModel: CellViewModelling?, delegate: CellDelegate?) {
+        guard let viewModel = viewModel as? OrdersExcerptViewModel else {
+            return
+        }
+        
+        userNameLabel.text = viewModel.customerName
+        orderNumberLabel.text = viewModel.orderNumber
+        orderPriceLabel.text = viewModel.price
+        orderTimeLabel.text = viewModel.time
     }
 }
