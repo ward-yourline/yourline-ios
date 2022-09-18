@@ -1,0 +1,19 @@
+{
+   "orders": {
+      "sales":{
+         "sales_amount":"2500.86",
+         "total_sales":"200",
+         "points": {
+            "count":"30",
+            "direction":"up"
+         }
+      },
+      "orders_excerpt":[
+         {
+            "customer_name": "Dorina Kusi",
+            "price" : "£50",
+            "number"
+         }
+      ]
+   }
+}

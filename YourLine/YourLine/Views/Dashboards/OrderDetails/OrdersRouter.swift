@@ -1,5 +1,5 @@
 //
-//  OrderDetailsRouter.swift
+//  OrdersRouter.swift
 //  YourLine
 //
 //  Created by Warrd Adlani on 18/09/2022.
@@ -12,7 +12,7 @@ import Presentation
 import Utility
 import Services
 
-class OrderDetailsRouter: OrderDetailsProtocols {
+class OrdersRouter: OrdersProtocols {
 
     private weak var context: UIViewController?
         
@@ -23,13 +23,13 @@ class OrderDetailsRouter: OrderDetailsProtocols {
     func start(insert: Bool = false) {
         
         let storyboard = UIStoryboard.init(
-            name: StoryboardNames.orderDetailsView.name,
+            name: StoryboardNames.ordersView.name,
             bundle: Bundle.main
         )
         
         guard
             let view = storyboard.instantiateViewController(
-                withIdentifier: YourLineViews.orderDetailsView.name
+                withIdentifier: YourLineViews.ordersView.name
             ) as? OrderDetailsViewing
         else {
             fatalError()

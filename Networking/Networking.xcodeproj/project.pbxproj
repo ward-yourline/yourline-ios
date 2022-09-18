@@ -20,6 +20,7 @@
 		F3D1A50F28C22C3E000D4677 /* sign_up_person.json in Resources */ = {isa = PBXBuildFile; fileRef = F3D1A4FA28C222F5000D4677 /* sign_up_person.json */; };
 		F3D1A51028C22C3E000D4677 /* sign_up_business.json in Resources */ = {isa = PBXBuildFile; fileRef = F3D1A4FB28C222F5000D4677 /* sign_up_business.json */; };
 		F3D1A51428C22CD9000D4677 /* business_dashboard.json in Resources */ = {isa = PBXBuildFile; fileRef = F3D1A51328C22CD9000D4677 /* business_dashboard.json */; };
+		F3D84EBB28D74E5E00B0B077 /* orders.json in Resources */ = {isa = PBXBuildFile; fileRef = F3D84EBA28D74E5E00B0B077 /* orders.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F3D1A50228C22875000D4677 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D1A50328C22875000D4677 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D1A51328C22CD9000D4677 /* business_dashboard.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = business_dashboard.json; sourceTree = "<group>"; };
+		F3D84EBA28D74E5E00B0B077 /* orders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = orders.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		F3D1A4FD28C222FD000D4677 /* MockResponses */ = {
 			isa = PBXGroup;
 			children = (
+				F3D84EB928D74E3500B0B077 /* Orders */,
 				F3D1A51228C22CC6000D4677 /* BusinessDashboard */,
 				F3D1A51128C22CBB000D4677 /* SignUp */,
 			);
@@ -155,6 +158,14 @@
 				F3D1A51328C22CD9000D4677 /* business_dashboard.json */,
 			);
 			path = BusinessDashboard;
+			sourceTree = "<group>";
+		};
+		F3D84EB928D74E3500B0B077 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				F3D84EBA28D74E5E00B0B077 /* orders.json */,
+			);
+			path = Orders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +262,7 @@
 			files = (
 				F3D1A50F28C22C3E000D4677 /* sign_up_person.json in Resources */,
 				F3D1A51428C22CD9000D4677 /* business_dashboard.json in Resources */,
+				F3D84EBB28D74E5E00B0B077 /* orders.json in Resources */,
 				F3D1A51028C22C3E000D4677 /* sign_up_business.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

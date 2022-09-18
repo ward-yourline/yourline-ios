@@ -1,5 +1,5 @@
 //
-//  OrderDetailsTableCell.swift
+//  OrderExcerptTableCell.swift
 //  YourLine
 //
 //  Created by Warrd Adlani on 18/09/2022.
@@ -9,7 +9,7 @@ import UIKit
 import Presentation
 import Utility
 
-class OrderDetailsTableCell: UITableViewCell {
+class OrderExcerptTableCell: UITableViewCell {
 
     @IBOutlet private weak var informationLabel: UILabel!
     @IBOutlet private weak var containerView: UIView!

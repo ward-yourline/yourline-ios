@@ -1,5 +1,5 @@
 //
-//  OrderDetailsViewController.swift
+//  OrdersViewController.swift
 //  YourLine
 //
 //  Created by Warrd Adlani on 18/09/2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OrderDetailsViewController: UIViewController, OrderDetailsViewing {
+class OrdersViewController: UIViewController, OrderDetailsViewing {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -24,11 +24,11 @@ class OrderDetailsViewController: UIViewController, OrderDetailsViewing {
     }
 }
 
-extension OrderDetailsViewController: UITableViewDataSource {
+extension OrdersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: OrderDetailsTableCell.className, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: OrderExcerptTableCell.className, for: indexPath)
         
         return cell
     }
@@ -75,7 +75,7 @@ extension OrderDetailsViewController: UITableViewDataSource {
     }
 }
 
-extension OrderDetailsViewController: UITableViewDelegate {
+extension OrdersViewController: UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
