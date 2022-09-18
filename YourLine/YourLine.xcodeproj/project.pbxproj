@@ -33,7 +33,7 @@
 		F370644328D68FAB00F17CB0 /* SalesSummaryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370644128D68FAB00F17CB0 /* SalesSummaryTableCell.swift */; };
 		F370644428D68FAB00F17CB0 /* SalesSummaryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F370644228D68FAB00F17CB0 /* SalesSummaryTableCell.xib */; };
 		F370644A28D6918D00F17CB0 /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370644928D6918D00F17CB0 /* OrderDetailsViewController.swift */; };
-		F370644E28D691AC00F17CB0 /* OrderDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F370644D28D691AC00F17CB0 /* OrderDetailsViewController.storyboard */; };
+		F370644E28D691AC00F17CB0 /* OrderDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F370644D28D691AC00F17CB0 /* OrderDetailsView.storyboard */; };
 		F370645028D6931300F17CB0 /* OrderDetailsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370644F28D6931300F17CB0 /* OrderDetailsTableCell.swift */; };
 		F370645228D6978500F17CB0 /* OrderDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370645128D6978500F17CB0 /* OrderDetailsProtocols.swift */; };
 		F370645428D6979F00F17CB0 /* OrderDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370645328D6979F00F17CB0 /* OrderDetailsRouter.swift */; };
@@ -137,7 +137,7 @@
 		F370644128D68FAB00F17CB0 /* SalesSummaryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesSummaryTableCell.swift; sourceTree = "<group>"; };
 		F370644228D68FAB00F17CB0 /* SalesSummaryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalesSummaryTableCell.xib; sourceTree = "<group>"; };
 		F370644928D6918D00F17CB0 /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
-		F370644D28D691AC00F17CB0 /* OrderDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetailsViewController.storyboard; sourceTree = "<group>"; };
+		F370644D28D691AC00F17CB0 /* OrderDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetailsView.storyboard; sourceTree = "<group>"; };
 		F370644F28D6931300F17CB0 /* OrderDetailsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsTableCell.swift; sourceTree = "<group>"; };
 		F370645128D6978500F17CB0 /* OrderDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsProtocols.swift; sourceTree = "<group>"; };
 		F370645328D6979F00F17CB0 /* OrderDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsRouter.swift; sourceTree = "<group>"; };
@@ -303,9 +303,9 @@
 			children = (
 				F370645128D6978500F17CB0 /* OrderDetailsProtocols.swift */,
 				F370645328D6979F00F17CB0 /* OrderDetailsRouter.swift */,
-				F370644928D6918D00F17CB0 /* OrderDetailsViewController.swift */,
 				F370644F28D6931300F17CB0 /* OrderDetailsTableCell.swift */,
-				F370644D28D691AC00F17CB0 /* OrderDetailsViewController.storyboard */,
+				F370644928D6918D00F17CB0 /* OrderDetailsViewController.swift */,
+				F370644D28D691AC00F17CB0 /* OrderDetailsView.storyboard */,
 			);
 			path = OrderDetails;
 			sourceTree = "<group>";
@@ -573,7 +573,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A5220928BCFE6E006A048B /* HomeView.storyboard in Resources */,
-				F370644E28D691AC00F17CB0 /* OrderDetailsViewController.storyboard in Resources */,
+				F370644E28D691AC00F17CB0 /* OrderDetailsView.storyboard in Resources */,
 				F37C891928097C4400F148EB /* LaunchScreen.storyboard in Resources */,
 				F37C891628097C4400F148EB /* Assets.xcassets in Resources */,
 				F323FED028551BC3004C4FC9 /* SignUpView.storyboard in Resources */,

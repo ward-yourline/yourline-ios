@@ -14,3 +14,7 @@ protocol OrderDetailsProtocols: Routing {
     
     func start(insert: Bool)
 }
+
+protocol OrderDetailsViewing {
+    
+}

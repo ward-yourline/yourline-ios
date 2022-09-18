@@ -47,7 +47,8 @@ class BusinessDashboardRouter: BusinessDashboardRouting {
     }
     
     func openOrderDetails() {
-        
+        let router = OrderDetailsRouter(context: context)
+        router.start()
     }
     
     func logout() {

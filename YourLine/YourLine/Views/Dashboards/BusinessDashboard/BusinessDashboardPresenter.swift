@@ -66,6 +66,8 @@ class BusinessDashboardPresenter: BusinessDashboardPresenting {
         else {
             return
         }
+        
+        router.openOrderDetails()
     }
     
     func logout() {

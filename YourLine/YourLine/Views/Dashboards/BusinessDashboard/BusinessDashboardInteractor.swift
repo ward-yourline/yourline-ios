@@ -11,7 +11,9 @@ import Networking
 import Utility
 
 class BusinessDashboardInteractor: BusinessDashboardInteracting {
+   
     private lazy var service = MockWebservice()
+    
     func getHome(with completion: NetworkCallbackBlock?) {
         service.getBusinessDashboard(with: completion)
     }

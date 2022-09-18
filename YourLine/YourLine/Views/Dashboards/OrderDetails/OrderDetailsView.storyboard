@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="157" width="414" height="739"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeAlertTableCell" rowHeight="128" id="3yM-sU-EgL" customClass="HomeAlertTableCell" customModule="YourLine" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OrderDetailsTableCell" rowHeight="128" id="3yM-sU-EgL" customClass="OrderDetailsTableCell" customModule="YourLine" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="49.5" width="414" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3yM-sU-EgL" id="rqX-zS-ELi">
@@ -120,6 +120,9 @@
                             <constraint firstAttribute="bottom" secondItem="DKk-cM-mnf" secondAttribute="bottom" id="zhc-1E-24j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="DKk-cM-mnf" id="etl-j7-RWS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
