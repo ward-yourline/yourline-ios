@@ -47,7 +47,7 @@ extension OrderExcerptTableCell: CellPresentable {
         }
         
         userNameLabel.text = viewModel.customerName
-        orderNumberLabel.text = viewModel.orderNumber
+        orderNumberLabel.text = "#\(viewModel.orderNumber)"
         orderPriceLabel.text = viewModel.price
         orderTimeLabel.text = viewModel.time
     }

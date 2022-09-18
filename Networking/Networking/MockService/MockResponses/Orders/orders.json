@@ -12,7 +12,19 @@
       "orders_excerpt" : [
          {
             "customer_name": "Dorina Kusi",
-            "price" : "£50",
+            "price" : "£50.65",
+            "order_number" : "450",
+            "order_time" : "12:56 PM"
+         },
+         {
+            "customer_name": "Mangnus Anand",
+            "price" : "£50.65",
+            "order_number" : "450",
+            "order_time" : "12:56 PM"
+         },
+         {
+            "customer_name": "Sandra Hill",
+            "price" : "£50.65",
             "order_number" : "450",
             "order_time" : "12:56 PM"
          }

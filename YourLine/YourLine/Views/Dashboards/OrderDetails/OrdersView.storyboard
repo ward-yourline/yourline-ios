@@ -105,7 +105,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="ePv-aP-aSR" secondAttribute="trailing" constant="16" id="1Jt-V3-9hu"/>
                                                 <constraint firstItem="ePv-aP-aSR" firstAttribute="top" secondItem="rqX-zS-ELi" secondAttribute="top" id="TJ6-aR-aoP"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ePv-aP-aSR" secondAttribute="bottom" constant="4" id="W9c-cs-Xoi"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ePv-aP-aSR" secondAttribute="bottom" constant="8" id="W9c-cs-Xoi"/>
                                                 <constraint firstItem="ePv-aP-aSR" firstAttribute="leading" secondItem="rqX-zS-ELi" secondAttribute="leading" constant="16" id="YbP-yR-cbN"/>
                                             </constraints>
                                         </tableViewCellContentView>
