@@ -12,7 +12,7 @@ import Presentation
 import Utility
 import Services
 
-class OrdersRouter: OrdersRouting {
+class OrderDetailsRouter: OrderDetailsRouting {
 
     private weak var context: UIViewController?
         
@@ -23,19 +23,19 @@ class OrdersRouter: OrdersRouting {
     func start(insert: Bool = false) {
         
         let storyboard = UIStoryboard.init(
-            name: StoryboardNames.ordersView.name,
+            name: StoryboardNames.orderDetailsView.name,
             bundle: Bundle.main
         )
         
         guard
             let view = storyboard.instantiateViewController(
-                withIdentifier: YourLineViews.ordersView.name
-            ) as? OrdersViewing
+                withIdentifier: YourLineViews.orderDetailsView.name
+            ) as? OrderDetailsViewing
         else {
             fatalError()
         }
         
-        let viewModel = OrdersViewModel(view: view, router: self)
+        let viewModel = OrderDetailsViewModel(view: view, router: self)
         
         view.set(viewModel: viewModel)
         
@@ -52,6 +52,7 @@ class OrdersRouter: OrdersRouting {
         
         context.pushViewController(view, animated: true)
     }
+    
 }
 
 

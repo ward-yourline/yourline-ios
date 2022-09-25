@@ -8,11 +8,11 @@
 import UIKit
 import Presentation
 
-class OrdersViewController: UIViewController, OrdersViewing {
+class OrderDetailsViewController: UIViewController, OrderDetailsViewing {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var viewModel: OrdersViewModelling!
+    private var viewModel: OrderDetailsViewModelling!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class OrdersViewController: UIViewController, OrdersViewing {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.register(SalesSummaryTableCell.nib(), forCellReuseIdentifier: SalesSummaryTableCell.className)
+        tableView.register(OrderDetailsTableCell.nib(), forCellReuseIdentifier: OrderDetailsTableCell.className)
         
         viewModel.viewDidLoad()
     }
@@ -30,7 +30,7 @@ class OrdersViewController: UIViewController, OrdersViewing {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    func set(viewModel: OrdersViewModelling) {
+    func set(viewModel: OrderDetailsViewModelling) {
         self.viewModel = viewModel
     }
     
@@ -39,32 +39,32 @@ class OrdersViewController: UIViewController, OrdersViewing {
     }
 }
 
-extension OrdersViewController: UITableViewDataSource {
+extension OrderDetailsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let section = OrdersViewSection(rawValue: indexPath.section) {
-            switch section {
-            case .summary:
-                let cell = tableView.dequeueReusableCell(withIdentifier: SalesSummaryTableCell.className, for: indexPath)
-                
-                if let cell = cell as? CellPresentable {
-                    viewModel.setupCell(cell, at: indexPath)
-                }
-                
-                return cell
-            case .orders:
-                let cell = tableView.dequeueReusableCell(withIdentifier: OrderExcerptTableCell.className, for: indexPath)
-                
-                if let cell = cell as? CellPresentable {
-                    viewModel.setupCell(cell, at: indexPath)
-                }
-                
-                return cell
-            }
-        }
+//        if let section = OrdersViewSection(rawValue: indexPath.section) {
+//            switch section {
+//            case .summary:
+//                let cell = tableView.dequeueReusableCell(withIdentifier: SalesSummaryTableCell.className, for: indexPath)
+//
+//                if let cell = cell as? CellPresentable {
+//                    viewModel.setupCell(cell, at: indexPath)
+//                }
+//
+//                return cell
+//            case .orders:
+//                let cell = tableView.dequeueReusableCell(withIdentifier: OrderExcerptTableCell.className, for: indexPath)
+//
+//                if let cell = cell as? CellPresentable {
+//                    viewModel.setupCell(cell, at: indexPath)
+//                }
+//
+//                return cell
+//            }
+//        }
         
-        return UITableViewCell()
+        return OrderDetailsTableCell()
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -109,7 +109,7 @@ extension OrdersViewController: UITableViewDataSource {
     }
 }
 
-extension OrdersViewController: UITableViewDelegate {
+extension OrderDetailsViewController: UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return viewModel.numberOfSections

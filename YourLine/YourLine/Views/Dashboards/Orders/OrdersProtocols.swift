@@ -14,6 +14,7 @@ protocol OrdersRouting: Routing {
     init(context: UIViewController?)
     
     func start(insert: Bool)
+    func openOrderDetails(with id: String)
 }
 
 protocol OrdersViewing: NSObject {
@@ -28,4 +29,5 @@ protocol OrdersViewModelling {
     init(view: OrdersViewing?, router: OrdersRouting)
     func viewDidLoad()
     func setupCell(_ cell: CellPresentable, at indexPath: IndexPath)
+    func didSelectRow(at indexPath: IndexPath)
 }

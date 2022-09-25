@@ -30,6 +30,11 @@
 		F323FECF28551BC3004C4FC9 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */; };
 		F323FED028551BC3004C4FC9 /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F323FECC28551BC3004C4FC9 /* SignUpView.storyboard */; };
 		F323FED228552813004C4FC9 /* CustomAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F323FED128552813004C4FC9 /* CustomAssets.xcassets */; };
+		F36CD72B28E051A90017C17A /* OrderDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CD72628E051A80017C17A /* OrderDetailsViewModel.swift */; };
+		F36CD72C28E051A90017C17A /* OrderDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CD72728E051A80017C17A /* OrderDetailsProtocols.swift */; };
+		F36CD72D28E051A90017C17A /* OrderDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CD72828E051A80017C17A /* OrderDetailsRouter.swift */; };
+		F36CD72E28E051A90017C17A /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CD72928E051A80017C17A /* OrderDetailsViewController.swift */; };
+		F36CD72F28E051A90017C17A /* OrderDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36CD72A28E051A80017C17A /* OrderDetailsView.storyboard */; };
 		F370644328D68FAB00F17CB0 /* SalesSummaryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370644128D68FAB00F17CB0 /* SalesSummaryTableCell.swift */; };
 		F370644428D68FAB00F17CB0 /* SalesSummaryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F370644228D68FAB00F17CB0 /* SalesSummaryTableCell.xib */; };
 		F370644A28D6918D00F17CB0 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370644928D6918D00F17CB0 /* OrdersViewController.swift */; };
@@ -136,6 +141,11 @@
 		F323FECB28551BC3004C4FC9 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		F323FECC28551BC3004C4FC9 /* SignUpView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpView.storyboard; sourceTree = "<group>"; };
 		F323FED128552813004C4FC9 /* CustomAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = CustomAssets.xcassets; path = ../../Resources/Resources/CustomAssets.xcassets; sourceTree = "<group>"; };
+		F36CD72628E051A80017C17A /* OrderDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewModel.swift; sourceTree = "<group>"; };
+		F36CD72728E051A80017C17A /* OrderDetailsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsProtocols.swift; sourceTree = "<group>"; };
+		F36CD72828E051A80017C17A /* OrderDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsRouter.swift; sourceTree = "<group>"; };
+		F36CD72928E051A80017C17A /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
+		F36CD72A28E051A80017C17A /* OrderDetailsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderDetailsView.storyboard; sourceTree = "<group>"; };
 		F370644128D68FAB00F17CB0 /* SalesSummaryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesSummaryTableCell.swift; sourceTree = "<group>"; };
 		F370644228D68FAB00F17CB0 /* SalesSummaryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalesSummaryTableCell.xib; sourceTree = "<group>"; };
 		F370644928D6918D00F17CB0 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
@@ -275,6 +285,18 @@
 			path = SignUpView;
 			sourceTree = "<group>";
 		};
+		F36CD72528E051530017C17A /* OrderDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F36CD72728E051A80017C17A /* OrderDetailsProtocols.swift */,
+				F36CD72828E051A80017C17A /* OrderDetailsRouter.swift */,
+				F36CD72A28E051A80017C17A /* OrderDetailsView.storyboard */,
+				F36CD72928E051A80017C17A /* OrderDetailsViewController.swift */,
+				F36CD72628E051A80017C17A /* OrderDetailsViewModel.swift */,
+			);
+			path = OrderDetails;
+			sourceTree = "<group>";
+		};
 		F370644528D690B500F17CB0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,7 +311,8 @@
 			children = (
 				F370644728D690FC00F17CB0 /* Shared */,
 				F3BBEBC628D67F5300297200 /* BusinessDashboard */,
-				F370644828D6912F00F17CB0 /* OrderDetails */,
+				F370644828D6912F00F17CB0 /* Orders */,
+				F36CD72528E051530017C17A /* OrderDetails */,
 			);
 			path = Dashboards;
 			sourceTree = "<group>";
@@ -302,7 +325,7 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		F370644828D6912F00F17CB0 /* OrderDetails */ = {
+		F370644828D6912F00F17CB0 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
 				F370645128D6978500F17CB0 /* OrdersProtocols.swift */,
@@ -312,7 +335,7 @@
 				F370644928D6918D00F17CB0 /* OrdersViewController.swift */,
 				F370644D28D691AC00F17CB0 /* OrdersView.storyboard */,
 			);
-			path = OrderDetails;
+			path = Orders;
 			sourceTree = "<group>";
 		};
 		F37C88FD28097C4000F148EB = {
@@ -589,6 +612,7 @@
 				F3A5220928BCFE6E006A048B /* HomeView.storyboard in Resources */,
 				F370644E28D691AC00F17CB0 /* OrdersView.storyboard in Resources */,
 				F37C891928097C4400F148EB /* LaunchScreen.storyboard in Resources */,
+				F36CD72F28E051A90017C17A /* OrderDetailsView.storyboard in Resources */,
 				F37C891628097C4400F148EB /* Assets.xcassets in Resources */,
 				F323FED028551BC3004C4FC9 /* SignUpView.storyboard in Resources */,
 				F323FED228552813004C4FC9 /* CustomAssets.xcassets in Resources */,
@@ -728,6 +752,7 @@
 				F3AB763628098A50002AF45D /* Constants.swift in Sources */,
 				F3AB7632280989CF002AF45D /* SignInRouter.swift in Sources */,
 				F323FECF28551BC3004C4FC9 /* SelectUserViewController.swift in Sources */,
+				F36CD72D28E051A90017C17A /* OrderDetailsRouter.swift in Sources */,
 				F3FB9FC428C274CB001D8D89 /* HomeAlertTableCell.swift in Sources */,
 				F3A5220728BCFE66006A048B /* HomeViewController.swift in Sources */,
 				F37C890E28097C4000F148EB /* MainViewController.swift in Sources */,
@@ -744,6 +769,7 @@
 				F370644A28D6918D00F17CB0 /* OrdersViewController.swift in Sources */,
 				F370645028D6931300F17CB0 /* OrderExcerptTableCell.swift in Sources */,
 				F3D84EC228D750E400B0B077 /* OrdersViewModel.swift in Sources */,
+				F36CD72C28E051A90017C17A /* OrderDetailsProtocols.swift in Sources */,
 				F3BBEBC828D67F7600297200 /* BusinessDashboardViewController.swift in Sources */,
 				F3AB7630280989C8002AF45D /* SignInProtocols.swift in Sources */,
 				F3A5220D28BD0156006A048B /* HomeViewRouter.swift in Sources */,
@@ -753,8 +779,10 @@
 				F3BBEBCC28D6810000297200 /* BusinessDashboardPresenter.swift in Sources */,
 				F3D866732815984A00E574B0 /* SignInPresenter.swift in Sources */,
 				F3D84EC528D7525000B0B077 /* OrdersExcerptViewModel.swift in Sources */,
+				F36CD72E28E051A90017C17A /* OrderDetailsViewController.swift in Sources */,
 				F3D1A4F928C220FF000D4677 /* BusinessDashboardInteractor.swift in Sources */,
 				F3AB762C280985C8002AF45D /* MainViewProtocols.swift in Sources */,
+				F36CD72B28E051A90017C17A /* OrderDetailsViewModel.swift in Sources */,
 				F3A521FA28BCD873006A048B /* SignUpFieldsViewModel.swift in Sources */,
 				F3BBEBCE28D6826400297200 /* BusinessDashboardProtocols.swift in Sources */,
 				F370645228D6978500F17CB0 /* OrdersProtocols.swift in Sources */,

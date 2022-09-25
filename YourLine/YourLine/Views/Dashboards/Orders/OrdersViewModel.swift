@@ -94,4 +94,8 @@ class OrdersViewModel: OrdersViewModelling {
             }
         })
     }
+    
+    func didSelectRow(at indexPath: IndexPath) {
+        router.openOrderDetails(with: "")
+    }
 }
