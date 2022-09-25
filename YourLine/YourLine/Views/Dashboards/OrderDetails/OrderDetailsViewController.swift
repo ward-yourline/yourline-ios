@@ -69,45 +69,38 @@ extension OrderDetailsViewController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let myLabel = UILabel()
+        myLabel.frame = CGRect.zero
+        myLabel.font = UIFont(name: "Poppins-Medium", size: 20.0)
+        myLabel.text = "Test"
+
+        let headerView = UIView()
+        headerView.addSubview(myLabel)
+        
+        headerView.layoutMargins = UIEdgeInsets(top: 0, left: 32.0, bottom: 0, right: 32.0)
+
+        myLabel.snp.makeConstraints { make in
+            make.margins.equalToSuperview()
+        }
+        
+        return headerView
+    }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return CGFloat.leastNormalMagnitude
+        return 32.0
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        return CGFloat.leastNormalMagnitude
+        return 32.0
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        guard
-//            let section = BusinessDashboardSections(rawValue: section)
-//        else {
-//            return CGFloat.leastNormalMagnitude
-//        }
-//
-//        switch section {
-//        case .sales, .visits, .alerts:
-//            return CGFloat.leastNormalMagnitude
-//        case .restock:
-//            return 16.0
-//        }
-        return 16.0
+        return CGFloat.leastNormalMagnitude
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
-//        guard
-//            let section = BusinessDashboardSections(rawValue: section)
-//        else {
-//            return CGFloat.leastNormalMagnitude
-//        }
-//
-//        switch section {
-//        case .sales, .visits, .alerts:
-//            return CGFloat.leastNormalMagnitude
-//        case .restock:
-//            return 16.0
-//        }
-        
-        return 16.0
+        return CGFloat.leastNormalMagnitude
     }
 }
 

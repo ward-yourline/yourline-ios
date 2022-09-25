@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		337F80CBADB2D52636940D35 /* Pods_PresentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8822F8117B16B13AEB3B4E /* Pods_PresentationTests.framework */; };
+		F3132C0A28E0663900FA6A8E /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3132C0928E0663900FA6A8E /* SnapKit.framework */; };
 		F36CD71F28E04B110017C17A /* OrderDetailsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CD71D28E04B110017C17A /* OrderDetailsTableCell.swift */; };
 		F36CD72028E04B110017C17A /* OrderDetailsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36CD71E28E04B110017C17A /* OrderDetailsTableCell.xib */; };
 		F36CD72228E04EE90017C17A /* OrderDetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CD72128E04EE90017C17A /* OrderDetailItemView.swift */; };
@@ -77,6 +78,7 @@
 		86303D071A1EEF945C357AF7 /* Pods-Presentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.release.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.release.xcconfig"; sourceTree = "<group>"; };
 		9E8822F8117B16B13AEB3B4E /* Pods_PresentationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresentationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43AD043FF747B9CCAF1033F /* Pods-Presentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.debug.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.debug.xcconfig"; sourceTree = "<group>"; };
+		F3132C0928E0663900FA6A8E /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36CD71D28E04B110017C17A /* OrderDetailsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsTableCell.swift; sourceTree = "<group>"; };
 		F36CD71E28E04B110017C17A /* OrderDetailsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailsTableCell.xib; sourceTree = "<group>"; };
 		F36CD72128E04EE90017C17A /* OrderDetailItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailItemView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				F3CAF19228550F8500E61B8A /* SkeletonView.framework in Frameworks */,
 				F3CAF18F28550F8100E61B8A /* ViewAnimator.framework in Frameworks */,
 				F3CAF18C28550F7D00E61B8A /* SideMenu.framework in Frameworks */,
+				F3132C0A28E0663900FA6A8E /* SnapKit.framework in Frameworks */,
 				F3D866F32816A5E200E574B0 /* Domain.framework in Frameworks */,
 				F3D867332816AF5700E574B0 /* Services.framework in Frameworks */,
 				F3A362152832CA9100690696 /* Resources.framework in Frameworks */,
@@ -306,6 +309,7 @@
 		F3D866F12816A5E200E574B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3132C0928E0663900FA6A8E /* SnapKit.framework */,
 				F3CAF1972855103900E61B8A /* Instructions.framework */,
 				F3CAF19428550F8D00E61B8A /* NVActivityIndicatorView.framework */,
 				F3CAF19128550F8500E61B8A /* SkeletonView.framework */,

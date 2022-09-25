@@ -28,4 +28,12 @@ public extension UIView {
     func isRunningUnitTest() -> Bool {
         return ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
     }
+
+    static func instantiateFromXIB() -> Self? {
+        instantiateHelper(withBundle: Bundle(for: self))
+    }
+
+    private static func instantiateHelper<T>(withBundle bundle: Bundle = .main) -> T? {
+        return bundle.loadNibNamed(String(describing: T.self), owner: nil, options: nil)?.first as? T
+    }
 }

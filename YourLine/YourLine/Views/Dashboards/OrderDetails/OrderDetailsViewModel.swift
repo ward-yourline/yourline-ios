@@ -13,11 +13,12 @@ import Utility
 import Networking
 
 enum OrderDetailsViewSection: Int, CaseIterable {
-    case summary
-    case orders
+    case items
+    case customerDetails
+    case paymentDetails
 }
 class OrderDetailsViewModel: OrderDetailsViewModelling {
-    var numberOfSections: Int { return OrdersViewSection.allCases.count }
+    var numberOfSections: Int { return OrderDetailsViewSection.allCases.count }
     
     private weak var view: OrderDetailsViewing?
     private let router: OrderDetailsRouting

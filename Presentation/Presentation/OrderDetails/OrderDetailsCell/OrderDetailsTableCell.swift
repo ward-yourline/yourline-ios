@@ -6,21 +6,23 @@
 //
 
 import UIKit
+import Resources
+import SnapKit
 
 public class OrderDetailsTableCell: UITableViewCell {
 
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var itemStackView: UIStackView!
     
     public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         dropShadow()
 
-    }
-
-    public override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+        for _ in 0...5 {
+            let itemView = OrderDetailItemView(frame: CGRect.zero)
+            itemStackView.addArrangedSubview(itemView)
+        }
     }
     
     func dropShadow(scale: Bool = true) {
