@@ -290,9 +290,9 @@
 			children = (
 				F36CD72728E051A80017C17A /* OrderDetailsProtocols.swift */,
 				F36CD72828E051A80017C17A /* OrderDetailsRouter.swift */,
-				F36CD72A28E051A80017C17A /* OrderDetailsView.storyboard */,
-				F36CD72928E051A80017C17A /* OrderDetailsViewController.swift */,
 				F36CD72628E051A80017C17A /* OrderDetailsViewModel.swift */,
+				F36CD72928E051A80017C17A /* OrderDetailsViewController.swift */,
+				F36CD72A28E051A80017C17A /* OrderDetailsView.storyboard */,
 			);
 			path = OrderDetails;
 			sourceTree = "<group>";

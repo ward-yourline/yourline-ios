@@ -64,7 +64,9 @@ extension OrderDetailsViewController: UITableViewDataSource {
 //            }
 //        }
         
-        return OrderDetailsTableCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: OrderDetailsTableCell.className, for: indexPath)
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

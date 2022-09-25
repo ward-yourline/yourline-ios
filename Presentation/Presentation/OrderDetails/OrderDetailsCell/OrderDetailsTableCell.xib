@@ -15,93 +15,152 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderDetailsTableCell" rowHeight="257" id="KGk-i7-Jjw" customClass="OrderDetailsTableCell" customModule="Presentation" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderDetailsTableCell" rowHeight="257" id="KGk-i7-Jjw" customClass="OrderDetailsTableCell" customModule="Presentation" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="476" height="257"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="476" height="257"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="Esh-rS-FnB">
-                        <rect key="frame" x="16" y="16" width="444" height="22.5"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iQ-iT-xcj">
+                        <rect key="frame" x="16" y="16" width="444" height="225"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Rossi’s Lunch Special" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tw0-GE-RTJ">
-                                <rect key="frame" x="0.0" y="0.0" width="170" height="22.5"/>
-                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lPq-3l-xSz">
-                                <rect key="frame" x="292" y="0.0" width="152" height="22.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Esh-rS-FnB">
+                                <rect key="frame" x="16" y="16" width="412" height="19"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rossi’s Lunch Special" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpl-aY-zHG">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="22.5"/>
-                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
-                                        <color key="textColor" red="0.36078431370000003" green="0.61199998860000004" blue="0.68599998949999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Rossi’s Lunch Special" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tw0-GE-RTJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="19"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_small_blue" translatesAutoresizingMaskIntoConstraints="NO" id="gJf-xk-erA">
-                                        <rect key="frame" x="142" y="0.0" width="10" height="22.5"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                    </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KOL-j2-SQG">
-                        <rect key="frame" x="16" y="54.5" width="444" height="31.5"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="186" translatesAutoresizingMaskIntoConstraints="NO" id="L3y-vJ-6o6">
-                                <rect key="frame" x="0.0" y="0.0" width="444" height="22.5"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-L5-6Zq">
-                                        <rect key="frame" x="0.0" y="0.0" width="211.5" height="22.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lPq-3l-xSz">
+                                        <rect key="frame" x="270.5" y="0.0" width="141.5" height="15.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="x2    Gamberetti E Spinaci*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDG-J1-pnI">
-                                                <rect key="frame" x="0.0" y="0.0" width="211.5" height="22.5"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Rossi’s Lunch Special" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpl-aY-zHG">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.5" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                                                <color key="textColor" red="0.36078431370000003" green="0.61199998860000004" blue="0.68599998949999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="star_small_blue" translatesAutoresizingMaskIntoConstraints="NO" id="gJf-xk-erA">
+                                                <rect key="frame" x="131.5" y="0.0" width="10" height="15.5"/>
+                                            </imageView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3FA-da-gas">
-                                        <rect key="frame" x="397.5" y="0.0" width="46.5" height="22.5"/>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KOL-j2-SQG">
+                                <rect key="frame" x="16" y="43" width="412" height="28"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="L3y-vJ-6o6">
+                                        <rect key="frame" x="0.0" y="0.0" width="412" height="19"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£27.90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4an-oc-iBM">
-                                                <rect key="frame" x="0.0" y="0.0" width="46.5" height="22.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-L5-6Zq">
+                                                <rect key="frame" x="0.0" y="0.0" width="183.5" height="19"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="x2  Gamberetti E Spinaci*" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDG-J1-pnI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="19"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="£27.90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4an-oc-iBM">
+                                                <rect key="frame" x="369" y="0.0" width="43" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36W-4X-sXW">
+                                        <rect key="frame" x="0.0" y="27" width="412" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="uxF-Ru-pMG"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36W-4X-sXW">
-                                <rect key="frame" x="0.0" y="30.5" width="444" height="1"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="uxF-Ru-pMG"/>
-                                </constraints>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tk0-Z9-2cM">
+                                <rect key="frame" x="16" y="79" width="412" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKk-rq-Wyf">
+                                        <rect key="frame" x="0.0" y="0.0" width="412" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£57.80" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLp-ji-7Uq">
+                                        <rect key="frame" x="0.0" y="20.5" width="412" height="19"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Customer notes: No garlic, extra spicy!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjd-AN-lVc">
+                                        <rect key="frame" x="0.0" y="43.5" width="412" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                    </stackView>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KOL-j2-SQG" firstAttribute="top" secondItem="Esh-rS-FnB" secondAttribute="bottom" constant="8" symbolic="YES" id="B5e-V0-BF1"/>
+                            <constraint firstAttribute="trailing" secondItem="Esh-rS-FnB" secondAttribute="trailing" constant="16" id="C53-Ty-dPd"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tk0-Z9-2cM" secondAttribute="bottom" constant="16" id="E4e-z0-CXo"/>
+                            <constraint firstItem="Esh-rS-FnB" firstAttribute="leading" secondItem="8iQ-iT-xcj" secondAttribute="leading" constant="16" id="EGR-ZS-mpy"/>
+                            <constraint firstItem="tk0-Z9-2cM" firstAttribute="top" secondItem="KOL-j2-SQG" secondAttribute="bottom" constant="8" symbolic="YES" id="ZlG-b0-J9c"/>
+                            <constraint firstItem="tk0-Z9-2cM" firstAttribute="leading" secondItem="8iQ-iT-xcj" secondAttribute="leading" constant="16" id="cil-t3-siK"/>
+                            <constraint firstItem="KOL-j2-SQG" firstAttribute="leading" secondItem="8iQ-iT-xcj" secondAttribute="leading" constant="16" id="eWH-th-Uph"/>
+                            <constraint firstAttribute="trailing" secondItem="tk0-Z9-2cM" secondAttribute="trailing" constant="16" id="f4V-DW-LWr"/>
+                            <constraint firstItem="Esh-rS-FnB" firstAttribute="top" secondItem="8iQ-iT-xcj" secondAttribute="top" constant="16" id="pwk-Ry-84B"/>
+                            <constraint firstAttribute="trailing" secondItem="KOL-j2-SQG" secondAttribute="trailing" constant="16" id="tpA-IC-n2v"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.36078431370000003" green="0.61199998860000004" blue="0.68599998949999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Esh-rS-FnB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="AWL-Q8-ReB"/>
-                    <constraint firstAttribute="trailing" secondItem="KOL-j2-SQG" secondAttribute="trailing" constant="16" id="MrC-eQ-ei2"/>
-                    <constraint firstItem="KOL-j2-SQG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="c3a-Id-Odq"/>
-                    <constraint firstItem="KOL-j2-SQG" firstAttribute="top" secondItem="Esh-rS-FnB" secondAttribute="bottom" constant="16" id="e05-Gs-GFN"/>
-                    <constraint firstItem="Esh-rS-FnB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="fmj-Gz-dAe"/>
-                    <constraint firstAttribute="trailing" secondItem="Esh-rS-FnB" secondAttribute="trailing" constant="16" id="p9Y-Lk-Z7R"/>
+                    <constraint firstItem="8iQ-iT-xcj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="1Tb-pj-USf"/>
+                    <constraint firstAttribute="bottom" secondItem="8iQ-iT-xcj" secondAttribute="bottom" constant="16" id="ALW-Bb-Ecs"/>
+                    <constraint firstAttribute="trailing" secondItem="8iQ-iT-xcj" secondAttribute="trailing" constant="16" id="L6n-Vn-UoF"/>
+                    <constraint firstItem="8iQ-iT-xcj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="MGF-P3-KpD"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                        <real key="value" value="0.0"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="0.0"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="8iQ-iT-xcj" id="enF-6U-0WC"/>
+            </connections>
             <point key="canvasLocation" x="250.72463768115944" y="175.78125"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="star_small_blue" width="10" height="11"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
