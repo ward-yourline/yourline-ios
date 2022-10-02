@@ -25,7 +25,7 @@ class SignInRouter: SignInRouting {
         let signInView = signInStoryboard.instantiateViewController(withIdentifier: YourLineViews.signInView.name)
         
         if let signInView = signInView as? SignInViewing {
-            let presenter = SignInPresenter(router: self)
+            let presenter = SignInPresenter(router: self, view: signInView)
             signInView.setPresenter(presenter)
         }
         

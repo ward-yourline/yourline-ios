@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Item
 public struct Item: Decodable {
-    public let title, desc, content: String
+    public let id, title, desc, content: String
 }
 
 public typealias Items = [Item]

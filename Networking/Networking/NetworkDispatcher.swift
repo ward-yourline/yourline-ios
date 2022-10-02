@@ -44,6 +44,17 @@ public struct NetworkDispatcher: NetworkDispatcherProtocol {
                 return
             }
             
+            if
+                let response = response as? HTTPURLResponse,
+                let data = data,
+                response.statusCode == 400,
+                let string = String(data: data, encoding: .utf8)
+            {
+                let error = NSError(domain: string, code: 0)
+                onError(NetworkError.unautothorised(error))
+                return
+            }
+            
             guard let data = data else {
                 onError(NetworkError.noData)
                 return

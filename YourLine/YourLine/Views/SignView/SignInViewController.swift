@@ -7,11 +7,13 @@
 
 import UIKit
 import Presentation
+import NVActivityIndicatorView
 
 class SignInViewController: UIViewController, SignInViewing {
     
     @IBOutlet weak var passwordField: TextField!
     @IBOutlet weak var emailField: TextField!
+    @IBOutlet weak var loadingView: UIView!
     
     private var presenter: SignInPresenting?
 
@@ -19,7 +21,6 @@ class SignInViewController: UIViewController, SignInViewing {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
     }
     
     func setPresenter(_ presenter: SignInPresenter?) {
@@ -35,11 +36,11 @@ class SignInViewController: UIViewController, SignInViewing {
         let password = passwordField.text ?? ""
         let email = emailField.text ?? ""
         
-        if email.contains("your@line.com"), password.contains("12345678") {
-            presenter?.signIn()
-        } else {
-            showAlert(with: "Error", message: "Please enter an email and password")
-        }
+        presenter?.signIn(with: email, and: password)
+    }
+    
+    func setIsBusy(_ isBusy: Bool) {
+        loadingView.isHidden = !isBusy
     }
     
     @IBAction func unwind( _ seg: UIStoryboardSegue) {

@@ -9,5 +9,11 @@
 import Foundation
 
 enum EndPoints: String {
-    case items = "http://localhost:10000/items"
+    case items = "items"
+    case authorise = "authorise/"
+    
+    public var endpoint: String {
+        let endpoint = "http://localhost:10000/"
+        return endpoint + self.rawValue
+    }
 }

@@ -23,6 +23,7 @@ public extension RequestTypeProtocol {
                 do {
                     let jsonDecoder = JSONDecoder()
                     let result = try jsonDecoder.decode(ResponseType.self, from: responseData)
+                    print(String(data: responseData, encoding: .utf8))
                     DispatchQueue.main.async {
                         onSuccess(result)
                     }

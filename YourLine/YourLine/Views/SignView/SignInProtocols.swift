@@ -19,14 +19,15 @@ protocol SignInRouting: Routing {
     func openHome()
 }
 
-protocol SignInViewing {
+protocol SignInViewing: AnyObject {
     func setPresenter(_ presenter: SignInPresenter?)
+    func showAlert(with title: String, message: String)
+    func setIsBusy(_ isBusy: Bool)
 }
 
 protocol SignInPresenting {
     
-    init(router: SignInRouting)
-    
+    init(router: SignInRouting, view: SignInViewing?)
     func signUp()
-    func signIn()
+    func signIn(with userName: String, and password: String)
 }

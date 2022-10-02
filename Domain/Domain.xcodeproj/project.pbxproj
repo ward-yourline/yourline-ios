@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F363D85F28E9AAA500FCDA85 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363D85E28E9AAA500FCDA85 /* Items.swift */; };
+		F363D86228E9B8B500FCDA85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363D86128E9B8B500FCDA85 /* User.swift */; };
 		F3A521FD28BCD8F8006A048B /* SignUpField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A521FC28BCD8F8006A048B /* SignUpField.swift */; };
 		F3CAF16728550E4100E61B8A /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CAF16628550E4100E61B8A /* Utility.framework */; };
 		F3D1A51728C24242000D4677 /* BusinessDashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A51628C24242000D4677 /* BusinessDashboardModel.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		F363D85E28E9AAA500FCDA85 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		F363D86128E9B8B500FCDA85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F3A521FC28BCD8F8006A048B /* SignUpField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpField.swift; sourceTree = "<group>"; };
 		F3CAF16628550E4100E61B8A /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D1A51628C24242000D4677 /* BusinessDashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDashboardModel.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 				F363D85E28E9AAA500FCDA85 /* Items.swift */,
 			);
 			path = Items;
+			sourceTree = "<group>";
+		};
+		F363D86028E9B8AD00FCDA85 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				F363D86128E9B8B500FCDA85 /* User.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 		F3A521FB28BCD8ED006A048B /* SignUp */ = {
@@ -139,6 +149,7 @@
 		F3D8668B2816A55400E574B0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				F363D86028E9B8AD00FCDA85 /* Users */,
 				F363D85D28E9AA9E00FCDA85 /* Items */,
 				F3D84EBC28D74F3A00B0B077 /* Orders */,
 				F3D1A51528C2423B000D4677 /* BusinessDashboard */,
@@ -288,6 +299,7 @@
 				F3D84EBE28D74F4400B0B077 /* Orders.swift in Sources */,
 				F3D1A51728C24242000D4677 /* BusinessDashboardModel.swift in Sources */,
 				F3D866B12816A56F00E574B0 /* Application.swift in Sources */,
+				F363D86228E9B8B500FCDA85 /* User.swift in Sources */,
 				F3D8668E2816A55400E574B0 /* Domain.docc in Sources */,
 				F363D85F28E9AAA500FCDA85 /* Items.swift in Sources */,
 				F3D866AD2816A56F00E574B0 /* Screen.swift in Sources */,
