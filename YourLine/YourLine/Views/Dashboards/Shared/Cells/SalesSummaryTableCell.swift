@@ -1,15 +1,15 @@
 //
-//  HomeSummaryCell.swift
+//  SalesSummaryTableCell.swift
 //  YourLine
 //
-//  Created by Warrd Adlani on 29/08/2022.
+//  Created by Warrd Adlani on 18/09/2022.
 //
 
 import UIKit
 import Presentation
 import Domain
 
-struct HomeSummaryCellViewModel: CellViewModelling {
+struct SalesSummaryTableCellViewModel: CellViewModelling {
     
     let title: String?
     let value: String?
@@ -24,7 +24,7 @@ struct HomeSummaryCellViewModel: CellViewModelling {
     }
 }
 
-class HomeSummaryCell: UITableViewCell {
+class SalesSummaryTableCell: UITableViewCell {
 
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
@@ -60,11 +60,11 @@ class HomeSummaryCell: UITableViewCell {
     }
 }
 
-extension HomeSummaryCell: CellPresentable {
+extension SalesSummaryTableCell: CellPresentable {
     
     func setupCell(with viewModel: CellViewModelling?, delegate: CellDelegate?) {
         guard
-            let viewModel = viewModel as? HomeSummaryCellViewModel
+            let viewModel = viewModel as? SalesSummaryTableCellViewModel
         else {
             return
         }
@@ -75,3 +75,4 @@ extension HomeSummaryCell: CellPresentable {
         pointsLabel.text = viewModel.points
     }
 }
+

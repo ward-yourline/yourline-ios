@@ -16,6 +16,7 @@ class HomeViewRouter: HomeViewRouting {
     
     private weak var context: UIViewController?
     private let signUpContext = UINavigationController()
+    private lazy var navigationContext = UINavigationController()
         
     required init(context: UIViewController?) {
         self.context = context
@@ -23,22 +24,22 @@ class HomeViewRouter: HomeViewRouting {
     
     func start(insert: Bool = false) {
         let storyboard = UIStoryboard.init(name: StoryboardNames.homeView.name, bundle: Bundle.main)
+        let view = storyboard.instantiateViewController(withIdentifier: YourLineViews.homeView.name)
         
-        guard
-            let view = storyboard.instantiateViewController(withIdentifier: YourLineViews.homeView.name) as? HomeViewing
-        else {
-            fatalError()
+        if let view = view as? HomeViewing {
+            let presenter = HomeViewPresenter(view: view, router: self)
+        
+            view.setPresenter(presenter)
         }
         
-        let interactor = HomeViewInteractor()
-        let presenter = HomeViewPresenter(view: view, interactor: interactor, router: self)
+        view.addChild(navigationContext)
         
-        view.setPresenter(presenter)
+        // TEMP
+        showBusinessDashboard()
         
         guard
             let context = context as? UINavigationController,
-            let firstView = context.viewControllers.first,
-            let view = view as? UIViewController
+            let firstView = context.viewControllers.first
         else {
             return
         }
@@ -59,5 +60,11 @@ class HomeViewRouter: HomeViewRouting {
         }
         
         context.popToRootViewController(animated: true)
+    }
+    
+    // MARK: Private
+    private func showBusinessDashboard() {
+        let router = BusinessDashboardRouter(context: navigationContext)
+        router.start()
     }
 }

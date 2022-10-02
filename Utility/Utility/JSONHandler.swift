@@ -16,11 +16,18 @@ public class JSONHandler {
             
             if
                 let path = bundle.path(forResource: name, ofType: "json"),
-                let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe),
-                let model = try? JSONDecoder().decode(type, from: data)
+                let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+//                let model = try? JSONDecoder().decode(type, from: data)
             {
-                DispatchQueue.main.async {
-                    completion(model, nil)
+                
+                do {
+                    let model = try JSONDecoder().decode(type, from: data)
+                    DispatchQueue.main.async {
+                        completion(model, nil)
+                    }
+                } catch {
+                    print(error)
+                    completion(nil, error)
                 }
             } else {
                 DispatchQueue.main.async {

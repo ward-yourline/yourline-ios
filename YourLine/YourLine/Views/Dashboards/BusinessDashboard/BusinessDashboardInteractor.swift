@@ -10,10 +10,12 @@ import Domain
 import Networking
 import Utility
 
-class HomeViewInteractor: HomeViewInteracting {
+class BusinessDashboardInteractor: BusinessDashboardInteracting {
+   
     private lazy var service = MockWebservice()
+    
     func getHome(with completion: NetworkCallbackBlock?) {
-        service.getHome(with: completion)
+        service.getBusinessDashboard(with: completion)
     }
 }
     

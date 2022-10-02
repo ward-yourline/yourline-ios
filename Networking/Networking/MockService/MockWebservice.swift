@@ -28,9 +28,9 @@ public class MockWebservice {
 extension MockWebservice {
     
     // Home
-    public func getHome(with completion: NetworkCallbackBlock?) {
-        let jsonFile = "home"
-        fetch(with: jsonFile, type: HomeModel.self, with: completion)
+    public func getBusinessDashboard(with completion: NetworkCallbackBlock?) {
+        let jsonFile = "business_dashboard"
+        fetch(with: jsonFile, type: BusinessDashboardModel.self, with: completion)
     }
     
     // Sign up and Sign in requests
@@ -42,5 +42,10 @@ extension MockWebservice {
     public func getSignUpBusinessView(completion: NetworkCallbackBlock?) {
         let jsonFile = "sign_up_business"
         fetch(with: jsonFile, type: SignUpFields.self, with: completion)
+    }
+    
+    public func getOrders(completion: NetworkCallbackBlock?) {
+        let jsonFile = "orders"
+        fetch(with: jsonFile, type: OrdersModel.self, with: completion)
     }
 }

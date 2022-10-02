@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		337F80CBADB2D52636940D35 /* Pods_PresentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8822F8117B16B13AEB3B4E /* Pods_PresentationTests.framework */; };
+		F3132C0A28E0663900FA6A8E /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3132C0928E0663900FA6A8E /* SnapKit.framework */; };
+		F36CD71F28E04B110017C17A /* OrderDetailsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CD71D28E04B110017C17A /* OrderDetailsTableCell.swift */; };
+		F36CD72028E04B110017C17A /* OrderDetailsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36CD71E28E04B110017C17A /* OrderDetailsTableCell.xib */; };
+		F36CD72228E04EE90017C17A /* OrderDetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CD72128E04EE90017C17A /* OrderDetailItemView.swift */; };
+		F36CD72428E04EF70017C17A /* OrderDetailItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36CD72328E04EF70017C17A /* OrderDetailItemView.xib */; };
 		F38E611B28C49A0700D28BCD /* ImageTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38E611928C49A0700D28BCD /* ImageTitleCell.xib */; };
 		F38E611C28C49A0700D28BCD /* ImageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E611A28C49A0700D28BCD /* ImageTitleCell.swift */; };
 		F3A361962832BCAA00690696 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A361952832BCAA00690696 /* TableView.storyboard */; };
@@ -73,6 +78,11 @@
 		86303D071A1EEF945C357AF7 /* Pods-Presentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.release.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.release.xcconfig"; sourceTree = "<group>"; };
 		9E8822F8117B16B13AEB3B4E /* Pods_PresentationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresentationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43AD043FF747B9CCAF1033F /* Pods-Presentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.debug.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.debug.xcconfig"; sourceTree = "<group>"; };
+		F3132C0928E0663900FA6A8E /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36CD71D28E04B110017C17A /* OrderDetailsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsTableCell.swift; sourceTree = "<group>"; };
+		F36CD71E28E04B110017C17A /* OrderDetailsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailsTableCell.xib; sourceTree = "<group>"; };
+		F36CD72128E04EE90017C17A /* OrderDetailItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailItemView.swift; sourceTree = "<group>"; };
+		F36CD72328E04EF70017C17A /* OrderDetailItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailItemView.xib; sourceTree = "<group>"; };
 		F38E611928C49A0700D28BCD /* ImageTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTitleCell.xib; sourceTree = "<group>"; };
 		F38E611A28C49A0700D28BCD /* ImageTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleCell.swift; sourceTree = "<group>"; };
 		F3A361952832BCAA00690696 /* TableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
@@ -130,6 +140,7 @@
 				F3CAF19228550F8500E61B8A /* SkeletonView.framework in Frameworks */,
 				F3CAF18F28550F8100E61B8A /* ViewAnimator.framework in Frameworks */,
 				F3CAF18C28550F7D00E61B8A /* SideMenu.framework in Frameworks */,
+				F3132C0A28E0663900FA6A8E /* SnapKit.framework in Frameworks */,
 				F3D866F32816A5E200E574B0 /* Domain.framework in Frameworks */,
 				F3D867332816AF5700E574B0 /* Services.framework in Frameworks */,
 				F3A362152832CA9100690696 /* Resources.framework in Frameworks */,
@@ -163,6 +174,25 @@
 			);
 			name = Pods;
 			path = ../YourLine/Pods;
+			sourceTree = "<group>";
+		};
+		F36CD71B28E04AF20017C17A /* OrderDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F36CD71C28E04AFA0017C17A /* OrderDetailsCell */,
+			);
+			path = OrderDetails;
+			sourceTree = "<group>";
+		};
+		F36CD71C28E04AFA0017C17A /* OrderDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				F36CD71D28E04B110017C17A /* OrderDetailsTableCell.swift */,
+				F36CD71E28E04B110017C17A /* OrderDetailsTableCell.xib */,
+				F36CD72128E04EE90017C17A /* OrderDetailItemView.swift */,
+				F36CD72328E04EF70017C17A /* OrderDetailItemView.xib */,
+			);
+			path = OrderDetailsCell;
 			sourceTree = "<group>";
 		};
 		F38E611628C499F000D28BCD /* Extensions */ = {
@@ -279,6 +309,7 @@
 		F3D866F12816A5E200E574B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3132C0928E0663900FA6A8E /* SnapKit.framework */,
 				F3CAF1972855103900E61B8A /* Instructions.framework */,
 				F3CAF19428550F8D00E61B8A /* NVActivityIndicatorView.framework */,
 				F3CAF19128550F8500E61B8A /* SkeletonView.framework */,
@@ -329,6 +360,7 @@
 		F3F499D5281588D700BD71CE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F36CD71B28E04AF20017C17A /* OrderDetails */,
 				F3D867312816A9A100E574B0 /* Shared */,
 				F3D866BA2816A5AE00E574B0 /* TableView */,
 				F3F499F22815895C00BD71CE /* Form */,
@@ -458,7 +490,9 @@
 				F3A361962832BCAA00690696 /* TableView.storyboard in Resources */,
 				F3D866E42816A5AE00E574B0 /* HeaderTextCell.xib in Resources */,
 				F3D866E72816A5AE00E574B0 /* BodyTextCell.xib in Resources */,
+				F36CD72028E04B110017C17A /* OrderDetailsTableCell.xib in Resources */,
 				F3D866E12816A5AE00E574B0 /* PaddingCell.xib in Resources */,
+				F36CD72428E04EF70017C17A /* OrderDetailItemView.xib in Resources */,
 				F38E611B28C49A0700D28BCD /* ImageTitleCell.xib in Resources */,
 				F3D866DE2816A5AE00E574B0 /* SingleActionButtonCell.xib in Resources */,
 			);
@@ -542,6 +576,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36CD72228E04EE90017C17A /* OrderDetailItemView.swift in Sources */,
+				F36CD71F28E04B110017C17A /* OrderDetailsTableCell.swift in Sources */,
 				F3D866E92816A5AE00E574B0 /* TableViewDataSource.swift in Sources */,
 				F3F499F42815897400BD71CE /* FormViewController.swift in Sources */,
 				F3D866EB2816A5AE00E574B0 /* TableViewController.swift in Sources */,

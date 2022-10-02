@@ -24,14 +24,6 @@ protocol HomeViewing: AnyObject {
 }
 
 protocol HomeViewPresenting {
-    var numberOfSections: Int { get }
-    
     func viewDidLoad()
-    func numberOfRows(in section: Int) -> Int
-    func setupCell(_ cell: CellPresentable, at indexPath: IndexPath)
     func logout()
-}
-
-protocol HomeViewInteracting {
-    func getHome(with completion: NetworkCallbackBlock?)
 }
