@@ -23,6 +23,11 @@ class SignInViewController: UIViewController, SignInViewing {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        view.endEditing(true)
+    }
+    
     func setPresenter(_ presenter: SignInPresenter?) {
         self.presenter = presenter
     }
