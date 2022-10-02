@@ -8,8 +8,8 @@
 import Foundation
 
 // MARK: - Item
-public struct Item: Codable {
+public struct Item: Decodable {
     public let title, desc, content: String
 }
 
-typealias Items = [Item]
+public typealias Items = [Item]
