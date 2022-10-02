@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F363D85528E9AA2900FCDA85 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363D84C28E9AA2800FCDA85 /* Request.swift */; };
+		F363D85628E9AA2900FCDA85 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363D84D28E9AA2800FCDA85 /* EndPoints.swift */; };
+		F363D85728E9AA2900FCDA85 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363D84E28E9AA2800FCDA85 /* NetworkError.swift */; };
+		F363D85828E9AA2900FCDA85 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363D84F28E9AA2800FCDA85 /* RequestType.swift */; };
+		F363D85928E9AA2900FCDA85 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363D85028E9AA2800FCDA85 /* WebService.swift */; };
+		F363D85A28E9AA2900FCDA85 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363D85128E9AA2900FCDA85 /* NetworkDispatcher.swift */; };
+		F363D85B28E9AA2900FCDA85 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363D85228E9AA2900FCDA85 /* HTTPMethod.swift */; };
 		F3D1A4D928C21F32000D4677 /* Networking.docc in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A4D828C21F32000D4677 /* Networking.docc */; };
 		F3D1A4DF28C21F32000D4677 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D1A4D428C21F32000D4677 /* Networking.framework */; };
 		F3D1A4E428C21F32000D4677 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A4E328C21F32000D4677 /* NetworkingTests.swift */; };
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F363D84C28E9AA2800FCDA85 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		F363D84D28E9AA2800FCDA85 /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		F363D84E28E9AA2800FCDA85 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F363D84F28E9AA2800FCDA85 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		F363D85028E9AA2800FCDA85 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F363D85128E9AA2900FCDA85 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		F363D85228E9AA2900FCDA85 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		F3D1A4D428C21F32000D4677 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D1A4D728C21F32000D4677 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
 		F3D1A4D828C21F32000D4677 /* Networking.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Networking.docc; sourceTree = "<group>"; };
@@ -97,6 +111,13 @@
 		F3D1A4D628C21F32000D4677 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F363D84D28E9AA2800FCDA85 /* EndPoints.swift */,
+				F363D85228E9AA2900FCDA85 /* HTTPMethod.swift */,
+				F363D85128E9AA2900FCDA85 /* NetworkDispatcher.swift */,
+				F363D84E28E9AA2800FCDA85 /* NetworkError.swift */,
+				F363D84C28E9AA2800FCDA85 /* Request.swift */,
+				F363D84F28E9AA2800FCDA85 /* RequestType.swift */,
+				F363D85028E9AA2800FCDA85 /* WebService.swift */,
 				F3D1A4FC28C222F5000D4677 /* MockService */,
 				F3D1A4D728C21F32000D4677 /* Networking.h */,
 				F3D1A4D828C21F32000D4677 /* Networking.docc */,
@@ -282,7 +303,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D1A4F228C21F91000D4677 /* MockWebservice.swift in Sources */,
+				F363D85528E9AA2900FCDA85 /* Request.swift in Sources */,
+				F363D85928E9AA2900FCDA85 /* WebService.swift in Sources */,
+				F363D85A28E9AA2900FCDA85 /* NetworkDispatcher.swift in Sources */,
+				F363D85628E9AA2900FCDA85 /* EndPoints.swift in Sources */,
+				F363D85B28E9AA2900FCDA85 /* HTTPMethod.swift in Sources */,
 				F3D1A4D928C21F32000D4677 /* Networking.docc in Sources */,
+				F363D85728E9AA2900FCDA85 /* NetworkError.swift in Sources */,
+				F363D85828E9AA2900FCDA85 /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

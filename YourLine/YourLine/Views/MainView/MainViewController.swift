@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Domain
+import Networking
 
 class MainViewController: UIViewController, MainViewing {
     
@@ -22,6 +24,13 @@ class MainViewController: UIViewController, MainViewing {
         // Do any additional setup after loading the view.
         
         setupChildrenIfNeeded()
+        
+        let webService = WebService()
+        webService.getProducts { items, error in
+            if let items = items as? Items {
+                
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
